@@ -1,0 +1,441 @@
+/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 3.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+/*---DROPDOWN---*/
+/* Nav Open Button */
+.toggle {
+  width:20%;
+  height:1.8em;
+  padding:0;
+  margin:0.2em;
+  background: var(--light-blue);
+  outline: 0;
+  border: none;
+  border-radius: 5px;
+  font-size: 3em;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+  transition: 0.15s ease-in-out;
+  cursor: pointer;
+}
+
+.toggle:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+  background: var(--highlight);
+}
+
+.toggle i {
+  color: black;
+  margin:0;
+  padding:0;
+}
+
+/* Nav Position and Opening Class*/
+
+
+.full-screen-nav {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: 0.2s ease-in-out;
+  display: none;
+  z-index: 9999;
+  color:black;
+  height:100vh;
+  width:100vw;
+  background:white;
+}
+
+.full-screen-nav ul{
+  display:flex;
+  justify-content:space-around;
+  flex-flow: row wrap;
+  text-align:center;
+  width:100%;
+  height:100%;
+  list-style:none;
+  padding:1em 1em 10% 1em;
+}
+
+.full-screen-nav ul li {
+  width:100%;
+  padding:0;  
+  
+}
+
+.full-screen-nav ul .close {
+  text-align:right;
+  padding-right:20px;
+  font-size:2.5em;
+}
+
+.full-screen-nav ul li a{
+  font-size:2em;
+  padding:0;
+  text-decoration:none;
+  color: black;
+}
+.open-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*---BASE STYLES---*/
+body{
+  background: white;
+  color: black;
+}
+h1,
+h2{
+    font-family: "Quattrocento", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+p{
+  font-family: "Lora", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+header,
+main,
+footer{
+  display:flex;
+  justify-content:center;
+  border: 2px white dotted;
+}
+
+.content-wrapper{
+  width:90%;
+  border: solid red 2px;
+}
+
+img{
+  width:100%;
+  margin:0;
+}
+
+/*---HEADER AND FOOTER BASE STYLES---*/
+header .content-wrapper,
+footer .content-wrapper{
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+header figure {
+  width: 40%;
+  border: 2px dotted white;
+}
+
+header .toggle i {
+  color: white;
+}
+
+header h1{
+  width:100%;
+  text-align: center;
+}
+
+footer{
+  text-align:center;
+}
+
+footer .acknowledgement {
+  border: 2px dotted black;
+}
+
+footer .acknowledgement p{
+  padding: 0.5em;
+  margin:0;
+  font-size: 0.85em;
+  font-weight: 600;
+}
+
+footer .content-wrapper #socials a {
+  font-size: 3em;
+  margin: 0 10px;
+  color: black;
+}
+
+footer .content-wrapper #socials .blue {
+  color:rgb(4, 4, 131);
+}
+
+footer .content-wrapper #socials .purple {
+  color:rgb(90, 8, 90);
+}
+footer .content-wrapper #socials .green {
+  color:rgb(4, 72, 4);
+}
+
+footer .developed{
+  margin:0 3em;
+  font-weight: 600;
+}
+
+
+/*---HOMEPAGE MAIN MOBILE STYLES---*/
+article{
+  border: blue solid 2px;
+  padding:1em 2em;
+  margin: 1em 0;
+}
+
+article h2{
+  text-align:center;
+  font-size: 1.75em;
+}
+
+article figure{
+  border: black 2px dotted;
+  height: 175px;
+  overflow:hidden;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visually-hidden {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+ * Extends the .visually-hidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visually-hidden.focusable:active,
+.visually-hidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * The use of `table` rather than `block` is only necessary if using
+ * `::before` to contain the top-margins of child elements.
+ */
+
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
