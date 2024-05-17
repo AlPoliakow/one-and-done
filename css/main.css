@@ -192,12 +192,10 @@ main,
 footer{
   display:flex;
   justify-content:center;
-  border: 2px white dotted;
 }
 
 .content-wrapper{
   width:90%;
-  border: solid red 2px;
 }
 
 img{
@@ -347,7 +345,6 @@ footer .developed{
 
 /*---HOMEPAGE MAIN MOBILE STYLES---*/
 article{
-  border: blue solid 2px;
   padding:1em 2em;
   margin: 1em 0;
 }
@@ -361,6 +358,35 @@ article figure{
   border: black 2px dotted;
   height: 175px;
   overflow:hidden;
+}
+
+/*--OUTLINES---*/
+.orange{
+  border: 2px orange solid;
+}
+/*-HTML-*/
+.blue{
+  border: 2px blue solid;
+}
+
+/*-CSS-*/
+.red{
+  border: 2px red solid;
+}
+
+/*-JavaScript-*/
+.yellow{
+  border: 2px yellow solid;
+}
+
+/*-All together-*/
+.green{
+  border: 2px limegreen solid;
+}
+
+/*-GIT-*/
+.purple{
+  border: 2px purple solid;
 }
 
 /* ==========================================================================

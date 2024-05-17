@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning log | The Terminal</title>
+    <!--CSS connections-->
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--Main fonts selected for readability as per Vision Australia recommendations-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&family=Lora:ital,wght@0,400..700;1,400..700&family=Quattrocento:wght@400;700&display=swap"
+        rel="stylesheet">
+    <!--icons-->
+    <script src="https://kit.fontawesome.com/5062d34338.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="center-wrapper">
+        <header>
+            <div class="content-wrapper homepage">
+                <figure>
+                    <img> <!--LLL-->
+                </figure>
+                <nav class="full-screen-nav hide">
+                    <div class="backdrop"></div>
+                    <ul>
+                        <li class="close"><a href="#home" onclick="closeNav()" class="nav-close">&times;</a></li>
+                        <li><a href="../index.html" onclick="closeNav()" class="nav-home">Homepage</a></li>
+                        <li><a href="../html-page/index.html" onclick="closeNav()" class="nav-html">HTML</a></li>
+                        <li><a href="index.html" onclick="closeNav()" class="nav-css">CSS</a></li>
+                        <li><a href="../js-page/index.html" onclick="closeNav()" class="nav-js">JavaScript</a></li>
+                        <li><a href="../all/index.html" onclick="closeNav()" class="nav-combo">Combo</a></li>
+                        <li><a href="index.html" onclick="closeNav()" class="nav-git">Git</a></li>
+                        <li><a href="#contact" onclick="closeNav()" class="nav-contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <button class="toggle" aria-label="navigation-menu"><i class="fa-solid fa-bars"></i>
+                </button>
+                <h1>The Terminal</h1>
+                <div class="mode-toggle">
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                    <p>Dark Mode</p>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="content-wrapper">
+                <article class="purple">
+                    <h2>Git</h2>
+                    <figure>
+                        <img>
+                    </figure>
+                    <p>A version control system that tracks changes in computer files</p>
+                </article>
+                <article class="purple">
+                    <h2>Frequent fliers</h2>
+                    <ul>
+                        <li>pwd ➡ view current file path or location</li>
+                        <li>mkdir <i>directory-name</i> ➡ make a new directory and name it</li>
+                        <li>ls ➡ view a list of files and folders in a directory</li>
+                        <li>ls -a ➡ view a list of files and folders in a directory including hidden and system files</li>
+                        <li>rm -r <i>directory-name</i> ➡ remove a directory ⚠ THIS IS PERMANENT AND DELETES THE DIRECTORY AND CONTENTS</li>
+                        <li>explorer . ➡ open the directory you're working within (PC)</li>
+                        <li>open . ➡ open the directory you're working within (MAC)</li>
+                    </ul>
+                </article>
+                <article class="purple">
+                    <h2>Branches</h2>
+                    <ul>
+                        <li>git checkout branch-name ➡ switches to the named branch</li>
+                        <li>git checkout -b new-branch-name ➡ creates and switches to a new named branch</li>
+                        <li>git branch ➡ list the branches in the local repo</li>
+                        <li>git branch -a ➡ list all the branches in local and remote repos</li>
+                        <li>git branch -d branch_name ➡ deletes the named branch</li>
+                        <li>git branch -D branch_name ➡ deletes a branch with a unique commit/feature that doesn't exist
+                            on another branch (for abandonning a feature)</li>
+                        <li>git branch -m branch_name new_branch_name ➡ rename a branch</li>
+                        <li>git merge branch_name ➡ merge commits from the named branch to the branch you're on</li>
+                        <li>git stash ➡ temporarily stores changes so you can switch branches without committing changes
+                            and without losing your work</li>
+                        <li>git stash pop ➡ apply the changes that were stored</li>
+                        <li>git clone ➡ clone a remote repo to your computer (local)</li>
+                        <li>git push origin branch_name ➡ push changes from a branch to a remote repo</li>
+                        <li>git remote -v ➡ list the remote repos that are connected to your local repo</li>
+                        <li>git fetch ➡ downloads any files or commits to the computer</li>
+                        <li>git remote remove origin ➡ removes the origin connection</li>
+                        <li> code . ➡ opens the current directory in VS code editor</li>
+                    </ul>
+                </article>
+                <article class="purple">
+                    <h2>Repo commands</h2>
+                    <ul>
+                        <li>git init ➡ turns a directory into a repo</li>
+                        <li>git status ➡ check for new, modified or untracked project files</li>
+                        <li>git log ➡ shows a history of the commits to a project</li>
+                        <li>git diff ➡ compare the recent changes to the previously/current committed version</li>
+                        <li>git add <i>file-name</i> ➡ stage file for the next commit</li>
+                        <li>git add -A ➡ stage all changed files for the next commit</li>
+                        <li>git commit -m <i>"Explanatory message"</i> ➡ commit files in staging area to repo</li>
+                    </ul>
+                </article>
+                <article class="purple">
+                    <h2>File commands</h2>
+                    <ul>
+                        <li>touch file_name ➡ creates a new file (touch index.html)</li>
+                        <li>cp current-name new-file-name ➡ duplicate a file</li>
+                        <li>cat ➡ view all the content in a file from the command line</li>
+                        <li>head ➡ print the first 10 lines of a file (head index.html)</li>
+                        <li>tail ➡ print the last 10 lines of a file</li>
+                        <li>rm file-name ➡ ⚠ Permanently deletes the file</li>
+                    </ul>
+                </article>
+                <article class="purple">
+                    <h2>Moving directories</h2>
+                    <ul>
+                        <li>cd ➡ move into a directory</li>
+                        <li>cd .. ➡ navigate up one directory</li>
+                        <li>cd ../.. ➡ naviage back two directories</li>
+                        <li>cd - ➡ return to your previous location</li>
+                    </ul>
+                </article>
+                <article class="purple">
+                    <h2>Create a new repo</h2>
+                    <ol>
+                        <li>Go to Github and create a new repository using the green button on the Dashboard page</li>
+                        <li>Copy the SSH of the repo</li>
+                        <li>Go to the Command-Line</li>
+                        <li>cd➡ get to the right local directory</li>
+                        <li>mkdir➡ to create a new directory *only if necessary*</li>
+                        <li>pwd ➡ double check where you are</li>
+                        <li>git init</li>
+                        <li>touch README.md</li>
+                        <li>git ADD -A</li>
+                        <li>git commit -m "First commit"</li>
+                        <li>git branch -M main ➡ renames "master" to "main"</li>
+                        <!--https://git-scm.com/docs/git-branch-->
+                        <li>git remote add origin (SSH)</li>
+                        <li>git push -u origin main ➡ "-u" sets 'upstream'</li>
+                    </ol>
+                </article>
+                <article class="purple">
+                    <h2>Delete commits to return to an old version</h2>
+                    <ul>
+                        <li>You can (⚠ PERMANENTLY) delete recent commits until a selected return point using the commit hash</li>
+                        <li>git reset --hard 123456 (commit hash sequence)</li>
+                        <li>after you've deleted commits, to push changes to GitHib you'll need to command "git push --force-with-lease origin branch_name"</li>
+                    </ul>
+                </article>
+                <article class="purple">
+                    <h2>Resources</h2>
+                    <ul>
+                        <li><a
+                            href="https://education.github.com/git-cheat-sheet-education.pdf" target="_blank" rel="noreferrer">GitHubCheat Sheet</a></li>
+                            <li><a
+                                href="https://confluence.atlassian.com/bitbucketserver/basic-git-commands-776639767.html" target="_blank" rel="noreferrer">Atlassian Basic Git Commands</a></li>
+                            <li><a href="https://www.atlassian.com/git/glossary#commands" target="_blank" rel="noreferrer">Atlassian Commands Glossary</a></li>
+                            <li><a href="https://dzone.com/articles/top-20-git-commands-with-examples" target="_blank" rel="noreferrer">Git Commands with examples</a></li>
+                            <li><a href="https://www.gitkraken.com/learn/git/commands" target="_blank" rel="noreferrer">Git Commands Reference Guide</a></li>
+                    </ul>
+                </article>
+                <article class="homepage-block">
+                    <h2>Hints</h2>
+                    <ul>
+                        <li>Panic exit the command line:<br>
+                            "ctrl" + "c"<br>
+                            "esc"
+                            "q"</li>
+                        <li>Capitalise the first letter of git messages</li>
+                        <li><a href="https://www.tempertemper.net/blog/chaining-git-commands" target="_blank" rel="noreferrer">Chaining commands</a> allows multiple git commands to run simultanesouly or in rapid succession.</li>
+                    </ul>
+                </article>
+                <article class="homepage-block">
+                    <h2>One & Done</h2>
+                    <ul>
+                        <li><a href="https://stackoverflow.com/questions/2944469/how-to-commit-my-current-changes-to-a-different-branch-in-git"
+                                target="_blank" rel="noopener">Add changes to a different git branch </a></li>
+                    </ul>
+                </article>
+            </div>
+        </main>
+        <footer>
+            <div class="content-wrapper">
+                <div class="acknowledgement">
+                    <p>I acknowledge the Traditional Custodians of Country throughout Australia and their connections to
+                        land, sea
+                        and community. I pay my respect to their Elders past and present and extend that respect to all
+                        Aboriginal and
+                        Torres Strait Islander peoples.</p>
+                </div>
+                <p id="socials">
+                    <a href="mailto:mx.al.poliakow@gmail.com"><i class="fa-regular fa-envelope blue"></i></a>
+                    <a href="https://github.com/AlPoliakow" target="_blank" rel="noopener"><i
+                            class="fa-brands fa-github purple"></i></a>
+                    <a href="https://www.linkedin.com/in/al-poliakow-2953282b6/" target="_blank" rel="noopener"><i
+                            class="fa-brands fa-linkedin green"></i></a>
+                </p>
+                <p class="developed">Designed, researched and developed by Al Poliakow - 2024</p>
+            </div>
+        </footer>
+
+        <script src="../js/index.js"></script>
+</body>
+
+</html>
