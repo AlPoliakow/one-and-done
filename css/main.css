@@ -389,6 +389,7 @@ article {
   padding: 1em 2em;
   margin: 1em 0;
   max-width:220px;
+  text-align:center;
 }
 
 article h2 {
@@ -400,6 +401,20 @@ article h2 a{
   color:white;
 }
 
+article p{
+  text-align:left;
+}
+
+.yellow{
+  outline: 3px solid black;
+  outline-offset:-6px;
+}
+.yellow i{
+  background: black;
+  border-left: 5px black solid;
+  border-right: 5px black solid;
+}
+
 /*article figure {
   border: black 2px dotted;
   height: 175px;
@@ -409,10 +424,6 @@ article h2 a{
   color:white;
 }
 
-article i{
-  width:100%;
-  text-align:center;
-}
 
 .fa-address-card{
   color:orange;
