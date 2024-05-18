@@ -364,14 +364,27 @@ footer .developed {
 
 
 /*---HOMEPAGE MAIN MOBILE STYLES---*/
+
+main .content-wrapper{
+  display:flex;
+  justify-content:center;
+  flex-flow:row wrap;
+  gap:1em;
+}
+
 article {
   padding: 1em 2em;
   margin: 1em 0;
+  max-width:220px;
 }
 
 article h2 {
   text-align: center;
   font-size: 1.75em;
+}
+
+article h2 a{
+  color:white;
 }
 
 article figure {
@@ -541,15 +554,61 @@ article figure {
   }
 
   /*---TABLET ARTICLE STYLES---*/
-  main .content-wrapper{
+  /*main .content-wrapper{
     column-width: 250px;
     column-gap:2%
+  }*/
+
+
+  .homepage .content-wrapper{
+    display: flex;
+    flex-flow:row wrap;
+    justify-content:center;
+    gap:1em;
   }
 
-  article{
+  .homepage article{
+    width:39%;
+    max-width:220px;
+    margin: 0.5em 0;
+  }
+
+
+  /*article{
     min-width: 150px;
     max-width:300px;
-    break-inside: avoid; /* avoids fragmentation */
+    break-inside: avoid; /* avoids fragmentation 
+  }*/
+
+  /*---HTML TABLET PAGE---*/
+  .language,
+  .bp{
+    width:39%;
+    max-width:600px;
+  }
+
+  .hints,
+  .flex,
+  .one-done{
+    width:100%;
+    max-width:1200px;
+  }
+}
+
+
+@media only screen and (min-width: 1200px) {
+  /*---DESKTOP STYLES---*/
+  .language,
+  .bp{
+    width:40%;
+    max-width:600px;
+  }
+
+  .hints,
+  .flex,
+  .one-done{
+    width:100%;
+    max-width:1200px;
   }
 }
 
