@@ -320,6 +320,11 @@ input:checked+.slider:before {
   color: white;
 }
 
+.light-mode{
+  background:white;
+  color: black;
+}
+
 /*--HEADER AND FOOTER MOBILE STYLES---*/
 header .content-wrapper{
   padding: 20px 0;

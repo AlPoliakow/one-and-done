@@ -12,7 +12,10 @@ const backdrop = document.querySelector('.backdrop');
 const body = document.querySelector('body');
 const darkModeSwitch = document.querySelector('input');
 const bars = document.querySelector('.toggle i');
-
+const acknowledgement = document.querySelector('.acknowledgement');
+const socials1 = document.querySelector('#socials .fa-envelope');
+const socials2 = document.querySelector('#socials .fa-github');
+const socials3 = document.querySelector('#socials .fa-linkedin');
 
 // nav menu
 menu.addEventListener('click', () => nav.classList.add('open-nav'));
@@ -23,25 +26,41 @@ function closeNav() {
 }
 
 //dark mode
+//darkModeSwitch.addEventListener("click", function () {
+  //  if (body.classList.contains("dark-mode")) {
+        //body.classList.remove("dark-mode");
+       // bars.style.color = "black";
+       // navClose.style.color = "black";
+       // navHome.style.color = "black";
+       // navHtml.style.color = "black";
+       // navCss.style.color = "black";
+      //  navJs.style.color = "black";
+       // navCombo.style.color = "black";
+        //navGit.style.color = "black";
+       // navContact.style.color = "black";
+       // nav.classList.remove("dark-mode");
+      //  console.log("to light mode");
+   // } else {
+       // body.classList.add("dark-mode");
+        //nav.classList.add("dark-mode");
+       // bars.style.color = "white";
+       // navClose.style.color = "white";
+        //navHome.style.color = "white";
+      //  navHtml.style.color = "white";
+       //navCss.style.color = "white";
+      //  navJs.style.color = "white";
+       // navCombo.style.color = "white";
+       // navGit.style.color = "white";
+       // navContact.style.color = "white";
+       // nav.classList.add("dark-mode");
+       // console.log("to dark mode");
+  //  }
+//});
 
-
+//light mode
 darkModeSwitch.addEventListener("click", function () {
-    if (body.classList.contains("dark-mode")) {
-        body.classList.remove("dark-mode");
-        bars.style.color = "black";
-        navClose.style.color = "black";
-        navHome.style.color = "black";
-        navHtml.style.color = "black";
-        navCss.style.color = "black";
-        navJs.style.color = "black";
-        navCombo.style.color = "black";
-        navGit.style.color = "black";
-        navContact.style.color = "black";
-        nav.classList.remove("dark-mode");
-        console.log("to light mode");
-    } else {
-        body.classList.add("dark-mode");
-        nav.classList.add("dark-mode");
+    if (body.classList.contains("light-mode")) {
+        body.classList.remove("light-mode");
         bars.style.color = "white";
         navClose.style.color = "white";
         navHome.style.color = "white";
@@ -51,7 +70,28 @@ darkModeSwitch.addEventListener("click", function () {
         navCombo.style.color = "white";
         navGit.style.color = "white";
         navContact.style.color = "white";
-        nav.classList.add("dark-mode");
-        console.log("to dark mode");
+        socials1.style.color = "white";
+        socials2.style.color = "white";
+        socials3.style.color = "white";
+        nav.classList.add("light-mode");
+        acknowledgement.style.border="2px dotted white";
+        
+    } else {
+        body.classList.add("light-mode");
+        nav.classList.add("light-mode");
+        bars.style.color = "black";
+        navClose.style.color = "black";
+        navHome.style.color = "black";
+        navHtml.style.color = "black";
+        navCss.style.color = "black";
+        navJs.style.color = "black";
+        navCombo.style.color = "black";
+        navGit.style.color = "black";
+        navContact.style.color = "black";
+        socials1.style.color = "black";
+        socials2.style.color = "black";
+        socials3.style.color = "black";
+        nav.classList.remove("light-mode");
+        acknowledgement.style.border="2px dotted black";
     }
 });
