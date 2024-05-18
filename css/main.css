@@ -383,22 +383,15 @@ article h2 {
   font-size: 1.75em;
 }
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
 article h2 a{
   color:white;
 }
 
-=======
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-article figure {
+/*article figure {
   border: black 2px dotted;
   height: 175px;
   overflow: hidden;
-=======
+]*/
 article h2 a{
   color:white;
 }
@@ -406,7 +399,6 @@ article h2 a{
 article i{
   width:100%;
   text-align:center;
->>>>>>> Stashed changes
 }
 
 .fa-address-card{
