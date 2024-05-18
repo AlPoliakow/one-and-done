@@ -123,10 +123,10 @@ textarea {
   transition: 0.2s ease-in-out;
   display: none;
   z-index: 9999;
-  color: black;
+  color: white;
   height: 100vh;
   width: 100vw;
-  background: white;
+  background: black;
 }
 
 .full-screen-nav ul {
@@ -148,15 +148,16 @@ textarea {
 
 .full-screen-nav ul .close {
   text-align: right;
-  padding-right: 20px;
+  padding: 20px 20px 0 0;
   font-size: 2.5em;
+  color:white;
 }
 
 .full-screen-nav ul li a {
   font-size: 2em;
   padding: 0;
   text-decoration: none;
-  color: black;
+  color:white;
 }
 
 .open-nav {
@@ -167,8 +168,8 @@ textarea {
 
 /*---BASE STYLES---*/
 body {
-  background: white;
-  color: black;
+  background: black;
+  color: white;
 }
 
 h1,
@@ -217,13 +218,22 @@ footer .content-wrapper {
 
 header figure {
   width: 40%;
-  border: 2px dotted black;
+  border: 2px dotted white;
 }
-
 
 header h1 {
   width: 100%;
   text-align: center;
+}
+
+header .toggle i {
+  color:white;
+}
+
+
+footer #socials,
+footer .developed {
+  width:100%;
 }
 
 /*---DARK MODE SLIDER---*/
@@ -319,8 +329,12 @@ footer {
   text-align: center;
 }
 
+footer .content-wrapper{
+  padding: 30px 0;
+}
+
 footer .acknowledgement {
-  border: 2px dotted black;
+  border: 2px dotted white;
 }
 
 footer .acknowledgement p {
@@ -333,20 +347,10 @@ footer .acknowledgement p {
 footer .content-wrapper #socials a {
   font-size: 3em;
   margin: 0 10px;
-  color: black;
+  color:white;
 }
 
-footer .content-wrapper #socials .blue {
-  color: rgb(4, 4, 131);
-}
 
-footer .content-wrapper #socials .purple {
-  color: rgb(90, 8, 90);
-}
-
-footer .content-wrapper #socials .green {
-  color: rgb(4, 72, 4);
-}
 
 footer .developed {
   margin: 0 3em;
@@ -517,6 +521,18 @@ article figure {
   header .mode-toggle p{
     width:100%;
     text-align:center;
+  }
+
+  footer .content-wrapper{
+    padding: 50px 0;
+  }
+
+  footer .acknowledgement{
+    max-width:700px;
+  }
+
+  footer #socials{
+    margin: 30px 0;
   }
 
   /*---TABLET ARTICLE STYLES---*/
