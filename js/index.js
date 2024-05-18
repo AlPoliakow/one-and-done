@@ -19,7 +19,7 @@ const socials2 = document.querySelector('#socials .fa-github');
 const socials3 = document.querySelector('#socials .fa-linkedin');
 
 // nav menu
-menu.addEventListener('click', () => nav.classList.add('open-nav'));
+menu.addEventListener('click', () => nav.classList.add('open-nav'), nav.classList.remove("hide"));
 backdrop.addEventListener('click', () => nav.classList.remove('open-nav'));
 
 function closeNav() {
@@ -31,7 +31,7 @@ darkModeSwitch.addEventListener("click", function () {
     if (body.classList.contains("light-mode")) {
         body.classList.remove("light-mode");
         bars.style.color = "white";
-        nav.style.background="black"; //nav was still appearing with black background despite adding light-mode class
+        nav.style.background="black"; //nav was still appearing with black background despite adding light-mode class; needed to add background specifically
         navClose.style.color = "white";
         navHome.style.color = "white";
         navHtml.style.color = "white";
