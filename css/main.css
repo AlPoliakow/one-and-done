@@ -383,16 +383,58 @@ article h2 {
   font-size: 1.75em;
 }
 
+<<<<<<< Updated upstream
 article h2 a{
   color:white;
 }
 
+=======
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
 article figure {
   border: black 2px dotted;
   height: 175px;
   overflow: hidden;
+=======
+article h2 a{
+  color:white;
 }
 
+article i{
+  width:100%;
+  text-align:center;
+>>>>>>> Stashed changes
+}
+
+.fa-address-card{
+  color:orange;
+  font-size:5em;
+}
+
+.fa-js{
+  color:yellow;
+  font-size: 5em;
+}
+
+.fa-html5{
+  color:blue;
+  font-size:5em;
+}
+
+.fa-css3-alt{
+  color:red;
+  font-size: 5em;
+}
+
+.fa-keyboard{
+  color:purple;
+  font-size:5em;
+}
+
+.fa-calculator{
+  color:green;
+  font-size:5em;
+}
 /*--OUTLINES---*/
 .orange {
   border: 2px orange solid;
