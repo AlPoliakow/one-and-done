@@ -31,6 +31,7 @@ darkModeSwitch.addEventListener("click", function () {
     if (body.classList.contains("light-mode")) {
         body.classList.remove("light-mode");
         bars.style.color = "white";
+        nav.style.background="black"; //nav was still appearing with black background despite adding light-mode class
         navClose.style.color = "white";
         navHome.style.color = "white";
         navHtml.style.color = "white";
@@ -47,9 +48,11 @@ darkModeSwitch.addEventListener("click", function () {
         darkModeSwitch.style.color="#ffef5c";
         darkModeText.style.color="#ffef5c";
         darkModeText.innerText="Turn on the light?";
+        console.log("light off");
     } else {
         body.classList.add("light-mode");
         nav.classList.add("light-mode");
+        nav.style.background="white"; //nav was still appearing with black background despite adding light-mode class
         bars.style.color = "black";
         navClose.style.color = "black";
         navHome.style.color = "black";
@@ -67,6 +70,7 @@ darkModeSwitch.addEventListener("click", function () {
         darkModeSwitch.style.color="#3e390a";
         darkModeText.style.color="#3e390a";
         darkModeText.innerText="Turn the light off!";
+        console.log("light on");
     }
 });
 
