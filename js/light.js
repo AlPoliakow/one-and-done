@@ -1,4 +1,3 @@
-const menu = document.querySelector('.toggle');
 const nav = document.querySelector('.full-screen-nav');
 const navClose = document.querySelector('.nav-close');
 const navHome = document.querySelector('.nav-home');
@@ -18,21 +17,13 @@ const socials1 = document.querySelector('#socials .fa-envelope');
 const socials2 = document.querySelector('#socials .fa-github');
 const socials3 = document.querySelector('#socials .fa-linkedin');
 
-// nav menu
-menu.addEventListener('click', () => nav.classList.add('open-nav'), nav.classList.remove("hide"));
-backdrop.addEventListener('click', () => nav.classList.remove('open-nav'));
-
-function closeNav() {
-    nav.classList.remove('open-nav');
-}
-
 //light mode
 darkModeSwitch.addEventListener("click", function () {
     if (body.classList.contains("light-mode")) {
         body.classList.remove("light-mode");
         bars.style.color = "white";
         nav.style.background="black"; //nav was still appearing with black background despite adding light-mode class; needed to add background specifically
-        navClose.style.color = "white";
+        navClose.style.color = "white"; //each Nav item needed individual selection for color change
         navHome.style.color = "white";
         navHtml.style.color = "white";
         navCss.style.color = "white";
@@ -73,36 +64,3 @@ darkModeSwitch.addEventListener("click", function () {
         console.log("light on");
     }
 });
-
-
-//dark mode
-//darkModeSwitch.addEventListener("click", function () {
-  //  if (body.classList.contains("dark-mode")) {
-        //body.classList.remove("dark-mode");
-       // bars.style.color = "black";
-       // navClose.style.color = "black";
-       // navHome.style.color = "black";
-       // navHtml.style.color = "black";
-       // navCss.style.color = "black";
-      //  navJs.style.color = "black";
-       // navCombo.style.color = "black";
-        //navGit.style.color = "black";
-       // navContact.style.color = "black";
-       // nav.classList.remove("dark-mode");
-      //  console.log("to light mode");
-   // } else {
-       // body.classList.add("dark-mode");
-        //nav.classList.add("dark-mode");
-       // bars.style.color = "white";
-       // navClose.style.color = "white";
-        //navHome.style.color = "white";
-      //  navHtml.style.color = "white";
-       //navCss.style.color = "white";
-      //  navJs.style.color = "white";
-       // navCombo.style.color = "white";
-       // navGit.style.color = "white";
-       // navContact.style.color = "white";
-       // nav.classList.add("dark-mode");
-       // console.log("to dark mode");
-  //  }
-//});
