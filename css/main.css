@@ -230,6 +230,19 @@ header .toggle i {
   color:white;
 }
 
+header .mode-toggle{
+  color: #ffef5c;
+}
+
+header .mode-toggle i{
+  font-size:3em;
+}
+
+header .mode-toggle p{
+  width:auto;
+  font-weight:500;
+}
+
 
 footer #socials,
 footer .developed {
@@ -458,6 +471,11 @@ article i{
 /*-GIT-*/
 .purple {
   border: 2px purple solid;
+}
+
+/*--HTML PAGE--*/
+.hints i{
+  width:7%;
 }
 
 /* ==========================================================================
