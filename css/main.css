@@ -187,6 +187,10 @@ li {
   font-style: normal;
 }
 
+a{
+  color: #f766f7; 
+}
+
 span {
   font-weight: 800;
 }
@@ -207,7 +211,7 @@ img {
   margin: 0;
 }
 
-/*---HEADER AND FOOTER BASE STYLES---*/
+/*---BASE HEADER AND FOOTER STYLES---*/
 header .content-wrapper,
 footer .content-wrapper {
   padding: 10px 0;
@@ -235,7 +239,7 @@ header .mode-toggle{
 }
 
 header .mode-toggle i{
-  font-size:3em;
+  font-size:2em;
 }
 
 header .mode-toggle p{
@@ -243,13 +247,50 @@ header .mode-toggle p{
   font-weight:500;
 }
 
-
 footer #socials,
 footer .developed {
   width:100%;
 }
 
-/*---DARK MODE SLIDER---*/
+footer {
+  text-align: center;
+}
+
+
+
+footer .acknowledgement {
+  border: 2px dotted white;
+}
+
+footer .acknowledgement p {
+  padding: 0.5em;
+  margin: 0;
+  font-size: 0.85em;
+  font-weight: 600;
+}
+
+footer .content-wrapper #socials a {
+  font-size: 3em;
+  margin: 0 10px;
+  color:white;
+}
+
+footer .developed {
+  margin: 0 3em;
+  font-weight: 600;
+}
+
+
+/*--HEADER AND FOOTER MOBILE STYLES---*/
+header .content-wrapper{
+  padding: 20px 0;
+}
+
+footer .content-wrapper{
+  padding: 30px 0;
+}
+
+/*---DARK MODE LIGHT SWITCH---*/
 /* The switch - the box around the slider */
 .switch {
   position: relative;
@@ -290,42 +331,7 @@ footer .developed {
 }
 
 
-/*--HEADER AND FOOTER MOBILE STYLES---*/
-header .content-wrapper{
-  padding: 20px 0;
-}
 
-footer {
-  text-align: center;
-}
-
-footer .content-wrapper{
-  padding: 30px 0;
-}
-
-footer .acknowledgement {
-  border: 2px dotted white;
-}
-
-footer .acknowledgement p {
-  padding: 0.5em;
-  margin: 0;
-  font-size: 0.85em;
-  font-weight: 600;
-}
-
-footer .content-wrapper #socials a {
-  font-size: 3em;
-  margin: 0 10px;
-  color:white;
-}
-
-
-
-footer .developed {
-  margin: 0 3em;
-  font-weight: 600;
-}
 
 
 /*---HOMEPAGE MAIN MOBILE STYLES---*/
@@ -533,25 +539,26 @@ article h2 a{
   }
 
   header figure {
-    width: 20%;
-    order: 1;
+    width: 10%;
+    order:1;
   }
 
   header .toggle {
     width: 20%;
-    order: 3;
+    order:3;
+    margin-top: 20px;
   }
 
   header h1 {
-    order: 4;
+    order: 2;
+    width: 50%;
+    font-size: 3em;
   }
   
   header .mode-toggle{
-    order:2;
-    width:20%;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
+    margin:10px 0 20px 0;
+    width: 180px;
+    order:4;
   }
 
   header .mode-toggle p{
