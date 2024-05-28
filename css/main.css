@@ -444,7 +444,8 @@ article h2 a{
 /*--HTML PAGE--*/
 .bp ul,
 .hints ul,
-.one-done ul{
+.one-done ul,
+.flex ul{
   text-align: left;
   padding-left:0.5em;
 }
@@ -623,6 +624,26 @@ article h2 a{
   .one-done{
     width:100%;
     max-width:1200px;
+  }
+
+  /*---CSS TABLET PAGE---*/
+  .flex{
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+  }
+
+  .flex h2{
+    width:100%;
+  }
+
+  .flex .parent,
+  .flex .child{ 
+    width: 40%;
+  }
+
+  .flex ul{
+    margin-left: 50px;
   }
 }
 
