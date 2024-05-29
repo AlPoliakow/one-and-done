@@ -216,22 +216,32 @@ header .content-wrapper,
 footer .content-wrapper {
   padding: 10px 0;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-flow: row wrap;
 }
 
+
 header figure {
-  width: 40%;
-  border: 2px dotted white;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  /*border: 2px dotted white;*/
+}
+
+header .logo {
+  font-size: 3em;
+  padding-top: 9.6px;
 }
 
 header h1 {
   width: 100%;
   text-align: center;
+  margin: 15px 0 30px 0;
 }
 
 header .toggle i {
   color:white;
+  margin-right:40px;
 }
 
 header .mode-toggle{
@@ -550,6 +560,11 @@ article h2 a{
     order:1;
   }
 
+  header .logo {
+    font-size: 3em;
+    padding-top: 20px;
+  }
+
   header .toggle {
     width: 20%;
     order:3;
@@ -560,8 +575,10 @@ article h2 a{
     order: 2;
     width: 50%;
     font-size: 3em;
+    margin: 25px 0 30px 0;
   }
-  
+
+
   header .mode-toggle{
     margin:10px 0 20px 0;
     width: 180px;
@@ -650,6 +667,41 @@ article h2 a{
 
 @media only screen and (min-width: 1200px) {
   /*---DESKTOP STYLES---*/
+  header .content-wrapper{
+    padding: 25px 0;
+    justify-content:space-evenly;
+    max-width: 1300px;
+  }
+
+  header figure {
+    width: 20%;
+    order:1;
+  }
+
+  header .toggle {
+    width: 20%;
+    order:3;
+    margin-top: 20px;
+  }
+
+  header h1 {
+    order: 2;
+    width: 50%;
+    font-size: 3em;
+  }
+  
+  header .mode-toggle{
+    margin:10px 0 20px 0;
+    width: 180px;
+    order:4;
+  }
+
+  header .mode-toggle p{
+    width:100%;
+    text-align:center;
+  }
+ 
+
   .language,
   .bp{
     width:40%;
