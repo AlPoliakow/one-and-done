@@ -231,6 +231,7 @@ header figure {
 header .logo {
   font-size: 3em;
   padding-top: 9.6px;
+  color: white;
 }
 
 header h1 {
@@ -431,14 +432,27 @@ article h2 a{
   border: 2px blue solid;
 }
 
+.logo-html {
+  color: blue;
+}
+
+
 /*-CSS-*/
 .red {
   border: 2px red solid;
 }
 
+.logo-css {
+  color: red;
+}
+
 /*-JavaScript-*/
 .yellow {
   border: 2px yellow solid;
+}
+
+.logo-js {
+  color: yellow;
 }
 
 /*-All together-*/
