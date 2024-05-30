@@ -661,6 +661,12 @@ article h2 a {
     max-width: 1200px;
   }
 
+  .hints ul,
+  .one-done ul{
+    columns:2;
+    column-gap:40px;
+  }
+
   /*---CSS TABLET PAGE---*/
   .flex {
     display: flex;
@@ -678,7 +684,7 @@ article h2 a {
   }
 
   .flex ul {
-    margin-left: 50px;
+    margin-left: 80px;
   }
 
   /*--The Terminal page--*/
