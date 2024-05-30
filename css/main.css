@@ -150,14 +150,14 @@ textarea {
   text-align: right;
   padding: 20px 20px 0 0;
   font-size: 2.5em;
-  color:white;
+  color: white;
 }
 
 .full-screen-nav ul li a {
   font-size: 2em;
   padding: 0;
   text-decoration: none;
-  color:white;
+  color: white;
 }
 
 .open-nav {
@@ -187,8 +187,8 @@ li {
   font-style: normal;
 }
 
-a{
-  color: #f766f7; 
+a {
+  color: #f766f7;
 }
 
 span {
@@ -241,26 +241,26 @@ header h1 {
 }
 
 header .toggle i {
-  color:white;
-  margin-right:40px;
+  color: white;
+  margin-right: 40px;
 }
 
-header .mode-toggle{
+header .mode-toggle {
   color: #ffef5c;
 }
 
-header .mode-toggle i{
-  font-size:2em;
+header .mode-toggle i {
+  font-size: 2em;
 }
 
-header .mode-toggle p{
-  width:auto;
-  font-weight:500;
+header .mode-toggle p {
+  width: auto;
+  font-weight: 500;
 }
 
 footer #socials,
 footer .developed {
-  width:100%;
+  width: 100%;
 }
 
 footer {
@@ -282,7 +282,7 @@ footer .acknowledgement p {
 footer .content-wrapper #socials a {
   font-size: 3em;
   margin: 0 10px;
-  color:white;
+  color: white;
 }
 
 footer .developed {
@@ -292,11 +292,11 @@ footer .developed {
 
 
 /*--HEADER AND FOOTER MOBILE STYLES---*/
-header .content-wrapper{
+header .content-wrapper {
   padding: 20px 0;
 }
 
-footer .content-wrapper{
+footer .content-wrapper {
   padding: 30px 0;
 }
 
@@ -335,8 +335,8 @@ footer .content-wrapper{
   color: white;
 }
 
-.light-mode{
-  background:white;
+.light-mode {
+  background: white;
   color: black;
 }
 
@@ -346,18 +346,18 @@ footer .content-wrapper{
 
 /*---HOMEPAGE MAIN MOBILE STYLES---*/
 
-main .content-wrapper{
-  display:flex;
-  justify-content:center;
-  flex-flow:row wrap;
-  gap:1em;
+main .content-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  gap: 1em;
 }
 
 article {
   padding: 1em 2em;
   margin: 1em 0;
-  max-width:220px;
-  text-align:center;
+  max-width: 220px;
+  text-align: center;
 }
 
 article h2 {
@@ -365,19 +365,20 @@ article h2 {
   font-size: 1.75em;
 }
 
-article h2 a{
-  color:white;
+article h2 a {
+  color: white;
 }
 
-article p{
-  text-align:left;
+article p {
+  text-align: left;
 }
 
-.yellow{
+.yellow {
   outline: 3px solid black;
-  outline-offset:-6px;
+  outline-offset: -6px;
 }
-.yellow i{
+
+.yellow i {
   background: black;
   border-left: 5px black solid;
   border-right: 5px black solid;
@@ -388,40 +389,41 @@ article p{
   height: 175px;
   overflow: hidden;
 ]*/
-article h2 a{
-  color:white;
+article h2 a {
+  color: white;
 }
 
 
-.fa-address-card{
-  color:orange;
-  font-size:5em;
-}
-
-.fa-js{
-  color:yellow;
+.fa-address-card {
+  color: orange;
   font-size: 5em;
 }
 
-.fa-html5{
-  color:blue;
-  font-size:5em;
-}
-
-.fa-css3-alt{
-  color:red;
+.fa-js {
+  color: yellow;
   font-size: 5em;
 }
 
-.fa-keyboard{
-  color:purple;
-  font-size:5em;
+.fa-html5 {
+  color: blue;
+  font-size: 5em;
 }
 
-.fa-calculator{
-  color:green;
-  font-size:5em;
+.fa-css3-alt {
+  color: red;
+  font-size: 5em;
 }
+
+.fa-keyboard {
+  color: purple;
+  font-size: 5em;
+}
+
+.fa-calculator {
+  color: green;
+  font-size: 5em;
+}
+
 /*--OUTLINES---*/
 .orange {
   border: 2px orange solid;
@@ -469,14 +471,16 @@ article h2 a{
 .bp ul,
 .hints ul,
 .one-done ul,
-.flex ul{
+.flex ul {
   text-align: left;
-  padding-left:0.5em;
+  padding-left: 0.5em;
 }
 
-.hints i{
-  width:7%;
+.hints i {
+  width: 7%;
 }
+
+
 
 /* ==========================================================================
    Helper classes
@@ -564,14 +568,14 @@ article h2 a{
 @media only screen and (min-width: 768px) {
 
   /* Style adjustments for tablets */
-  header .content-wrapper{
+  header .content-wrapper {
     padding: 25px 0;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
   }
 
   header figure {
     width: 10%;
-    order:1;
+    order: 1;
   }
 
   header .logo {
@@ -581,7 +585,7 @@ article h2 a{
 
   header .toggle {
     width: 20%;
-    order:3;
+    order: 3;
     margin-top: 20px;
   }
 
@@ -593,26 +597,26 @@ article h2 a{
   }
 
 
-  header .mode-toggle{
-    margin:10px 0 20px 0;
+  header .mode-toggle {
+    margin: 10px 0 20px 0;
     width: 180px;
-    order:4;
+    order: 4;
   }
 
-  header .mode-toggle p{
-    width:100%;
-    text-align:center;
+  header .mode-toggle p {
+    width: 100%;
+    text-align: center;
   }
 
-  footer .content-wrapper{
+  footer .content-wrapper {
     padding: 50px 0;
   }
 
-  footer .acknowledgement{
-    max-width:700px;
+  footer .acknowledgement {
+    max-width: 700px;
   }
 
-  footer #socials{
+  footer #socials {
     margin: 30px 0;
   }
 
@@ -623,16 +627,16 @@ article h2 a{
   }*/
 
 
-  .homepage .content-wrapper{
+  .homepage .content-wrapper {
     display: flex;
-    flex-flow:row wrap;
-    justify-content:center;
-    gap:1em;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 1em;
   }
 
-  .homepage article{
-    width:39%;
-    max-width:220px;
+  .homepage article {
+    width: 39%;
+    max-width: 220px;
     margin: 0.5em 0;
   }
 
@@ -645,56 +649,68 @@ article h2 a{
 
   /*---HTML TABLET PAGE---*/
   .language,
-  .bp{
-    width:39%;
-    max-width:600px;
+  .bp {
+    width: 39%;
+    max-width: 600px;
   }
 
   .hints,
   .flex,
-  .one-done{
-    width:100%;
-    max-width:1200px;
+  .one-done {
+    width: 100%;
+    max-width: 1200px;
   }
 
   /*---CSS TABLET PAGE---*/
-  .flex{
+  .flex {
     display: flex;
     justify-content: space-evenly;
     flex-flow: row wrap;
   }
 
-  .flex h2{
-    width:100%;
+  .flex h2 {
+    width: 100%;
   }
 
   .flex .parent,
-  .flex .child{ 
+  .flex .child {
     width: 40%;
   }
 
-  .flex ul{
+  .flex ul {
     margin-left: 50px;
+  }
+
+  /*--The Terminal page--*/
+  .git-content-wrapper {
+    column-width: 220px;
+    column-count: 2;
+  }
+
+  .git-content-wrapper .git{
+    margin-top:0;
   }
 }
 
 
+
 @media only screen and (min-width: 1200px) {
+
   /*---DESKTOP STYLES---*/
-  header .content-wrapper{
+  header .content-wrapper {
     padding: 25px 0;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     max-width: 1300px;
   }
 
   header figure {
     width: 20%;
-    order:1;
+    order: 1;
   }
 
   header .toggle {
     width: 20%;
-    order:3;
+    order: 3;
     margin-top: 20px;
   }
 
@@ -703,30 +719,35 @@ article h2 a{
     width: 50%;
     font-size: 3em;
   }
-  
-  header .mode-toggle{
-    margin:10px 0 20px 0;
+
+  header .mode-toggle {
+    margin: 10px 0 20px 0;
     width: 180px;
-    order:4;
+    order: 4;
   }
 
-  header .mode-toggle p{
-    width:100%;
-    text-align:center;
+  header .mode-toggle p {
+    width: 100%;
+    text-align: center;
   }
- 
+
 
   .language,
-  .bp{
-    width:40%;
-    max-width:600px;
+  .bp {
+    width: 40%;
+    max-width: 600px;
   }
 
   .hints,
   .flex,
-  .one-done{
-    width:100%;
-    max-width:1200px;
+  .one-done {
+    width: 100%;
+    max-width: 1200px;
+  }
+
+  /*--The Terminal page--*/
+  .git-content-wrapper {
+    column-count: 3;
   }
 }
 
