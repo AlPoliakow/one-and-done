@@ -111,62 +111,8 @@ textarea {
   padding: 0;
 }
 
-/* Nav Position and Opening Class*/
 
-
-.full-screen-nav {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  transition: 0.2s ease-in-out;
-  display: none;
-  z-index: 9999;
-  color: white;
-  height: 100vh;
-  width: 100vw;
-  background: black;
-}
-
-.full-screen-nav ul {
-  display: flex;
-  justify-content: space-around;
-  flex-flow: row wrap;
-  text-align: center;
-  width: 100%;
-  height: 100%;
-  list-style: none;
-  padding: 1em 1em 10% 1em;
-}
-
-.full-screen-nav ul li {
-  width: 100%;
-  padding: 0;
-
-}
-
-.full-screen-nav ul .close {
-  text-align: right;
-  padding: 20px 20px 0 0;
-  font-size: 2.5em;
-  color: white;
-}
-
-.full-screen-nav ul li a {
-  font-size: 2em;
-  padding: 0;
-  text-decoration: none;
-  color: white;
-}
-
-.open-nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/*---BASE STYLES---*/
+/*---GENERAL STYLES---*/
 body {
   background: black;
   color: white;
@@ -231,7 +177,6 @@ header figure {
 header .logo {
   font-size: 3em;
   padding-top: 9.6px;
-  color: white;
 }
 
 header h1 {
@@ -245,18 +190,61 @@ header .toggle i {
   margin-right: 40px;
 }
 
-header .mode-toggle {
-  color: #ffef5c;
+/*--Nav Display--*/
+.full-screen-nav {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: 0.2s ease-in-out;
+  display: none;
+  z-index: 9999;
+  color: white;
+  height: 100vh;
+  width: 100vw;
+  background: black;
 }
 
-header .mode-toggle i {
+.full-screen-nav ul {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  list-style: none;
+  padding: 1em 1em 10% 1em;
+}
+
+.full-screen-nav ul li {
+  width: 100%;
+  padding: 0;
+
+}
+
+.full-screen-nav ul .close {
+  text-align: right;
+  padding: 20px 20px 0 0;
+  font-size: 2.5em;
+  color: white;
+}
+
+.full-screen-nav ul li a {
   font-size: 2em;
+  padding: 0;
+  text-decoration: none;
+  color: white;
 }
 
-header .mode-toggle p {
-  width: auto;
-  font-weight: 500;
+.open-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+
+
 
 footer #socials,
 footer .developed {
@@ -290,31 +278,26 @@ footer .developed {
   font-weight: 600;
 }
 
-
+/*==========================================================================
+------HOMEPAGE MOBILE------
+============================================================================*/
 /*--HEADER AND FOOTER MOBILE STYLES---*/
 header .content-wrapper {
   padding: 20px 0;
 }
 
-footer .content-wrapper {
-  padding: 30px 0;
+header .mode-toggle {
+  color: #ffef5c;
 }
+
+
+
+
+
 
 /*---DARK MODE LIGHT SWITCH---*/
 /* The switch - the box around the slider */
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
-}
 
-/* Hide default HTML checkbox */
-.switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
 
 /* light switch */
 .mode-toggle {
@@ -327,6 +310,11 @@ footer .content-wrapper {
 .mode-toggle p {
   width: 30%;
   margin-top: 8px;
+  font-weight: 500;
+}
+
+header .mode-toggle i {
+  font-size: 2em;
 }
 
 /*---DARK/LIGHT MODE CLASSES---*/
@@ -339,10 +327,6 @@ footer .content-wrapper {
   background: white;
   color: black;
 }
-
-
-
-
 
 /*---HOMEPAGE MAIN MOBILE STYLES---*/
 
@@ -393,7 +377,6 @@ article h2 a {
   color: white;
 }
 
-
 .fa-address-card {
   color: orange;
   font-size: 5em;
@@ -429,45 +412,56 @@ article h2 a {
   border: 2px orange solid;
 }
 
-/*-HTML-*/
 .blue {
   border: 2px blue solid;
 }
 
-.logo-html {
-  color: blue;
-}
-
-
-/*-CSS-*/
 .red {
   border: 2px red solid;
+}
+
+.yellow {
+  border: 2px yellow solid;
+}
+
+.green {
+  border: 2px limegreen solid;
+}
+
+.purple {
+  border: 2px purple solid;
+}
+
+/*---HOMEPAGE MOBILE FOOTER---*/
+footer .content-wrapper {
+  padding: 30px 0;
+}
+
+/*==========================================================================
+------ADDITIONAL PAGES MOBILE------
+============================================================================*/
+/*---LOGO colors---*/
+.logo-html {
+  color: blue;
 }
 
 .logo-css {
   color: red;
 }
 
-/*-JavaScript-*/
-.yellow {
-  border: 2px yellow solid;
-}
-
 .logo-js {
   color: yellow;
 }
 
-/*-All together-*/
-.green {
-  border: 2px limegreen solid;
+.logo-all {
+  color: green;
 }
 
-/*-GIT-*/
-.purple {
-  border: 2px purple solid;
+.logo-git {
+  color: purple;
 }
 
-/*--HTML PAGE--*/
+/*---Articles Styles Mobile---*/
 .bp ul,
 .hints ul,
 .one-done ul,
@@ -479,8 +473,6 @@ article h2 a {
 .hints i {
   width: 7%;
 }
-
-
 
 /* ==========================================================================
    Helper classes
@@ -567,7 +559,7 @@ article h2 a {
 
 @media only screen and (min-width: 768px) {
 
-  /* Style adjustments for tablets */
+  /*---GENERAL TABLET STYLES---*/
   header .content-wrapper {
     padding: 25px 0;
     justify-content: space-evenly;
@@ -596,18 +588,6 @@ article h2 a {
     margin: 25px 0 30px 0;
   }
 
-
-  header .mode-toggle {
-    margin: 10px 0 20px 0;
-    width: 180px;
-    order: 4;
-  }
-
-  header .mode-toggle p {
-    width: 100%;
-    text-align: center;
-  }
-
   footer .content-wrapper {
     padding: 50px 0;
   }
@@ -620,14 +600,21 @@ article h2 a {
     margin: 30px 0;
   }
 
-  /*---TABLET ARTICLE STYLES---*/
-  /*main .content-wrapper{
-    column-width: 250px;
-    column-gap:2%
-  }*/
+/*==========================================================================
+------HOMEPAGE TABLET STYLES------
+============================================================================*/
+  header .mode-toggle {
+    margin: 10px 0 20px 0;
+    width: 180px;
+    order: 4;
+  }
 
+  header .mode-toggle p {
+    width: 100%;
+    text-align: center;
+  }
 
-  .homepage .content-wrapper {
+  .content-wrapper {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -640,14 +627,9 @@ article h2 a {
     margin: 0.5em 0;
   }
 
-
-  /*article{
-    min-width: 150px;
-    max-width:300px;
-    break-inside: avoid; /* avoids fragmentation 
-  }*/
-
-  /*---HTML TABLET PAGE---*/
+/*==========================================================================
+------ADDITIONAL PAGES TABLET BASE STYLES------
+============================================================================*/
   .language,
   .bp {
     width: 39%;
@@ -662,12 +644,16 @@ article h2 a {
   }
 
   .hints ul,
-  .one-done ul{
-    columns:2;
-    column-gap:40px;
+  .one-done ul {
+    columns: 2;
+    column-gap: 40px;
+    break-inside: avoid;
+    /* avoids fragmentation */
   }
 
-  /*---CSS TABLET PAGE---*/
+/*==========================================================================
+------CSS PAGE TABLET STYLES------
+============================================================================*/
   .flex {
     display: flex;
     justify-content: space-evenly;
@@ -687,14 +673,17 @@ article h2 a {
     margin-left: 80px;
   }
 
-  /*--The Terminal page--*/
+/*==========================================================================
+------TERMINAL PAGE TABLET STYLES------
+============================================================================*/
   .git-content-wrapper {
     column-width: 220px;
     column-count: 2;
   }
 
-  .git-content-wrapper .git{
-    margin-top:0;
+  .git-content-wrapper .git {
+    margin-top: 0;
+    break-inside: avoid; /* avoids fragmentation */
   }
 }
 
