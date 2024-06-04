@@ -454,7 +454,7 @@ footer .content-wrapper {
 ============================================================================*/
 /*---LOGO colors---*/
 .logo-html {
-  color: blue;
+  color: rgb(71, 71, 254)
 }
 
 .logo-css {
@@ -486,6 +486,14 @@ footer .content-wrapper {
   width: 7%;
 }
 
+/*---HTML MOBILE PAGE---*/
+.html-page .acknowledgement{
+  border: 2px dotted rgb(71, 71, 254);
+}
+
+.html-page #socials a i{
+  color: rgb(71, 71, 254);
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
