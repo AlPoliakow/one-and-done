@@ -286,29 +286,19 @@ header .content-wrapper {
   padding: 20px 0;
 }
 
-header .mode-toggle {
-  color: #ffef5c;
-}
-
-
-
-
-
-
 /*---DARK MODE LIGHT SWITCH---*/
-/* The switch - the box around the slider */
-
-
 /* light switch */
 .mode-toggle {
-  width: 100%;
+  width: 60%;
+  padding: 0.5em 1em 0 1em;
   display: flex;
   justify-content: center;
   gap: 10px;
+  color: #ffef5c;
+  border: dotted 1.5px #ffef5c;
 }
 
 .mode-toggle p {
-  width: 30%;
   margin-top: 8px;
   font-weight: 500;
 }
@@ -347,49 +337,39 @@ article {
 article h2 {
   text-align: center;
   font-size: 1.75em;
+  font-weight: 400;
 }
 
-article h2 a {
-  color: white;
-}
+
 
 article p {
   text-align: left;
 }
 
-.yellow {
-  outline: 3px solid black;
-  outline-offset: -6px;
-}
 
-.yellow i {
-  background: black;
-  border-left: 5px black solid;
-  border-right: 5px black solid;
-}
 
-/*article figure {
-  border: black 2px dotted;
-  height: 175px;
-  overflow: hidden;
-]*/
-article h2 a {
-  color: white;
+/*---ABOUT---*/
+.orange {
+  color: orange;
 }
 
 .fa-address-card {
-  color: orange;
   font-size: 5em;
 }
 
-.fa-js {
-  color: yellow;
-  font-size: 5em;
+/*---HTML---*/
+.blue {
+  color:rgb(71, 71, 254);
 }
 
 .fa-html5 {
-  color: blue;
+  color: rgb(71, 71, 254);
   font-size: 5em;
+}
+
+/*---CSS---*/
+.red {
+  color: red;
 }
 
 .fa-css3-alt {
@@ -397,15 +377,47 @@ article h2 a {
   font-size: 5em;
 }
 
+/*---JavaScript---*/
+.yellow {
+  /* for light on mode */
+  outline: 3px solid black; 
+  outline-offset: -6px;
+  color: yellow;
+}
+
+.yellow i {
+  /* for light on mode */
+  background: black;
+  border-left: 5px black solid;
+  border-right: 5px black solid;
+}
+
+.fa-js {
+  color: yellow;
+  font-size: 5em;
+}
+
+/*---ALL---*/
+.fa-calculator {
+  color: green;
+  font-size: 5em;
+}
+
+.green{
+  color: green;
+}
+
+/*---GIT---*/
 .fa-keyboard {
   color: purple;
   font-size: 5em;
 }
 
-.fa-calculator {
-  color: green;
-  font-size: 5em;
+.purple {
+  color:purple;
 }
+
+
 
 /*--OUTLINES---*/
 .orange {
@@ -413,7 +425,7 @@ article h2 a {
 }
 
 .blue {
-  border: 2px blue solid;
+  border: 2px rgb(71, 71, 254) solid;
 }
 
 .red {
