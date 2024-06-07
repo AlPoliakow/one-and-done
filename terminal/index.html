@@ -53,38 +53,113 @@
                 </article>
                 <article class="purple ff">
                     <h2>Frequent fliers</h2>
+                    <table>
+                        <tr> <!--row 1-->
+                            <th>Code</th>
+                            <th>Function</th>
+                        </tr>
+                        <tr> <!--row 2-->
+                            <td>pwd</td>
+                            <td>view current file path or location</td>
+                        </tr>
+                        <tr>
+                            <td>mkdir <i>directory-name</i></td>
+                            <td>make a new directory and name it</td>
+                        </tr>
+                        <tr>
+                            <td>ls</td>
+                            <td>view a list of files and folders in a directory</td>
+                        </tr>
+                        <tr>
+                            <td>explorer .</td>
+                            <td>open the current directory in files (PC)</td>
+                        </tr>
+                        <tr>
+                            <td>code .</td>
+                            <td>open the current directory in the text editor (PC)</td>
+                        </tr>
+                    </table>
+                    <p>Less frequent fliers</p>
                     <ul>
-                        <li>pwd ➡ view current file path or location</li>
-                        <li>mkdir <i>directory-name</i> ➡ make a new directory and name it</li>
-                        <li>ls ➡ view a list of files and folders in a directory</li>
-                        <li>ls -a ➡ view a list of files and folders in a directory including hidden and system files</li>
-                        <li>rm -r <i>directory-name</i> ➡ remove a directory ⚠ THIS IS PERMANENT AND DELETES THE DIRECTORY AND CONTENTS</li>
-                        <li>explorer . ➡ open the directory you're working within (PC)</li>
-                        <li>open . ➡ open the directory you're working within (MAC)</li>
+                        <li>ls -a ➡ view a list of files and folders in a directory including hidden and system files
+                        </li>
+                        <li>rm -r <i>directory-name</i> ➡ remove a directory ⚠ THIS IS PERMANENT AND DELETES THE
+                            DIRECTORY AND CONTENTS</li>
                     </ul>
                 </article>
-                <article class="purple">
+                <article class="purple branches">
                     <h2>Branches</h2>
-                    <ul>
-                        <li>git checkout branch-name ➡ switches to the named branch</li>
-                        <li>git checkout -b new-branch-name ➡ creates and switches to a new named branch</li>
-                        <li>git branch ➡ list the branches in the local repo</li>
-                        <li>git branch -a ➡ list all the branches in local and remote repos</li>
-                        <li>git branch -d branch_name ➡ deletes the named branch</li>
-                        <li>git branch -D branch_name ➡ deletes a branch with a unique commit/feature that doesn't exist
-                            on another branch (for abandonning a feature)</li>
-                        <li>git branch -m branch_name new_branch_name ➡ rename a branch</li>
-                        <li>git merge branch_name ➡ merge commits from the named branch to the branch you're on</li>
-                        <li>git stash ➡ temporarily stores changes so you can switch branches without committing changes
-                            and without losing your work</li>
-                        <li>git stash pop ➡ apply the changes that were stored</li>
-                        <li>git clone ➡ clone a remote repo to your computer (local)</li>
-                        <li>git push origin branch_name ➡ push changes from a branch to a remote repo</li>
-                        <li>git remote -v ➡ list the remote repos that are connected to your local repo</li>
-                        <li>git fetch ➡ downloads any files or commits to the computer</li>
-                        <li>git remote remove origin ➡ removes the origin connection</li>
-                        <li> code . ➡ opens the current directory in VS code editor</li>
-                    </ul>
+                    <p>Branches are used to trial a new feature or design which can then be merged into the main branch
+                        or easily deleted/pruned</p>
+                    <table class="branch-table">
+                        <thead>
+                            <tr> <!--row 1-->
+                                <th>Code</th>
+                                <th>Function</th>
+                            </tr>
+                        </thead>
+                        <tr> <!--row 2-->
+                            <td>git checkout <i>branch-name</i></td>
+                            <td>switches to the named branch</td>
+                        </tr>
+                        <tr>
+                            <td>git checkout -b <i>new-branch-name</i></td>
+                            <td>creates and switches to a new named branch</td>
+                        </tr>
+                        <tr>
+                            <td>git branch</td>
+                            <td>list the branches in the local repo</td>
+                        </tr>
+                        <tr>
+                            <td>git branch -a</td>
+                            <td>list all the branches in local and remote repos</td>
+                        </tr>
+                        <tr>
+                            <td>git branch -d <i>branch_name</i></td>
+                            <td>deletes the named branch (when abandonning a feature)</td>
+                        </tr>
+                        <tr>
+                            <td>git branch -m <i>branch_name</i> <i>new_branch_name</i></td>
+                            <td>rename a branch</td>
+                        </tr>
+                        <tr>
+                            <td>git branch -m <i>branch_name</i> <i>new_branch_name</i></td>
+                            <td>rename a branch</td>
+                        </tr>
+                        <tr>
+                            <td>git merge branch_name</td>
+                            <td>merge commits from the named branch to the branch you're on</td>
+                        </tr>
+                        <tr>
+                            <td>git stash</td>
+                            <td>temporarily stores changes so you can switch branches without committing changes
+                                and without losing your work</td>
+                        </tr>
+                        <tr>
+                            <td>git stash pop</td>
+                            <td>apply the changes that were stored</td>
+                        </tr>
+                        <tr>
+                            <td>git clone</td>
+                            <td>clone a remote repo to your computer (local)</td>
+                        </tr>
+                        <tr>
+                            <td>git push origin <i>branch_name</i></td>
+                            <td>push changes from a branch to a remote repo</td>
+                        </tr>
+                        <tr>
+                            <td>git remote -v</td>
+                            <td>list the remote repos that are connected to your local repo</td>
+                        </tr>
+                        <tr>
+                            <td>git fetch</td>
+                            <td>downloads any files or commits to the computer</td>
+                        </tr>
+                        <tr>
+                            <td>git remote remove origin</td>
+                            <td>removes the origin connection</td>
+                        </tr>
+                    </table>
                 </article>
                 <article class="purple">
                     <h2>Repo commands</h2>
@@ -140,21 +215,26 @@
                 <article class="purple">
                     <h2>Delete commits to return to an old version</h2>
                     <ul>
-                        <li>You can (⚠ PERMANENTLY) delete recent commits until a selected return point using the commit hash</li>
+                        <li>You can (⚠ PERMANENTLY) delete recent commits until a selected return point using the commit
+                            hash</li>
                         <li>git reset --hard 123456 (commit hash sequence)</li>
-                        <li>after you've deleted commits, to push changes to GitHib you'll need to command "git push --force-with-lease origin branch_name"</li>
+                        <li>after you've deleted commits, to push changes to GitHib you'll need to command "git push
+                            --force-with-lease origin branch_name"</li>
                     </ul>
                 </article>
                 <article class="purple">
                     <h2>Resources</h2>
                     <ul>
-                        <li><a
-                            href="https://education.github.com/git-cheat-sheet-education.pdf" target="_blank" rel="noreferrer">GitHubCheat Sheet</a></li>
-                            <li><a
-                                href="https://confluence.atlassian.com/bitbucketserver/basic-git-commands-776639767.html" target="_blank" rel="noreferrer">Atlassian Basic Git Commands</a></li>
-                            <li><a href="https://www.atlassian.com/git/glossary#commands" target="_blank" rel="noreferrer">Atlassian Commands Glossary</a></li>
-                            <li><a href="https://dzone.com/articles/top-20-git-commands-with-examples" target="_blank" rel="noreferrer">Git Commands with examples</a></li>
-                            <li><a href="https://www.gitkraken.com/learn/git/commands" target="_blank" rel="noreferrer">Git Commands Reference Guide</a></li>
+                        <li><a href="https://education.github.com/git-cheat-sheet-education.pdf" target="_blank"
+                                rel="noreferrer">GitHubCheat Sheet</a></li>
+                        <li><a href="https://confluence.atlassian.com/bitbucketserver/basic-git-commands-776639767.html"
+                                target="_blank" rel="noreferrer">Atlassian Basic Git Commands</a></li>
+                        <li><a href="https://www.atlassian.com/git/glossary#commands" target="_blank"
+                                rel="noreferrer">Atlassian Commands Glossary</a></li>
+                        <li><a href="https://dzone.com/articles/top-20-git-commands-with-examples" target="_blank"
+                                rel="noreferrer">Git Commands with examples</a></li>
+                        <li><a href="https://www.gitkraken.com/learn/git/commands" target="_blank" rel="noreferrer">Git
+                                Commands Reference Guide</a></li>
                     </ul>
                 </article>
                 <article class="purple">
@@ -165,7 +245,9 @@
                             "esc"
                             "q"</li>
                         <li>Capitalise the first letter of git messages</li>
-                        <li><a href="https://www.tempertemper.net/blog/chaining-git-commands" target="_blank" rel="noreferrer">Chaining commands</a> allows multiple git commands to run simultanesouly or in rapid succession.</li>
+                        <li><a href="https://www.tempertemper.net/blog/chaining-git-commands" target="_blank"
+                                rel="noreferrer">Chaining commands</a> allows multiple git commands to run
+                            simultanesouly or in rapid succession.</li>
                     </ul>
                 </article>
                 <article class="purple">

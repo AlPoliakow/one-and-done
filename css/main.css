@@ -331,8 +331,8 @@ main .content-wrapper {
 
 article {
   padding: 1em 2em;
-  margin: 1em 0;
-  max-width: 220px;
+  margin: 1em 1em;
+  /*max-width: 220px;*/ /* removed for terminal page*/
   text-align: center;
 }
 
@@ -442,6 +442,23 @@ article p {
   color:purple;
 }
 
+table {
+  width: 100%;
+}
+
+table,
+th,
+td{
+  border: 1px solid purple;
+  border-collapse: collapse; /*single instead of double lines */
+}
+
+.branches{
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  column-width: 50%;
+}
 
 
 /*--OUTLINES---*/
