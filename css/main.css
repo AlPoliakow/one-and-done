@@ -125,6 +125,11 @@ h2 {
   font-style: normal;
 }
 
+h1{
+  font-size: 2.5em;
+  font-weight: 600;
+}
+
 p,
 ul,
 li {
@@ -487,8 +492,9 @@ footer .content-wrapper {
 }
 
 /*---HTML MOBILE PAGE---*/
-.html-page .acknowledgement{
-  border: 2px dotted rgb(71, 71, 254);
+.html-page .acknowledgement p,
+.html-page .developed{
+  color:white;
 }
 
 .html-page #socials a i{
