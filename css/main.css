@@ -182,6 +182,7 @@ header figure {
 header .logo {
   font-size: 3em;
   padding-top: 9.6px;
+  color:white;
 }
 
 header h1 {
@@ -248,9 +249,6 @@ header .toggle i {
   align-items: center;
 }
 
-
-
-
 footer #socials,
 footer .developed {
   width: 100%;
@@ -259,7 +257,6 @@ footer .developed {
 footer {
   text-align: center;
 }
-
 
 footer .acknowledgement {
   border: 2px dotted white;
@@ -345,8 +342,6 @@ article h2 {
   font-weight: 400;
 }
 
-
-
 article p {
   text-align: left;
 }
@@ -363,8 +358,21 @@ article p {
 }
 
 /*---HTML---*/
-.blue {
+/*.blue {
   color:rgb(71, 71, 254);
+}*/
+
+.blue-text {
+  color:rgb(71, 71, 254);
+}
+
+.bigger{
+  font-size: 3em;
+  margin:0;
+}
+
+.blue {
+  border: 2px rgb(71, 71, 254) solid;
 }
 
 .fa-html5 {
@@ -373,7 +381,11 @@ article p {
 }
 
 /*---CSS---*/
-.red {
+/*.red {
+  color: red;
+}*/
+
+.red-text{
   color: red;
 }
 
@@ -387,7 +399,11 @@ article p {
   /* for light on mode */
   outline: 3px solid black; 
   outline-offset: -6px;
-  color: yellow;
+  /*color: yellow;*/
+}
+
+.yellow-text{
+  color:yellow;
 }
 
 .yellow i {
@@ -408,7 +424,11 @@ article p {
   font-size: 5em;
 }
 
-.green{
+/*.green{
+  color: green;
+}*/
+
+.green-text{
   color: green;
 }
 
@@ -418,7 +438,7 @@ article p {
   font-size: 5em;
 }
 
-.purple {
+.purple-text {
   color:purple;
 }
 
@@ -429,9 +449,7 @@ article p {
   border: 2px orange solid;
 }
 
-.blue {
-  border: 2px rgb(71, 71, 254) solid;
-}
+
 
 .red {
   border: 2px red solid;
@@ -458,9 +476,9 @@ footer .content-wrapper {
 ------ADDITIONAL PAGES MOBILE------
 ============================================================================*/
 /*---LOGO colors---*/
-.logo-html {
+/*.logo-html {
   color: rgb(71, 71, 254)
-}
+}*/
 
 .logo-css {
   color: red;
