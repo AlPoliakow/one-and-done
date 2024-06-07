@@ -446,6 +446,14 @@ table {
   width: 100%;
 }
 
+.ff p{
+  text-align: center;
+}
+
+.align-left {
+  text-align:left;
+}
+
 table,
 th,
 td{
