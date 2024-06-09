@@ -51,10 +51,16 @@
         <main class="homepage">
             <div class="content-wrapper">
                 <article class="homepage-block orange top">
-                    <h2>About</h2>
-                    <i class="fa-regular fa-address-card"></i>
-                    <p>Why make the same mistake over and over when you could learn it once and learn it properly?
-                    This is a log of lessons learnt.</p>
+                    <div class="about-base">
+                        <h2>About</h2>
+                        <!--<button type="button" class="launch">↗</button>-->
+                        <button type="button" class="collapsible">➕</button>
+                    </div>
+                    <div class="about-content hide">
+                        <i class="fa-regular fa-address-card"></i>
+                        <p>Why make the same mistake over and over when you could learn it once and learn it properly?
+                            This is a log of lessons learnt.</p>
+                    </div>
                 </article>
                 <article class="homepage-block blue">
                     <h2>HTML</h2>
@@ -105,6 +111,7 @@
 
         <script src="js/nav.js"></script>
         <script src="js/light.js"></script>
+        <script src="js/expand-hp.js"></script>
 </body>
 
 </html>

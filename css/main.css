@@ -321,12 +321,20 @@ header .mode-toggle i {
 }
 
 /*---HOMEPAGE MAIN MOBILE STYLES---*/
-
 main .content-wrapper {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
   gap: 1em;
+}
+
+.about-base{
+  width:100%;
+  display: flex;
+}
+
+.hide{
+  display:none;
 }
 
 article {
