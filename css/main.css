@@ -325,16 +325,69 @@ main .content-wrapper {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  gap: 1em;
+  gap: 0.125em;
 }
 
-.about-base{
+/*---Styling for expandable sections---*/
+.about,
+.blue,
+.red,
+.yellow,
+.purple,
+.green{
   width:100%;
+}
+
+.about-base,
+.html-base,
+.css-base,
+.js-base,
+.green-base,
+.purple-base{
   display: flex;
+  justify-content:space-between;
+}
+
+.html-base i,
+.css-base i,
+.js-base i,
+.green-base i,
+.purple-base i{
+  font-size: 1.95em;
+}
+
+.about h2,
+.blue h2,
+.red h2,
+.yellow h2,
+.purple h2,
+.green h2{
+  width:100%;
+  margin:0;
+}
+
+.about-base button,
+.html-base button,
+.css-base button,
+.js-base button,
+.green-base button,
+.purple-base button{
+  padding:0;
+  line-height:0;
+  font-size:1em;
 }
 
 .hide{
   display:none;
+}
+
+.about-content,
+.html-content,
+.css-content,
+.js-content,
+.green-content,
+.purple-content{
+  margin-top: 20px;
 }
 
 article {
@@ -347,7 +400,7 @@ article {
 article h2 {
   text-align: center;
   font-size: 1.75em;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 article p {
