@@ -124,7 +124,7 @@ h2 {
   font-style: normal;
 }
 
-h1{
+h1 {
   font-size: 2.5em;
   font-weight: 600;
 }
@@ -182,7 +182,7 @@ header figure {
 header .logo {
   font-size: 3em;
   padding-top: 9.6px;
-  color:white;
+  color: white;
   margin: 0;
 }
 
@@ -192,14 +192,14 @@ header h1 {
   margin: 15px 0 30px 0;
 }
 
-header .toggle{
+header .toggle {
   margin: 20px 0 0 0;
 }
 
 header .toggle i {
   color: white;
   margin: 0;
- 
+
 }
 
 /*--Nav Display--*/
@@ -340,25 +340,25 @@ main .content-wrapper {
 .red,
 .yellow,
 .purple,
-.green{
-  width:100%;
+.green {
+  width: 100%;
 }
 
 .about-base,
 .html-base,
 .css-base,
 .js-base,
-.green-base,
-.purple-base{
+.all-base,
+.git-base {
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
 }
 
 .html-base i,
 .css-base i,
 .js-base i,
-.green-base i,
-.purple-base i{
+.all-base i,
+.git-base i {
   font-size: 1.95em;
 }
 
@@ -367,39 +367,37 @@ main .content-wrapper {
 .red h2,
 .yellow h2,
 .purple h2,
-.green h2{
-  width:100%;
-  margin:0;
+.green h2 {
+  width: 100%;
+  margin: 0;
 }
 
 .about-base button,
 .html-base button,
 .css-base button,
 .js-base button,
-.green-base button,
-.purple-base button{
-  padding:0;
-  line-height:0;
-  font-size:1em;
-}
-
-.hide{
-  display:none;
+.all-base button,
+.git-base button {
+  padding: 0;
+  line-height: 0;
+  font-size: 1em;
 }
 
 .about-content,
 .html-content,
 .css-content,
 .js-content,
-.green-content,
-.purple-content{
+.all-content,
+.git-content {
   margin-top: 20px;
+  display: none;
 }
 
 article {
   padding: 1em 2em;
   margin: 0.5em 1em;
-  /*max-width: 220px;*/ /* removed for terminal page*/
+  /*max-width: 220px;*/
+  /* removed for terminal page*/
   text-align: center;
 }
 
@@ -416,12 +414,13 @@ article p {
 
 
 /*---ABOUT---*/
-.orange {
+.orange-text {
   color: orange;
 }
 
 .fa-address-card {
   font-size: 5em;
+  color: orange;
 }
 
 /*---HTML---*/
@@ -430,12 +429,12 @@ article p {
 }*/
 
 .blue-text {
-  color:rgb(71, 71, 254);
+  color: rgb(71, 71, 254);
 }
 
-.bigger{
+.bigger {
   font-size: 3em;
-  margin:0;
+  margin: 0;
 }
 
 .blue {
@@ -452,7 +451,7 @@ article p {
   color: red;
 }*/
 
-.red-text{
+.red-text {
   color: red;
 }
 
@@ -464,13 +463,13 @@ article p {
 /*---JavaScript---*/
 .yellow {
   /* for light on mode */
-  outline: 3px solid black; 
+  outline: 3px solid black;
   outline-offset: -6px;
   /*color: yellow;*/
 }
 
-.yellow-text{
-  color:yellow;
+.yellow-text {
+  color: yellow;
 }
 
 .yellow .fa-js {
@@ -495,7 +494,7 @@ article p {
   color: green;
 }*/
 
-.green-text{
+.green-text {
   color: green;
 }
 
@@ -506,29 +505,30 @@ article p {
 }
 
 .purple-text {
-  color:purple;
+  color: purple;
 }
 
 table {
   width: 100%;
 }
 
-.ff p{
+.ff p {
   text-align: center;
 }
 
 .align-left {
-  text-align:left;
+  text-align: left;
 }
 
 table,
 th,
-td{
+td {
   border: 1px solid purple;
-  border-collapse: collapse; /*single instead of double lines */
+  border-collapse: collapse;
+  /*single instead of double lines */
 }
 
-.branches{
+.branches {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -603,13 +603,14 @@ footer .content-wrapper {
 
 /*---HTML MOBILE PAGE---*/
 .html-page .acknowledgement p,
-.html-page .developed{
-  color:white;
+.html-page .developed {
+  color: white;
 }
 
-.html-page #socials a i{
+.html-page #socials a i {
   color: rgb(71, 71, 254);
 }
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -704,6 +705,7 @@ footer .content-wrapper {
   header figure {
     width: 10%;
     order: 1;
+    margin-top:10px;
   }
 
   header .logo {
@@ -714,14 +716,14 @@ footer .content-wrapper {
   header .toggle {
     width: 20%;
     order: 3;
-    margin-top: 20px;
+    margin-top: 15px;
   }
 
   header h1 {
     order: 2;
     width: 50%;
     font-size: 3em;
-    margin: 25px 0 30px 0;
+    margin: 25px 0 0 0;
   }
 
   footer .content-wrapper {
@@ -736,11 +738,11 @@ footer .content-wrapper {
     margin: 30px 0;
   }
 
-/*==========================================================================
+  /*==========================================================================
 ------HOMEPAGE TABLET STYLES------
 ============================================================================*/
   header .mode-toggle {
-    margin: 10px 0 20px 0;
+    margin: 0;
     width: 180px;
     order: 4;
   }
@@ -760,10 +762,44 @@ footer .content-wrapper {
   .homepage article {
     width: 39%;
     max-width: 220px;
-    margin: 0.5em 0;
+    margin: 0.5em 0.5em;
   }
 
-/*==========================================================================
+  .html-base a,
+  .css-base a,
+  .js-base a,
+  .all-base a,
+  .git-base a{
+    order:2;
+  }
+
+  .html-base h2,
+  .css-base h2,
+  .js-base h2,
+  .all-base h2,
+  .git-base h2{
+    order:1;
+  }
+
+  .about-content,
+  .html-content,
+  .css-content,
+  .js-content,
+  .all-content,
+  .git-content {
+    display: block;
+  }
+
+  .about-base button,
+  .html-base button,
+  .css-base button,
+  .js-base button,
+  .all-base button,
+  .git-base button {
+    display: none;
+  }
+
+  /*==========================================================================
 ------ADDITIONAL PAGES TABLET BASE STYLES------
 ============================================================================*/
   .language,
@@ -787,7 +823,7 @@ footer .content-wrapper {
     /* avoids fragmentation */
   }
 
-/*==========================================================================
+  /*==========================================================================
 ------CSS PAGE TABLET STYLES------
 ============================================================================*/
   .flex {
@@ -809,7 +845,7 @@ footer .content-wrapper {
     margin-left: 80px;
   }
 
-/*==========================================================================
+  /*==========================================================================
 ------TERMINAL PAGE TABLET STYLES------
 ============================================================================*/
   .git-content-wrapper {
@@ -819,7 +855,8 @@ footer .content-wrapper {
 
   .git-content-wrapper .git {
     margin-top: 0;
-    break-inside: avoid; /* avoids fragmentation */
+    break-inside: avoid;
+    /* avoids fragmentation */
   }
 }
 

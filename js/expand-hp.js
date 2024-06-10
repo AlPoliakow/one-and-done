@@ -10,22 +10,22 @@ const redExpand = document.querySelector('.css-base .collapsible');
 const yellowBase = document.querySelector('.js-base');
 const yellowContent = document.querySelector('.js-content');
 const yellowExpand = document.querySelector('.js-base .collapsible');
-const greenBase = document.querySelector('.green-base');
-const greenContent = document.querySelector('.green-content');
-const greenExpand = document.querySelector('.green-base .collapsible');
-const purpleBase = document.querySelector('.purple-base');
-const purpleContent = document.querySelector('.purple-content');
-const purpleExpand = document.querySelector('.purple-base .collapsible');
+const greenBase = document.querySelector('.all-base');
+const greenContent = document.querySelector('.all-content');
+const greenExpand = document.querySelector('.all-base .collapsible');
+const purpleBase = document.querySelector('.git-base');
+const purpleContent = document.querySelector('.git-content');
+const purpleExpand = document.querySelector('.git-base .collapsible');
 
 //Expand and collapse About content
 aboutExpand.addEventListener('click', function () {
     if (aboutExpand.innerText == "➕") {
         aboutExpand.innerText = "➖";
-        aboutContent.classList.remove("hide");
+        aboutContent.style.display="block";
         console.log("expand");
     } else {
         aboutExpand.innerText = "➕";
-        aboutContent.classList.add("hide");
+        aboutContent.style.display="none";
         console.log("collapse");
     }
 });
@@ -34,11 +34,11 @@ aboutExpand.addEventListener('click', function () {
 blueExpand.addEventListener('click', function () {
     if (blueExpand.innerText == "➕") {
         blueExpand.innerText = "➖";
-        blueContent.classList.remove("hide");
+        blueContent.style.display="block";
         console.log("expand");
     } else {
         blueExpand.innerText = "➕";
-        blueContent.classList.add("hide");
+        blueContent.style.display="none";
         console.log("collapse");
     }
 });
@@ -47,11 +47,11 @@ blueExpand.addEventListener('click', function () {
 redExpand.addEventListener('click', function () {
     if (redExpand.innerText == "➕") {
         redExpand.innerText = "➖";
-        redContent.classList.remove("hide");
+        redContent.style.display="block";
         console.log("expand");
     } else {
         redExpand.innerText = "➕";
-        redContent.classList.add("hide");
+        redContent.style.display="none";
         console.log("collapse");
     }
 });
@@ -60,11 +60,11 @@ redExpand.addEventListener('click', function () {
 yellowExpand.addEventListener('click', function () {
     if (yellowExpand.innerText == "➕") {
         yellowExpand.innerText = "➖";
-        yellowContent.classList.remove("hide");
+        yellowContent.style.display="block";
         console.log("expand");
     } else {
         yellowExpand.innerText = "➕";
-        yellowContent.classList.add("hide");
+        yellowContent.style.display="none";
         console.log("collapse");
     }
 });
@@ -73,11 +73,11 @@ yellowExpand.addEventListener('click', function () {
 greenExpand.addEventListener('click', function () {
     if (greenExpand.innerText == "➕") {
         greenExpand.innerText = "➖";
-        greenContent.classList.remove("hide");
+        greenContent.style.display="block";
         console.log("expand");
     } else {
         greenExpand.innerText = "➕";
-        greenContent.classList.add("hide");
+        greenContent.style.display="none";
         console.log("collapse");
     }
 });
@@ -86,11 +86,11 @@ greenExpand.addEventListener('click', function () {
 purpleExpand.addEventListener('click', function () {
     if (purpleExpand.innerText == "➕") {
         purpleExpand.innerText = "➖";
-        purpleContent.classList.remove("hide");
+        purpleContent.style.display="block";
         console.log("expand");
     } else {
         purpleExpand.innerText = "➕";
-        purpleContent.classList.add("hide");
+        purpleContent.style.display="none";
         console.log("collapse");
     }
 });
