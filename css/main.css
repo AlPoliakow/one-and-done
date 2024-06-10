@@ -150,6 +150,7 @@ main,
 footer {
   display: flex;
   justify-content: center;
+  width:100%;
 }
 
 .content-wrapper {
@@ -541,8 +542,6 @@ td {
   border: 2px orange solid;
 }
 
-
-
 .red {
   border: 2px red solid;
 }
@@ -609,6 +608,18 @@ footer .content-wrapper {
 
 .html-page #socials a i {
   color: rgb(71, 71, 254);
+}
+
+/*---GIT MOBILE PAGE---*/
+.git-content-wrapper {
+  width:100%;
+  display: flex;
+  justify-content:center;
+  flex-flow: row wrap;
+}
+
+.git-content-wrapper article{
+  margin: 0.5em 1em;
 }
 
 /* ==========================================================================
