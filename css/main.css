@@ -95,7 +95,6 @@ textarea {
   border: none;
   border-radius: 5px;
   font-size: 3em;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
   transition: 0.15s ease-in-out;
   cursor: pointer;
 }
@@ -176,6 +175,7 @@ header figure {
   width: 20%;
   display: flex;
   justify-content: center;
+  margin: 24px 0 0 0;
   /*border: 2px dotted white;*/
 }
 
@@ -183,6 +183,7 @@ header .logo {
   font-size: 3em;
   padding-top: 9.6px;
   color:white;
+  margin: 0;
 }
 
 header h1 {
@@ -191,9 +192,14 @@ header h1 {
   margin: 15px 0 30px 0;
 }
 
+header .toggle{
+  margin: 20px 0 0 0;
+}
+
 header .toggle i {
   color: white;
-  margin-right: 40px;
+  margin: 0;
+ 
 }
 
 /*--Nav Display--*/
@@ -297,7 +303,7 @@ header .content-wrapper {
   justify-content: center;
   gap: 10px;
   color: #ffef5c;
-  border: dotted 1.5px #ffef5c;
+  /*border: dotted 1.5px #ffef5c;*/
 }
 
 .mode-toggle p {
@@ -325,7 +331,7 @@ main .content-wrapper {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  gap: 0.125em;
+  gap: 0;
 }
 
 /*---Styling for expandable sections---*/
@@ -392,7 +398,7 @@ main .content-wrapper {
 
 article {
   padding: 1em 2em;
-  margin: 1em 1em;
+  margin: 0.5em 1em;
   /*max-width: 220px;*/ /* removed for terminal page*/
   text-align: center;
 }
@@ -467,7 +473,7 @@ article p {
   color:yellow;
 }
 
-.yellow i {
+.yellow .fa-js {
   /* for light on mode */
   background: black;
   border-left: 5px black solid;
