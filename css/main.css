@@ -150,7 +150,7 @@ main,
 footer {
   display: flex;
   justify-content: center;
-  width:100%;
+  width: 100%;
 }
 
 .content-wrapper {
@@ -606,19 +606,19 @@ footer .content-wrapper {
   color: white;
 }
 
-.html-page #socials a i {
+/*.html-page #socials a i {
   color: rgb(71, 71, 254);
-}
+}*/
 
 /*---GIT MOBILE PAGE---*/
 .git-content-wrapper {
-  width:100%;
+  width: 100%;
   display: flex;
-  justify-content:center;
+  justify-content: center;
   flex-flow: row wrap;
 }
 
-.git-content-wrapper article{
+.git-content-wrapper article {
   margin: 0.5em 1em;
 }
 
@@ -711,12 +711,13 @@ footer .content-wrapper {
   header .content-wrapper {
     padding: 25px 0;
     justify-content: space-evenly;
+    gap: 0;
   }
 
   header figure {
     width: 10%;
     order: 1;
-    margin-top:10px;
+    margin-top: 10px;
   }
 
   header .logo {
@@ -725,14 +726,14 @@ footer .content-wrapper {
   }
 
   header .toggle {
-    width: 20%;
+    width: 10%;
     order: 3;
     margin-top: 15px;
   }
 
   header h1 {
     order: 2;
-    width: 50%;
+    width: 70%;
     font-size: 3em;
     margin: 25px 0 0 0;
   }
@@ -780,16 +781,16 @@ footer .content-wrapper {
   .css-base a,
   .js-base a,
   .all-base a,
-  .git-base a{
-    order:2;
+  .git-base a {
+    order: 2;
   }
 
   .html-base h2,
   .css-base h2,
   .js-base h2,
   .all-base h2,
-  .git-base h2{
-    order:1;
+  .git-base h2 {
+    order: 1;
   }
 
   .about-content,
@@ -811,12 +812,35 @@ footer .content-wrapper {
   }
 
   /*==========================================================================
-------ADDITIONAL PAGES TABLET BASE STYLES------
+------HTML. CSS, JS, ALL-TOGETHER PAGES TABLET STYLES------
 ============================================================================*/
-  .language,
-  .bp {
-    width: 39%;
+  /*---HEADER---*/
+  .bigger {
+    margin: 25px 0 0 0;
+  }
+
+  .html-page .content-wrapper,
+  .css-page .content-wrapper,
+  .js-page .content-wrapper{
+    gap: 1em;
+  }
+
+  .html-page article,
+  .css-page article,
+  .js-page article {
+    margin: 0;
+  }
+
+  .content-wrapper .language,
+  .content-wrapper .bp {
+    width: calc(50% - 4.75em);
     max-width: 600px;
+  }
+
+  .html-page .content-wrapper .language h2,
+  .css-page .content-wrapper .language h2,
+  .js-page .content-wrapper .language h2{
+    margin-bottom: 20px;
   }
 
   .hints,
@@ -877,7 +901,7 @@ footer .content-wrapper {
 
   /*---DESKTOP STYLES---*/
   header .content-wrapper {
-    padding: 25px 0;
+    padding: 25px 0 0 0;
     justify-content: space-evenly;
     max-width: 1300px;
   }
@@ -900,7 +924,7 @@ footer .content-wrapper {
   }
 
   header .mode-toggle {
-    margin: 10px 0 20px 0;
+    margin: 0 0 20px 0;
     width: 180px;
     order: 4;
   }
