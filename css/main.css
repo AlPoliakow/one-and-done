@@ -83,50 +83,27 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-/*---DROPDOWN---*/
-/* Nav Open Button */
-.toggle {
-  width: 20%;
-  height: 1.8em;
-  padding: 0;
-  margin: 0.2em;
-  background: var(--light-blue);
-  outline: 0;
-  border: none;
-  border-radius: 5px;
-  font-size: 3em;
-  transition: 0.15s ease-in-out;
-  cursor: pointer;
-}
-
-.toggle:hover {
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
-  background: var(--highlight);
-}
-
-.toggle i {
-  color: black;
-  margin: 0;
-  padding: 0;
-}
-
-
 /*---GENERAL STYLES---*/
 body {
-  background: black;
-  color: white;
+  background: rgb(0, 0, 0);
+  color: #FFFFFF;
 }
 
 h1,
 h2 {
   font-family: "Quattrocento", serif;
-  font-weight: 500;
   font-style: normal;
 }
 
 h1 {
   font-size: 2.5em;
   font-weight: 600;
+}
+
+h2 {
+  font-weight: 500;
+  text-align: center;
+  font-size: 1.75em;
 }
 
 p,
@@ -138,7 +115,7 @@ li {
 }
 
 a {
-  color: #f766f7;
+  color: #b266ff;
 }
 
 span {
@@ -150,11 +127,12 @@ main,
 footer {
   display: flex;
   justify-content: center;
+  /*---parent's to .content-wrapper---*/
   width: 100%;
 }
 
 .content-wrapper {
-  width: 90%;
+  width: 100%;
 }
 
 img {
@@ -165,12 +143,12 @@ img {
 /*---BASE HEADER AND FOOTER STYLES---*/
 header .content-wrapper,
 footer .content-wrapper {
-  padding: 10px 0;
+  width: 90%;
+  padding: 20px 0;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   flex-flow: row wrap;
 }
-
 
 header figure {
   width: 20%;
@@ -195,12 +173,27 @@ header h1 {
 
 header .toggle {
   margin: 20px 0 0 0;
+  width: 20%;
+  height: 1.8em;
+  padding: 0;
+  background: var(--light-blue);
+  outline: 0;
+  border: none;
+  border-radius: 5px;
+  font-size: 3em;
+  transition: 0.15s ease-in-out;
+  cursor: pointer;
+}
+
+.toggle:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+  background: var(--highlight);
 }
 
 header .toggle i {
   color: white;
   margin: 0;
-
+  padding: 0;
 }
 
 /*--Nav Display--*/
@@ -256,6 +249,7 @@ header .toggle i {
   align-items: center;
 }
 
+/*---BASE FOOTER STYLES---*/
 footer #socials,
 footer .developed {
   width: 100%;
@@ -288,34 +282,8 @@ footer .developed {
 }
 
 /*==========================================================================
-------HOMEPAGE MOBILE------
+------HOMEPAGE MOBILE STYLES------
 ============================================================================*/
-/*--HEADER AND FOOTER MOBILE STYLES---*/
-header .content-wrapper {
-  padding: 20px 0;
-}
-
-/*---DARK MODE LIGHT SWITCH---*/
-/* light switch */
-.mode-toggle {
-  width: 60%;
-  padding: 0.5em 1em 0 1em;
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  color: #ffef5c;
-  /*border: dotted 1.5px #ffef5c;*/
-}
-
-.mode-toggle p {
-  margin-top: 8px;
-  font-weight: 500;
-}
-
-header .mode-toggle i {
-  font-size: 2em;
-}
-
 /*---DARK/LIGHT MODE CLASSES---*/
 .dark-mode {
   background: black;
@@ -327,6 +295,27 @@ header .mode-toggle i {
   color: black;
 }
 
+/*---DARK MODE LIGHT SWITCH---*/
+/* light switch */
+.mode-toggle {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  /*-between light and text -*/
+  color: #ffef5c;
+}
+
+.mode-toggle p {
+  margin-top: 6px;
+  /*-to correct height difference between image and text */
+  font-weight: 500;
+}
+
+header .mode-toggle i {
+  font-size: 2em;
+}
+
 /*---HOMEPAGE MAIN MOBILE STYLES---*/
 main .content-wrapper {
   display: flex;
@@ -335,7 +324,6 @@ main .content-wrapper {
   gap: 0;
 }
 
-/*---Styling for expandable sections---*/
 .about,
 .blue,
 .red,
@@ -343,8 +331,13 @@ main .content-wrapper {
 .purple,
 .green {
   width: 100%;
+  padding: 1em 2em;
+  margin: 0.5em 1em;
+  text-align: center;
+  /*-needed for icon position-*/
 }
 
+/*-for click to expand section-*/
 .about-base,
 .html-base,
 .css-base,
@@ -394,27 +387,15 @@ main .content-wrapper {
   display: none;
 }
 
-article {
-  padding: 1em 2em;
-  margin: 0.5em 1em;
-  /*max-width: 220px;*/
-  /* removed for terminal page*/
-  text-align: center;
-}
-
-article h2 {
-  text-align: center;
-  font-size: 1.75em;
-  font-weight: 500;
-}
-
 article p {
   text-align: left;
 }
 
-
-
 /*---ABOUT---*/
+.orange {
+  border: 2px orange solid;
+}
+
 .orange-text {
   color: orange;
 }
@@ -425,15 +406,11 @@ article p {
 }
 
 /*---HTML---*/
-/*.blue {
-  color:rgb(71, 71, 254);
-}*/
-
 .blue-text {
   color: rgb(71, 71, 254);
 }
 
-.bigger {
+.main-heading {
   font-size: 3em;
   margin: 0;
 }
@@ -448,9 +425,9 @@ article p {
 }
 
 /*---CSS---*/
-/*.red {
-  color: red;
-}*/
+.red {
+  border: 2px red solid;
+}
 
 .red-text {
   color: red;
@@ -466,7 +443,7 @@ article p {
   /* for light on mode */
   outline: 3px solid black;
   outline-offset: -6px;
-  /*color: yellow;*/
+  border: 2px yellow solid;
 }
 
 .yellow-text {
@@ -478,22 +455,19 @@ article p {
   background: black;
   border-left: 5px black solid;
   border-right: 5px black solid;
-}
-
-.fa-js {
   color: yellow;
   font-size: 5em;
 }
 
 /*---ALL---*/
+.green {
+  border: 2px limegreen solid;
+}
+
 .fa-calculator {
   color: green;
   font-size: 5em;
 }
-
-/*.green{
-  color: green;
-}*/
 
 .green-text {
   color: green;
@@ -509,8 +483,42 @@ article p {
   color: purple;
 }
 
-table {
-  width: 100%;
+.purple {
+  border: 2px purple solid;
+}
+
+/*---HOMEPAGE MOBILE FOOTER---*/
+footer .content-wrapper {
+  padding: 30px 0;
+}
+
+/*==========================================================================
+------HTML, CSS, JS PAGES MOBILE STYLES------
+============================================================================*/
+/*---Articles Styles Mobile---*/
+.bp ul,
+.hints ul,
+.one-done ul,
+.flex ul {
+  text-align: left;
+  padding-left: 0.5em;
+}
+
+.hints i {
+  width: 7%;
+}
+
+/*==========================================================================
+------GIT PAGE MOBILE STYLES------
+============================================================================*/
+.git-content-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.git-content-wrapper article {
+  margin: 0.5em 1em;
 }
 
 .ff p {
@@ -519,6 +527,10 @@ table {
 
 .align-left {
   text-align: left;
+}
+
+table {
+  width: 100%;
 }
 
 table,
@@ -534,92 +546,6 @@ td {
   justify-content: center;
   flex-flow: row wrap;
   column-width: 50%;
-}
-
-
-/*--OUTLINES---*/
-.orange {
-  border: 2px orange solid;
-}
-
-.red {
-  border: 2px red solid;
-}
-
-.yellow {
-  border: 2px yellow solid;
-}
-
-.green {
-  border: 2px limegreen solid;
-}
-
-.purple {
-  border: 2px purple solid;
-}
-
-/*---HOMEPAGE MOBILE FOOTER---*/
-footer .content-wrapper {
-  padding: 30px 0;
-}
-
-/*==========================================================================
-------ADDITIONAL PAGES MOBILE------
-============================================================================*/
-/*---LOGO colors---*/
-/*.logo-html {
-  color: rgb(71, 71, 254)
-}*/
-
-.logo-css {
-  color: red;
-}
-
-.logo-js {
-  color: yellow;
-}
-
-.logo-all {
-  color: green;
-}
-
-.logo-git {
-  color: purple;
-}
-
-/*---Articles Styles Mobile---*/
-.bp ul,
-.hints ul,
-.one-done ul,
-.flex ul {
-  text-align: left;
-  padding-left: 0.5em;
-}
-
-.hints i {
-  width: 7%;
-}
-
-/*---HTML MOBILE PAGE---*/
-.html-page .acknowledgement p,
-.html-page .developed {
-  color: white;
-}
-
-/*.html-page #socials a i {
-  color: rgb(71, 71, 254);
-}*/
-
-/*---GIT MOBILE PAGE---*/
-.git-content-wrapper {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  flex-flow: row wrap;
-}
-
-.git-content-wrapper article {
-  margin: 0.5em 1em;
 }
 
 /* ==========================================================================
@@ -721,7 +647,6 @@ footer .content-wrapper {
   }
 
   header .logo {
-    font-size: 3em;
     padding-top: 20px;
   }
 
@@ -756,6 +681,7 @@ footer .content-wrapper {
   header .mode-toggle {
     margin: 0;
     width: 180px;
+    /*-keeps image and text together-*/
     order: 4;
   }
 
@@ -765,9 +691,6 @@ footer .content-wrapper {
   }
 
   .content-wrapper {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
     gap: 1em;
   }
 
@@ -815,13 +738,13 @@ footer .content-wrapper {
 ------HTML. CSS, JS, ALL-TOGETHER PAGES TABLET STYLES------
 ============================================================================*/
   /*---HEADER---*/
-  .bigger {
+  .main-heading {
     margin: 25px 0 0 0;
   }
 
   .html-page .content-wrapper,
   .css-page .content-wrapper,
-  .js-page .content-wrapper{
+  .js-page .content-wrapper {
     gap: 1em;
   }
 
@@ -839,12 +762,11 @@ footer .content-wrapper {
 
   .html-page .content-wrapper .language h2,
   .css-page .content-wrapper .language h2,
-  .js-page .content-wrapper .language h2{
+  .js-page .content-wrapper .language h2 {
     margin-bottom: 20px;
   }
 
   .hints,
-  .flex,
   .one-done {
     width: 100%;
     max-width: 1200px;
@@ -865,6 +787,8 @@ footer .content-wrapper {
     display: flex;
     justify-content: space-evenly;
     flex-flow: row wrap;
+    width: 100%;
+    max-width: 1200px;
   }
 
   .flex h2 {
@@ -899,6 +823,9 @@ footer .content-wrapper {
 
 @media only screen and (min-width: 1200px) {
 
+  /*==========================================================================
+------GENERAL DESKTOP STYLES------
+============================================================================*/
   /*---DESKTOP STYLES---*/
   header .content-wrapper {
     padding: 25px 0 0 0;
@@ -934,6 +861,9 @@ footer .content-wrapper {
     text-align: center;
   }
 
+  /*==========================================================================
+------HTML, CSS, JS PAGES DESKTOP STYLES------
+============================================================================*/
 
   .language,
   .bp {
@@ -948,7 +878,9 @@ footer .content-wrapper {
     max-width: 1200px;
   }
 
-  /*--The Terminal page--*/
+  /*==========================================================================
+------GIT PAGE DESKTOP STYLES------
+============================================================================*/
   .git-content-wrapper {
     column-count: 3;
   }
