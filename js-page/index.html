@@ -19,10 +19,10 @@
     <script src="https://kit.fontawesome.com/5062d34338.js" crossorigin="anonymous"></script>
 </head>
 
-<body class="js-page">
+<body class="js-page content-page">
     <div class="center-wrapper">
         <header>
-            <div class="content-wrapper homepage">
+            <div class="content-wrapper">
                 <figure>
                     <a href="../index.html"><i class="fa-solid fa-book-bookmark logo logo-js"></i></a>
                 </figure>
@@ -34,7 +34,7 @@
                         <li><a href="../html-page/index.html" onclick="closeNav()" class="nav-html">HTML</a></li>
                         <li><a href="../css-page/index.html" onclick="closeNav()" class="nav-css">CSS</a></li>
                         <li><a href="index.html" onclick="closeNav()" class="nav-js">JavaScript</a></li>
-                        <li><a href="../all/index.html" onclick="closeNav()" class="nav-combo">Combo</a></li>
+                        <li><a href="../all/index.html" onclick="closeNav()" class="nav-combo">All together</a></li>
                         <li><a href="../terminal/index.html" onclick="closeNav()" class="nav-git">Git</a></li>
                         <li><a href="#socials" onclick="closeNav()" class="nav-contact">Contact</a></li>
                     </ul>
@@ -49,14 +49,14 @@
                 <article class="yellow language">
                     <h2>JavaScript</h2>
                     <i class="fa-brands fa-js"></i>
-                    <p>A language used to create interactive effects on a webpage</p>
+                    <p>A language used to create interactive effects on a webpage.</p>
                 </article>
                 <article class="yellow bp">
                     <h2>Best practices</h2>
                     <ul>
-                        <li><span>Comments:</span> use comments to add a brief note or explanation to the code</li>
+                        <li><span>Comments:</span> provide a brief explanation for label to the code</li>
                         <li><span>Modules:</span> save the code in individual files for each function to assist with organization and debugging</li>
-                        <li><span>Debug:</span> run the code and check for errors using the text editor and then DevTools</li>
+                        <li><span>Debug:</span> run the code and check for errors using the text editor and DevTools (99% right is still wrong)</li>
                     </ul>
                 </article>
                 <article class="yellow hints">
@@ -71,9 +71,9 @@
                 <article class="yellow one-done">
                     <h2>One & Done</h2>
                     <ul>
-                        <li><a href="https://stackoverflow.com/questions/14331671/list-of-javascript-mobile-events" target="_blank" rel="noopener">Mobile events</a></li>
-                        <li><a href="https://www.youtube.com/watch?v=y1APFBxI_FY" target="_blank" rel="noopener">Change an elements' ID</a></li>
-                        <li><a href="https://help.salesforce.com/s/articleView?id=001119014&type=1" target="_blank" rel="noopener">"toLowercase() errors"</a></li>
+                        <li><a href="https://stackoverflow.com/questions/14331671/list-of-javascript-mobile-events" target="_blank" rel="noopener">Mobile events</a> or touch events are different to computer or click events</li>
+                        <li>JavaScript can be used to <a href="https://www.youtube.com/watch?v=y1APFBxI_FY" target="_blank" rel="noopener">change an elements' ID</a></li>
+                        <li>The data needs to be a string for <a href="https://help.salesforce.com/s/articleView?id=001119014&type=1" target="_blank" rel="noopener">".toLowercase()"</a> to work</li>
                         <li>To alter elements using <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll" target="_blank" rel="noopener">".querySelectorAll"</a> you need to use a "forEach" loop</li>
                         <li><a href="https://www.guru99.com/difference-equality-strict-operator-javascript.html#:~:text=%3D%3D%20in%20JavaScript%20is%20used,datatype%20and%20compares%20two%20values.&text=Checks%20the%20equality%20of%20two%20operands%20without%20considering%20their%20type." target="_blank" rel="noopener">If, else loops need == to compare variables</a></li>
                     </ul>
@@ -82,6 +82,14 @@
         </main>
         <footer>
             <div class="content-wrapper">
+                <p class="bottom-nav">
+                    <a href="../index.html"><i class="fa-solid fa-house"></i></a>
+                    <a href="../html-page/index.html"><i class="fa-brands fa-html5"></i></a>
+                    <a href="../css-page/index.html"><i class="fa-brands fa-css3-alt"></i></a>
+                    <a href="../all/index.html"><i class="fa-solid fa-calculator"></i></a>
+                    <a href="../terminal/index.html"><i class="fa-solid fa-keyboard"></i></a>
+                    <a href="#up"><i class="fa-solid fa-up-long"></i></a>
+                </p>
                 <div class="acknowledgement">
                     <p>I acknowledge the Traditional Custodians of Country throughout Australia and their connections to
                         land, sea
@@ -90,14 +98,15 @@
                         Torres Strait Islander peoples.</p>
                 </div>
                 <p id="socials">
-                    <a href="mailto:mx.al.poliakow@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+                    <a href="mailto:mx.al.poliakow@gmail.com?subject=Hello" target="_blank"><i
+                        class="fa-regular fa-envelope"></i></a>
                     <a href="https://github.com/AlPoliakow" target="_blank" rel="noopener"><i
                             class="fa-brands fa-github"></i></a>
                     <a href="https://www.linkedin.com/in/al-poliakow-2953282b6/" target="_blank" rel="noopener"><i
                             class="fa-brands fa-linkedin"></i></a>
-                    <a href="../index.html"><i class="fa-solid fa-house"></i></a>
                 </p>
-                <p class="developed">Designed, researched and developed by Al Poliakow - 2024</p>
+                <p class="developed"><!--Designed, researched and developed by--><i class="fa-regular fa-copyright"></i> Al
+                    Poliakow - 2024</p>
             </div>
         </footer>
 

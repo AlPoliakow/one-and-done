@@ -829,7 +829,8 @@ td {
   /*==========================================================================
 ------CSS PAGE TABLET STYLES------
 ============================================================================*/
-  .css-page .language {
+  .css-page .language,
+  .js-page .language {
     display:flex;
     flex-flow:row wrap;
     justify-content:center;
@@ -841,7 +842,8 @@ td {
     font-size: 7em;
   }
   
-  .css-page .bp{
+  .css-page .bp,
+  .js-page .bp {
     width: calc(60% - 0.5em);
     max-width: calc(720px - 0.5em);
   }
@@ -938,8 +940,6 @@ td {
     padding: 100px 0 75px 0;
   }
 
- 
-
   /*==========================================================================
 ------HTML, CSS, JS PAGES DESKTOP STYLES------
 ============================================================================*/
@@ -957,9 +957,7 @@ td {
     max-width: 1200px;
   }
 
-  .html-page footer .content-wrapper{
-    padding: 20px 0 70px 0;
-  }
+  
 
   .css-page .language i{
     font-size: 6em;
@@ -975,6 +973,14 @@ td {
 
   .flex ul li{
    width:10em;
+  }
+
+  .content-page footer .content-wrapper{
+    padding: 20px 0 70px 0;
+  }
+
+  .bottom-nav{
+    margin:0;
   }
   /*==========================================================================
 ------GIT PAGE DESKTOP STYLES------
