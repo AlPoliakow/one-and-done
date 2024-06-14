@@ -87,6 +87,7 @@ textarea {
 body {
   background: rgb(0, 0, 0);
   color: #FFFFFF;
+  width:100vw;
 }
 
 h1,
@@ -116,6 +117,7 @@ li {
 
 a {
   color: #b266ff;
+  cursor:pointer;
 }
 
 span {
@@ -144,7 +146,7 @@ img {
 header .content-wrapper,
 footer .content-wrapper {
   width: 90%;
-  padding: 20px 0;
+  padding: 0 0 20px 0;
   display: flex;
   justify-content: space-between;
   flex-flow: row wrap;
@@ -257,6 +259,13 @@ footer .developed {
 
 footer {
   text-align: center;
+}
+
+footer .content-wrapper{
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  margin-top:30px;
 }
 
 footer .acknowledgement {
@@ -450,7 +459,7 @@ article p {
   color: yellow;
 }
 
-.yellow .fa-js {
+.fa-js {
   /* for light on mode */
   background: black;
   border-left: 5px black solid;
@@ -492,20 +501,49 @@ footer .content-wrapper {
   padding: 30px 0;
 }
 
+
 /*==========================================================================
 ------HTML, CSS, JS PAGES MOBILE STYLES------
 ============================================================================*/
 /*---Articles Styles Mobile---*/
+.html-page h2,
+.content-page h2{
+  margin-bottom: 20px;
+}
+
 .bp ul,
 .hints ul,
-.one-done ul,
-.flex ul {
+.one-done ul {
   text-align: left;
   padding-left: 0.5em;
 }
 
 .hints i {
   width: 7%;
+}
+
+footer .bottom-nav{
+  width:100%;
+}
+
+footer .bottom-nav i{
+  font-size: 2em;
+  margin: 0 0.4em 1em 0;
+}
+
+footer .bottom-nav .fa-house,
+footer .bottom-nav .fa-up-long{
+  color: #FFFFFF;
+}
+
+.flex ul{
+  text-align: left;
+  padding-left: 1em;
+  columns: 2;
+}
+
+.content-page footer .content-wrapper{
+  padding-top:0;
 }
 
 /*==========================================================================
@@ -746,6 +784,7 @@ td {
   .css-page .content-wrapper,
   .js-page .content-wrapper {
     gap: 1em;
+    padding: 1em;
   }
 
   .html-page article,
@@ -756,8 +795,9 @@ td {
 
   .content-wrapper .language,
   .content-wrapper .bp {
-    width: calc(50% - 4.75em);
-    max-width: 600px;
+    width: calc(50% - 0.5em);
+    max-width: calc(600px - 0.5em);
+    box-sizing:border-box;
   }
 
   .html-page .content-wrapper .language h2,
@@ -767,9 +807,11 @@ td {
   }
 
   .hints,
-  .one-done {
+  .one-done,
+  .flex{
     width: 100%;
     max-width: 1200px;
+    box-sizing:border-box;
   }
 
   .hints ul,
@@ -780,9 +822,30 @@ td {
     /* avoids fragmentation */
   }
 
+  .content-page footer .content-wrapper{
+  padding: 0 0 50px 0;
+}
+
   /*==========================================================================
 ------CSS PAGE TABLET STYLES------
 ============================================================================*/
+  .css-page .language {
+    display:flex;
+    flex-flow:row wrap;
+    justify-content:center;
+    width: calc(40% - 0.5em);
+    max-width: calc(480px - 0.5em);
+  }
+
+  .css-page .language i{
+    font-size: 7em;
+  }
+  
+  .css-page .bp{
+    width: calc(60% - 0.5em);
+    max-width: calc(720px - 0.5em);
+  }
+
   .flex {
     display: flex;
     justify-content: space-evenly;
@@ -797,12 +860,22 @@ td {
 
   .flex .parent,
   .flex .child {
-    width: 40%;
+    width: 100%;
   }
 
   .flex ul {
-    margin-left: 80px;
+    width:100%;
+    columns:none;
+    display: flex;
+    justify-content:center;
+    flex-flow: row wrap;
+    padding-left:3em;
   }
+
+  .flex ul li{
+   width:12em;
+  }
+
 
   /*==========================================================================
 ------TERMINAL PAGE TABLET STYLES------
@@ -828,7 +901,7 @@ td {
 ============================================================================*/
   /*---DESKTOP STYLES---*/
   header .content-wrapper {
-    padding: 25px 0 0 0;
+    padding: 25px 0 50px 0;
     justify-content: space-evenly;
     max-width: 1300px;
   }
@@ -861,6 +934,12 @@ td {
     text-align: center;
   }
 
+  footer .content-wrapper {
+    padding: 100px 0 75px 0;
+  }
+
+ 
+
   /*==========================================================================
 ------HTML, CSS, JS PAGES DESKTOP STYLES------
 ============================================================================*/
@@ -878,6 +957,25 @@ td {
     max-width: 1200px;
   }
 
+  .html-page footer .content-wrapper{
+    padding: 20px 0 70px 0;
+  }
+
+  .css-page .language i{
+    font-size: 6em;
+  }
+
+  .css-page .bp ul{
+    padding-left:1.25em;
+  }
+
+  .flex ul {
+    padding-left:2em;
+  }
+
+  .flex ul li{
+   width:10em;
+  }
   /*==========================================================================
 ------GIT PAGE DESKTOP STYLES------
 ============================================================================*/

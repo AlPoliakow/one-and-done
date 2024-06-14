@@ -19,143 +19,161 @@
     <script src="https://kit.fontawesome.com/5062d34338.js" crossorigin="anonymous"></script>
 </head>
 
-<body class="css-page">
-        <header>
-            <div class="content-wrapper homepage">
-                <figure>
-                    <a href="../index.html"><i class="fa-solid fa-book-bookmark logo logo-css"></i></a>
-                </figure>
-                <nav class="full-screen-nav hide">
-                    <div class="backdrop"></div>
+<body class="css-page content-page">
+    <header>
+        <div class="content-wrapper" id="up">
+            <figure>
+                <a href="../index.html"><i class="fa-solid fa-book-bookmark logo logo-css"></i></a>
+            </figure>
+            <nav class="full-screen-nav hide">
+                <div class="backdrop"></div>
+                <ul>
+                    <li class="close"><a href="#home" onclick="closeNav()" class="nav-close">&times;</a></li>
+                    <li><a href="../index.html" onclick="closeNav()" class="nav-home">Home</a></li>
+                    <li><a href="../html-page/index.html" onclick="closeNav()" class="nav-html">HTML</a></li>
+                    <li><a href="index.html" onclick="closeNav()" class="nav-css">CSS</a></li>
+                    <li><a href="../js-page/index.html" onclick="closeNav()" class="nav-js">JavaScript</a></li>
+                    <li><a href="../all/index.html" onclick="closeNav()" class="nav-combo">All together</a></li>
+                    <li><a href="../terminal/index.html" onclick="closeNav()" class="nav-git">Git</a></li>
+                    <li><a href="#socials" onclick="closeNav()" class="nav-contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="toggle" aria-label="navigation-menu"><i class="fa-solid fa-bars"></i>
+            </button>
+            <h1 class="red-text main-heading">CSS</h1>
+        </div>
+    </header>
+    <main>
+        <div class="content-wrapper">
+            <article class="language red">
+                <h2>Cascading Style Sheets (CSS)</h2>
+                <i class="fa-brands fa-css3-alt"></i>
+                <p>A language which dictates how HTML elements are to be displayed or styled.</p>
+            </article>
+            <article class="bp red">
+                <h2>Best practices</h2>
+                <ul>
+                    <li><span>Comments:</span> add a brief explanation or label to the code</li>
+                    <li><span>Accessibility:</span><br>
+                        <i class="fa-regular fa-square-check"></i> select fonts which are appropriate for low vision<br>
+                        <i class="fa-regular fa-square-check"></i> ensure sufficient contrast<br>
+                        <i class="fa-regular fa-square-check"></i> ensure spacing is appropriate for magnification
+                    </li>
+                    <li><span>Formatting:</span> order the code in a logical order and with flagging comments for
+                        each section</li>
+                    <li><span>Validate the code:</span> check the code for errors using a <a
+                            href="https://jigsaw.w3.org/css-validator/#validate_by_input" target="_blank"
+                            rel="noopener">CSS validator</a></li>
+                    <li>Make styling responsive to screen size</li>
+                </ul>
+            </article>
+            <article class="homepage-block red hints">
+                <h2>Hints <i class="fa-solid fa-magnifying-glass"></i></h2>
+                <ul>
+                    <li>Check the spelling of each class</li>
+                    <li>Check container levels</li>
+                    <li>Check folder pathway</li>
+                    <li>Check <a href="https://color.review/" target="_blank" rel="noopener">color</a> and <a
+                            href="https://webaim.org/resources/contrastchecker/" target="_blank"
+                            rel="noopener">contrast</a></li>
+                    <li>Check mobile site portrait and landscape</li>
+                    <li><a href="googlefonts">Google Fonts</a> provides a range of free font options</li>
+                    <li>Use media queries to make the webpage responsive to different screen sizes</li>
+                </ul>
+            </article>
+            <article class="homepage-block red flex">
+                <h2>Flexbox</h2>
+                <p>Flexbox is a style of layout that allows containers to flexibly adjust to different screen sizes.</p>
+                <div class="parent">
+                    <h3>Parent properies</h3>
                     <ul>
-                        <li class="close"><a href="#home" onclick="closeNav()" class="nav-close">&times;</a></li>
-                        <li><a href="../index.html" onclick="closeNav()" class="nav-home">Home</a></li>
-                        <li><a href="../html-page/index.html" onclick="closeNav()" class="nav-html">HTML</a></li>
-                        <li><a href="index.html" onclick="closeNav()" class="nav-css">CSS</a></li>
-                        <li><a href="../js-page/index.html" onclick="closeNav()" class="nav-js">JavaScript</a></li>
-                        <li><a href="../all/index.html" onclick="closeNav()" class="nav-combo">Combo</a></li>
-                        <li><a href="../terminal/index.html" onclick="closeNav()" class="nav-git">Git</a></li>
-                        <li><a href="#socials" onclick="closeNav()" class="nav-contact">Contact</a></li>
+                        <li>justify-content</li>
+                        <li>align-items</li>
+                        <li>flex-wrap</li>
+                        <li>align-content</li>
+                        <li>gap</li>
+                        <li>flex-direction</li>
+                        <li>flex-flow</li>
                     </ul>
-                </nav>
-                <button class="toggle" aria-label="navigation-menu"><i class="fa-solid fa-bars"></i>
-                </button>
-                <h1 class="red-text bigger">CSS</h1>
-            </div>
-        </header>
-        <main>
-            <div class="content-wrapper">
-                <article class="language red">
-                    <h2>Cascading Style Sheets (CSS)</h2>
-                    <i class="fa-brands fa-css3-alt"></i>
-                    <p>A language which dictates how HTML elements are to be displayed</p>
-                </article>
-                <article class="bp red">
-                    <h2>Best practices</h2>
-                    <ul>
-                        <li><span>Comments:</span> use comments to add a brief note or explanation to the code</li>
-                        <li>Class-based styling</li>
-                        <li><span>Accessibility:</span><br>
-                            select fonts which are appropriate for low vision<br>
-                            ensure sufficient contrast<br>
-                            allow for magnification<br>
-                            ensure sufficient spacing</li>
-                        <li><span>Formatting:</span> order the code in a logical order and with flagging comments for
-                            each section</li>
-                        <li><span>Validate the code:</span> use a <a
-                                href="https://jigsaw.w3.org/css-validator/#validate_by_input" target="_blank"
-                                rel="noopener">CSS validator</a> to check the code for errors</li>
-                    </ul>
-                </article>
-                <article class="homepage-block red hints">
-                    <h2>Hints <i class="fa-solid fa-magnifying-glass"></i></h2>
-                    <ul>
-                        <li>Check the spelling of each class</li>
-                        <li>Check container levels</li>
-                        <li>Check folder pathway</li>
-                        <li>Check <a href="https://color.review/" target="_blank" rel="noopener">color</a> and <a
-                                href="https://webaim.org/resources/contrastchecker/" target="_blank"
-                                rel="noopener">contrast</a></li>
-                        <li>Check mobile site portrait and landscape</li>
-                        <li><a href="googlefonts">Google Fonts</a> provides a range of free font options</li>
-                    </ul>
-                </article>
-                <article class="homepage-block red flex">
-                    <h2>Flexbox</h2>
-                    <p>Flexbox is a style of layout that allows containers to flexibly adjust to different screen sizes.</p>
-                    <div class="parent">
-                        <h3>Parent properies</h3>
-                        <ul>
-                            <li>justify-content</li>
-                            <li>align-items</li>
-                            <li>flex-wrap</li>
-                            <li>align-content</li>
-                            <li>gap</li>
-                            <li>flex-direction</li>
-                            <li>flex-flow</li>
-                        </ul>
-                    </div>
-                    <div class="child">
-                        <h3>Child properites</h3>
-                        <ul>
-                            <li>flex</li>
-                            <li>flex-basis</li>
-                            <li>flex-shrink</li>
-                            <li>flex-grow</li>
-                            <li>order</li>
-                            <li>align-self</li>
-                        </ul>
-                    </div>
-                </article>
-                <article class="homepage-block red one-done">
-                    <h2>One & Done</h2>
-                    <ul>
-                        <li><a href="https://www.w3schools.com/html/html_forms.asp" target="_blank"
-                                rel="noopener">Responsive typography: em vs rem</a></li>
-                        <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Forms/Your_first_form"
-                                target="_blank" rel="noopener">Font style options</a></li>
-                        <li><a href="cursor: pointer - https://developer.mozilla.org/en-US/docs/Web/CSS/cursor"
-                                target="_blank" rel="noopener">Change cursor style</a></li>
-                        <li><a href="https://au.siteground.com/kb/margin-vs-padding/#:~:text=Margin%20is%20the%20space%20outside,borders%20of%20its%20containing%20element."
-                                target="_blank" rel="noopener">Margin vs padding</a></li>
-                        <li><a href="Link:https://theme.co/forum/t/resizing-images-to-all-be-the-same-size/93913/2"
-                                target="_blank" rel="noopener">Uniform image sizing</a></li>
-                        <li><a href="https://stackoverflow.com/questions/3538489/html-css-make-a-div-invisible-to-clicks"
-                                target="_blank" rel="noopener">Make a div invisible to clicks</a></li>
-                        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotate"
-                                target="_blank" rel="noopener">Rotate an element</a></li>
-                        <li>Borders: width(px) color <a href="https://www.w3schools.com/css/css_border.asp"
-                                target="_blank" rel="noopener">type</a></li>
-                        <li>Width and height can be measured in pixels or percentages or can be relative using flexbox
-                        </li>
-                        <li>You can use <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/calc" target="_blank" rel="noopener">calculations</a> to set widths that adapt to screen size</li>
-                        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/break-inside" target="_blank" rel="noopener">Break-inside</a> dictates how a column behaves inside a container and can stop any break within a box</li>
-                    </ul>
-                </article>
-            </div>
-        </main>
-        <footer>
-            <div class="content-wrapper">
-                <div class="acknowledgement">
-                    <p>I acknowledge the Traditional Custodians of Country throughout Australia and their connections to
-                        land, sea
-                        and community. I pay my respect to their Elders past and present and extend that respect to all
-                        Aboriginal and
-                        Torres Strait Islander peoples.</p>
                 </div>
-                <p id="socials">
-                    <a href="mailto:mx.al.poliakow@gmail.com"><i class="fa-regular fa-envelope"></i></a>
-                    <a href="https://github.com/AlPoliakow" target="_blank" rel="noopener"><i
-                            class="fa-brands fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/al-poliakow-2953282b6/" target="_blank" rel="noopener"><i
-                            class="fa-brands fa-linkedin"></i></a>
-                    <a href="../index.html"><i class="fa-solid fa-house"></i></a>
-                </p>
-                <p class="developed">Designed, researched and developed by Al Poliakow - 2024</p>
+                <div class="child">
+                    <h3>Child properites</h3>
+                    <ul>
+                        <li>flex</li>
+                        <li>flex-basis</li>
+                        <li>flex-shrink</li>
+                        <li>flex-grow</li>
+                        <li>order</li>
+                        <li>align-self</li>
+                    </ul>
+                </div>
+            </article>
+            <article class="homepage-block red one-done">
+                <h2>One & Done</h2>
+                <ul>
+                    <li><span>Border:</span><i> width color <a href="https://www.w3schools.com/css/css_border.asp" target="_blank"
+                            rel="noopener">type</a></i>;</li>
+                    <li>Width and height can be measured in pixels or percentages or can be relative using flexbox
+                    </li>
+                    <li>You can use <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/calc" target="_blank"
+                            rel="noopener">calculations</a> to set widths that adapt to screen size</li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/break-inside" target="_blank"
+                            rel="noopener">Break-inside</a> dictates how a column behaves inside a container and can
+                        stop any break within a box</li>
+                    <li><a href="https://elementor.com/help/whats-the-difference-between-px-em-rem-vw-and-vh/#:~:text=EM%20is%20relative%20to%20the,parent%20size%20is%2C%20use%20REM." target="_blank"
+                            rel="noopener">Responsive typography:</a> "em" is relative to the parent element's font-size whereas "rem" is relative to root font-size</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Forms/Your_first_form" target="_blank"
+                            rel="noopener">Font options</a> should consider <a href="https://www.visionaustralia.org/business-consulting/digital-access/blog/typography-in-inclusive-design-part-2" target="_blank"
+                            rel="noopener">legibility in relation to accessbility</a></li>
+                    <li><a href="cursor: pointer - https://developer.mozilla.org/en-US/docs/Web/CSS/cursor"
+                            target="_blank" rel="noopener">Change cursor style</a></li>
+                    <li><a href="https://au.siteground.com/kb/margin-vs-padding/#:~:text=Margin%20is%20the%20space%20outside,borders%20of%20its%20containing%20element."
+                            target="_blank" rel="noopener">Margin vs padding</a></li>
+                    <li><a href="Link:https://theme.co/forum/t/resizing-images-to-all-be-the-same-size/93913/2"
+                            target="_blank" rel="noopener">Uniform image sizing</a></li>
+                    <li><a href="https://stackoverflow.com/questions/3538489/html-css-make-a-div-invisible-to-clicks"
+                            target="_blank" rel="noopener">Make a div invisible to clicks</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotate"
+                            target="_blank" rel="noopener">Rotate an element</a></li>
+                    <li>Use media queries and display:none or display:block to<a
+                            href="https://teamtreehouse.com/community/showhide-elements-depending-on-screen-size"
+                            target="_blank" rel="noopener"> make divs appear/disappear at different screen widths</a>
+                    </li>
+                </ul>
+            </article>
+        </div>
+    </main>
+    <footer>
+        <div class="content-wrapper">
+            <p class="bottom-nav">
+                <a href="../index.html"><i class="fa-solid fa-house"></i></a>
+                <a href="../html-page/index.html"><i class="fa-brands fa-html5"></i></a>
+                <a href="../js-page/index.html"><i class="fa-brands fa-js"></i></a>
+                <a href="../all/index.html"><i class="fa-solid fa-calculator"></i></a>
+                <a href="../terminal/index.html"><i class="fa-solid fa-keyboard"></i></a>
+                <a href="#up"><i class="fa-solid fa-up-long"></i></a>
+            </p>
+            <div class="acknowledgement">
+                <p>I acknowledge the Traditional Custodians of Country throughout Australia and their connections to
+                    land, sea
+                    and community. I pay my respect to their Elders past and present and extend that respect to all
+                    Aboriginal and
+                    Torres Strait Islander peoples.</p>
             </div>
-        </footer>
+            <p id="socials">
+                <a href="mailto:mx.al.poliakow@gmail.com?subject=Hello" target="_blank"><i
+                        class="fa-regular fa-envelope"></i></a>
+                <a href="https://github.com/AlPoliakow" target="_blank" rel="noopener"><i
+                        class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/al-poliakow-2953282b6/" target="_blank" rel="noopener"><i
+                        class="fa-brands fa-linkedin"></i></a>
+            </p>
+            <p class="developed"><!--Designed, researched and developed by--><i class="fa-regular fa-copyright"></i> Al
+                Poliakow - 2024</p>
+        </div>
+    </footer>
 
-        <script src="../js/nav.js"></script>
+    <script src="../js/nav.js"></script>
 </body>
 
 </html>
