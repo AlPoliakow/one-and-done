@@ -87,7 +87,7 @@ textarea {
 body {
   background: rgb(0, 0, 0);
   color: #FFFFFF;
-  width:100vw;
+  width: 100vw;
 }
 
 h1,
@@ -117,7 +117,7 @@ li {
 
 a {
   color: #b266ff;
-  cursor:pointer;
+  cursor: pointer;
 }
 
 span {
@@ -261,11 +261,11 @@ footer {
   text-align: center;
 }
 
-footer .content-wrapper{
+footer .content-wrapper {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  margin-top:30px;
+  margin-top: 30px;
 }
 
 footer .acknowledgement {
@@ -507,7 +507,7 @@ footer .content-wrapper {
 ============================================================================*/
 /*---Articles Styles Mobile---*/
 .html-page h2,
-.content-page h2{
+.content-page h2 {
   margin-bottom: 20px;
 }
 
@@ -522,28 +522,43 @@ footer .content-wrapper {
   width: 7%;
 }
 
-footer .bottom-nav{
-  width:100%;
+footer .bottom-nav {
+  width: 100%;
 }
 
-footer .bottom-nav i{
+footer .bottom-nav i {
   font-size: 2em;
   margin: 0 0.4em 1em 0;
 }
 
 footer .bottom-nav .fa-house,
-footer .bottom-nav .fa-up-long{
+footer .bottom-nav .fa-up-long {
   color: #FFFFFF;
 }
 
-.flex ul{
+.flex ul {
   text-align: left;
   padding-left: 1em;
   columns: 2;
 }
 
-.content-page footer .content-wrapper{
-  padding-top:0;
+.content-page footer .content-wrapper {
+  padding-top: 0;
+}
+
+/*==========================================================================
+------ALL-PAGE MOBILE STYLES------
+============================================================================*/
+.check ul {
+  list-style: none;
+  padding: 0 0 0 1em;
+  text-align: left;
+}
+
+.check ul li {
+  margin-bottom: 0.6em;
+  text-indent: -1.3em;
+  /*indents second line */
 }
 
 /*==========================================================================
@@ -797,7 +812,7 @@ td {
   .content-wrapper .bp {
     width: calc(50% - 0.5em);
     max-width: calc(600px - 0.5em);
-    box-sizing:border-box;
+    box-sizing: border-box;
   }
 
   .html-page .content-wrapper .language h2,
@@ -808,10 +823,11 @@ td {
 
   .hints,
   .one-done,
-  .flex{
+  .flex,
+  .check {
     width: 100%;
     max-width: 1200px;
-    box-sizing:border-box;
+    box-sizing: border-box;
   }
 
   .hints ul,
@@ -822,26 +838,35 @@ td {
     /* avoids fragmentation */
   }
 
-  .content-page footer .content-wrapper{
-  padding: 0 0 50px 0;
-}
+  .content-page footer .content-wrapper {
+    padding: 0 0 50px 0;
+  }
+
+  .bottom-nav {
+    margin: 0 0 20px 0;
+    height: 2em;
+  }
+
+  .content-page #socials {
+    margin: 10px 0;
+  }
 
   /*==========================================================================
 ------CSS PAGE TABLET STYLES------
 ============================================================================*/
   .css-page .language,
   .js-page .language {
-    display:flex;
-    flex-flow:row wrap;
-    justify-content:center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
     width: calc(40% - 0.5em);
     max-width: calc(480px - 0.5em);
   }
 
-  .css-page .language i{
+  .css-page .language i {
     font-size: 7em;
   }
-  
+
   .css-page .bp,
   .js-page .bp {
     width: calc(60% - 0.5em);
@@ -866,18 +891,17 @@ td {
   }
 
   .flex ul {
-    width:100%;
-    columns:none;
+    width: 100%;
+    columns: none;
     display: flex;
-    justify-content:center;
+    justify-content: center;
     flex-flow: row wrap;
-    padding-left:3em;
+    padding-left: 3em;
   }
 
-  .flex ul li{
-   width:12em;
+  .flex ul li {
+    width: 12em;
   }
-
 
   /*==========================================================================
 ------TERMINAL PAGE TABLET STYLES------
@@ -957,31 +981,26 @@ td {
     max-width: 1200px;
   }
 
-  
-
-  .css-page .language i{
+  .css-page .language i {
     font-size: 6em;
   }
 
-  .css-page .bp ul{
-    padding-left:1.25em;
+  .css-page .bp ul {
+    padding-left: 1.25em;
   }
 
   .flex ul {
-    padding-left:2em;
+    padding-left: 2em;
   }
 
-  .flex ul li{
-   width:10em;
+  .flex ul li {
+    width: 10em;
   }
 
-  .content-page footer .content-wrapper{
+  .content-page footer .content-wrapper {
     padding: 20px 0 70px 0;
   }
 
-  .bottom-nav{
-    margin:0;
-  }
   /*==========================================================================
 ------GIT PAGE DESKTOP STYLES------
 ============================================================================*/
