@@ -561,6 +561,28 @@ footer .bottom-nav .fa-up-long {
   /*indents second line */
 }
 
+/*-for click to expand section-*/
+.git-page .base {
+  display: flex;
+  justify-content: space-between;
+}
+
+.git-page h2{
+  width: 100%;
+  margin: 0;
+}
+
+.git-page button {
+  padding: 0;
+  line-height: 0;
+  font-size: 1em;
+}
+
+.git-page .content {
+  margin-top: 20px;
+  display: none;
+}
+
 /*==========================================================================
 ------GIT PAGE MOBILE STYLES------
 ============================================================================*/
@@ -594,7 +616,7 @@ td {
   /*single instead of double lines */
 }
 
-.branches {
+.branches-content {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
