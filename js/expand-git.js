@@ -55,7 +55,20 @@ branchesExpand.addEventListener('click', function () {
     }
 });
 
-//Expand and collapse Ireegular content
+//Expand and collapse Repo content
+repoExpand.addEventListener('click', function () {
+    if (repoExpand.innerText == "➕") {
+        repoExpand.innerText = "➖";
+        repoContent.style.display="block";
+        console.log("expand");
+    } else {
+        repoExpand.innerText = "➕";
+        repoContent.style.display="none";
+        console.log("collapse");
+    }
+});
+
+//Expand and collapse Irregular content
 irregularExpand.addEventListener('click', function () {
     if (irregularExpand.innerText == "➕") {
         irregularExpand.innerText = "➖";

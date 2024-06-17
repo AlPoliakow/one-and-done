@@ -572,7 +572,7 @@ footer .bottom-nav .fa-up-long {
   margin: 0;
 }
 
-.git-page button {
+.git-content-wrapper button {
   padding: 0;
   line-height: 0;
   font-size: 1em;
@@ -590,6 +590,9 @@ footer .bottom-nav .fa-up-long {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+}
+.git p{
+  text-align:center;
 }
 
 .git-content-wrapper article {
@@ -926,7 +929,7 @@ td {
   }
 
   /*==========================================================================
-------TERMINAL PAGE TABLET STYLES------
+------GIT PAGE TABLET STYLES------
 ============================================================================*/
   .git-content-wrapper {
     column-width: 220px;
@@ -937,6 +940,14 @@ td {
     margin-top: 0;
     break-inside: avoid;
     /* avoids fragmentation */
+  }
+
+  .git-page .content {
+    display: block;
+  }
+
+  .git-content-wrapper button {
+    display: none;
   }
 }
 
