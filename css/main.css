@@ -323,6 +323,12 @@ footer .developed {
 
 header .mode-toggle i {
   font-size: 2em;
+  color: #ffef5c;
+}
+
+header .mode-button {
+  background: black;
+  border: 2px solid rgb(185, 182, 182);
 }
 
 /*---HOMEPAGE MAIN MOBILE STYLES---*/

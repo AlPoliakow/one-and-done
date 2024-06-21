@@ -5,6 +5,7 @@ const body = document.querySelector('body');
 const darkModeSwitch = document.querySelector('.mode-toggle i');
 const darkModeText = document.querySelector('.mode-toggle p');
 const darkModeBox = document.querySelector('.mode-toggle');
+const button= document.querySelector('.mode-button');
 const bars = document.querySelector('.toggle i');
 const acknowledgement = document.querySelector('.acknowledgement');
 const socials = document.querySelectorAll('#socials i');
@@ -19,6 +20,7 @@ darkModeSwitch.addEventListener("click", function () {
         icon.style.color="white";
         bars.style.color = "white";
         nav.style.background="black"; 
+        button.style.background="black";
         acknowledgement.style.border="2px dotted white";
         darkModeSwitch.style.color="#ffef5c";
         //darkModeBox.style.border=-"dotted 1.5px #ffef5c";
@@ -42,6 +44,7 @@ darkModeSwitch.addEventListener("click", function () {
         nav.style.background="white"; //nav was still appearing with black background despite adding light-mode class
         bars.style.color = "black";
         icon.style.color="black";
+        button.style.background="white";
         nav.classList.remove("light-mode");
         acknowledgement.style.border="2px dotted black";
         darkModeSwitch.style.color="#3e390a";
