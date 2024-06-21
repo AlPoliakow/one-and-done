@@ -623,7 +623,6 @@ td {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  column-width: 50%;
 }
 
 .horses {
@@ -921,7 +920,7 @@ td {
 
   .flex ul {
     width: 100%;
-    columns: none;
+    columns: 1;
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
