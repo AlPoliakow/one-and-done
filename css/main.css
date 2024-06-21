@@ -767,7 +767,7 @@ td {
 ============================================================================*/
   header .mode-toggle {
     margin: 0;
-    width: 180px;
+    width: 200px;
     /*-keeps image and text together-*/
     order: 4;
   }
@@ -993,7 +993,6 @@ td {
 
   header .mode-toggle {
     margin: 0 0 20px 0;
-    width: 180px;
     order: 4;
   }
 
