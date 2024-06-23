@@ -10,6 +10,11 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
 
 html {
   color: #222;
@@ -573,7 +578,7 @@ footer .bottom-nav .fa-up-long {
   justify-content: space-between;
 }
 
-.git-page h2{
+.git-page h2 {
   width: 100%;
   margin: 0;
 }
@@ -597,8 +602,9 @@ footer .bottom-nav .fa-up-long {
   justify-content: center;
   flex-flow: row wrap;
 }
-.git p{
-  text-align:center;
+
+.git p {
+  text-align: center;
 }
 
 .git-content-wrapper article {
@@ -632,7 +638,7 @@ td {
 }
 
 .horses {
-  display:none;
+  display: none;
 }
 
 /* ==========================================================================
@@ -1047,21 +1053,21 @@ td {
 ============================================================================*/
   .git-content-wrapper {
     column-count: 3;
-    max-width:1200px;
+    max-width: 1200px;
   }
 
   .create,
   .hard {
-    width:calc(50% - 6.25em);
+    width: calc(50% - 6.25em);
     margin: auto 0 auto 0;
   }
 
-  .horses{
-    display:block;
+  .horses {
+    display: block;
     margin-top: 50px;
   }
 
-  .horses i{
+  .horses i {
     font-size: 3em;
     margin: 0 0.125em 0 0.125em;
   }
