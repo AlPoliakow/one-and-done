@@ -33,7 +33,7 @@ darkModeSwitch.addEventListener("click", function () {
       paragraph.classList.remove("light-mode");
     });
     linkedHeadings.forEach((linkedHeading) => {
-      linkedHeading.style.color = "black";
+      linkedHeading.style.color = "white";
     });
     navList.forEach((listItem) => {
       listItem.style.color = "white";
@@ -60,7 +60,7 @@ darkModeSwitch.addEventListener("click", function () {
     });
     heading.style.color = "white";
     linkedHeadings.forEach((linkedHeading) => {
-      linkedHeading.style.color = "white";
+      linkedHeading.style.color = "black";
     });
     navList.forEach((listItem) => {
       listItem.style.color = "black";
