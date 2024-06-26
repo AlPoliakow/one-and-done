@@ -316,6 +316,42 @@ footer .developed {
 }
 
 /*---DARK MODE LIGHT SWITCH---*/
+/*actual switch*/
+.mode-button{
+  content: '';
+  height: 32px;
+  width: 52px;
+  border-radius: 16px;
+  display: inline-block;
+  position: relative;
+  margin: 0;
+  border: 2px solid #474755;
+  background: linear-gradient(180deg, #2D2F39 0%, #1F2027 100%);
+  transition: all .2s ease;
+}
+
+.mode-button:after{
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: white;
+    box-shadow: 0 1px 2px rgba(44,44,44,.2);
+    transition: all .2s cubic-bezier(.5,.1,.75,1.35);
+}
+
+.mode-button:checked  {
+    border-color: #654FEC;
+    content: '';
+}
+
+.mode-button:checked:after{
+      transform: translatex(20px)
+}
+    
 /* light switch */
 .mode-toggle {
   width: 100%;
@@ -323,7 +359,7 @@ footer .developed {
   justify-content: center;
   gap: 15px;
   /*-between light and text -*/
-  color: #ffef5c;
+ color: #ffef5c;
 }
 
 .mode-toggle p {
@@ -337,10 +373,12 @@ header .mode-toggle i {
   color: #ffef5c;
 }
 
-header .mode-button {
+/*header .mode-button {
   background: black;
   border: 2px solid rgb(185, 182, 182);
-}
+}*/
+
+
 
 /*---HOMEPAGE MAIN MOBILE STYLES---*/
 main .content-wrapper {
