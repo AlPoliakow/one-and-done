@@ -382,6 +382,10 @@ main .content-wrapper {
   font-size: 1.95em;
 }
 
+.homepage-block h2 a {
+  color: #FFFFFF;
+}
+
 .about h2,
 .blue h2,
 .red h2,
