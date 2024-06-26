@@ -89,10 +89,16 @@ textarea {
    Author's custom styles
    ========================================================================== */
 /*---GENERAL STYLES---*/
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
 body {
   background: rgb(0, 0, 0);
   color: #FFFFFF;
-  width: 100vw;
 }
 
 h1,
@@ -761,7 +767,7 @@ td {
   }
 
   footer .acknowledgement {
-    max-width: 700px;
+    max-width: 840px;
   }
 
   footer #socials {
@@ -785,6 +791,7 @@ td {
 
   .content-wrapper {
     gap: 1em;
+    width:90%;
   }
 
   .homepage article {
@@ -1008,7 +1015,7 @@ td {
   }
 
   footer .content-wrapper {
-    padding: 100px 0 75px 0;
+    padding: 50px 0 75px 0;
   }
 
   /*==========================================================================
