@@ -304,19 +304,20 @@ footer .developed {
 /*==========================================================================
 ------HOMEPAGE MOBILE STYLES------
 ============================================================================*/
-/*---DARK/LIGHT MODE CLASSES---*/
-.dark-mode {
-  background: black;
-  color: white;
-}
-
+/*---LIGHT MODE CLASS---*/
 .light-mode {
   background: white;
   color: black;
 }
 
-/*---DARK MODE LIGHT SWITCH---*/
-/*sun-moon switch*/
+/*---LIGHT MODE MOON/SUN SWITCH---*/
+.mode-toggle {
+  width: 100%;
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+}
+
 .mode-button {
   position: relative;
   width: 2em;
@@ -327,7 +328,6 @@ footer .developed {
   margin: 0.26em 0.15em;
   cursor: pointer;
 }
-
 
 .toggle-btn::after {
   position: absolute;
@@ -355,15 +355,6 @@ left: 50%;
 .sun-moon .toggle-checkbox:checked + .toggle-btn::after {
   content: '🌚';
 }
-
-/* light switch */
-.mode-toggle {
-  width: 100%;
-  margin: 10px 0;
-  display: flex;
-  justify-content: center;
-}
-
 
 /*---HOMEPAGE MAIN MOBILE STYLES---*/
 main .content-wrapper {
