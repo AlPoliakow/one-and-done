@@ -320,13 +320,12 @@ footer .developed {
 .mode-button {
   position: relative;
   width: 2em;
-  height: 0.1em;
+  height: 0.05em;
   border-radius: 0.1em;
-  border: 0.015em solid #9f9f9f;
-  background-image: linear-gradient(#f2f2f2, #fff, #f2f2f2);
+  border: 0.095em solid #9f9f9f;
+  background: #9f9f9f;
   margin: 0.26em 0.15em;
   cursor: pointer;
-  filter: drop-shadow(0.015em 0.015em 0.01em rgba(0, 0, 0, 0.3))
 }
 
 
@@ -350,11 +349,11 @@ left: 50%;
 }
 
 .sun-moon .toggle-btn::after {
-  content: '🌚';
+  content: '🌞';
 }
 
 .sun-moon .toggle-checkbox:checked + .toggle-btn::after {
-  content: '🌞';
+  content: '🌚';
 }
 
 /* light switch */
@@ -363,9 +362,6 @@ left: 50%;
   margin: 10px 0;
   display: flex;
   justify-content: center;
-  gap: 15px;
-  /*-between light and text -*/
-  color: #ffef5c;
 }
 
 

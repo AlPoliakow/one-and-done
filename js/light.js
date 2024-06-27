@@ -20,7 +20,6 @@ darkModeSwitch.addEventListener("click", function () {
     icon.style.color = "white";
     bars.style.color = "white";
     nav.style.background = "black";
-    button.style.background = "black";
     acknowledgement.style.border = "2px dotted white";
     //darkModeBox.style.border=-"dotted 1.5px #ffef5c";
     //forEach loop for all multiples
@@ -42,7 +41,6 @@ darkModeSwitch.addEventListener("click", function () {
     nav.style.background = "white"; //nav was still appearing with black background despite adding light-mode class
     bars.style.color = "black";
     icon.style.color = "black";
-    button.style.background = "white";
     nav.classList.remove("light-mode");
     acknowledgement.style.border = "2px dotted black";
     //darkModeBox.style.border="dotted 1.5px #3e390a";
