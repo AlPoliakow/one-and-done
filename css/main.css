@@ -859,14 +859,16 @@ td {
 
   .html-page .content-wrapper,
   .css-page .content-wrapper,
-  .js-page .content-wrapper {
+  .js-page .content-wrapper,
+  .git-page .content-wrapper {
     gap: 1em;
     padding: 1em;
   }
 
   .html-page article,
   .css-page article,
-  .js-page article {
+  .js-page article,
+  .git-page article {
     margin: 0;
   }
 
@@ -969,14 +971,23 @@ td {
 ------GIT PAGE TABLET STYLES------
 ============================================================================*/
   .git-content-wrapper {
-    column-width: 220px;
-    column-count: 2;
+    gap: 1em;
+    padding: 1em;
+  }
+
+  .git-content-wrapper article {
+    box-sizing: border-box;
   }
 
   .git-content-wrapper .git {
-    margin-top: 0;
-    break-inside: avoid;
-    /* avoids fragmentation */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: calc(50% - 0.5em);
+  }
+
+  .git-content-wrapper .resources {
+    width: calc(50% - 0.5em);
   }
 
   .git-page .content {
@@ -1067,14 +1078,16 @@ td {
 ------GIT PAGE DESKTOP STYLES------
 ============================================================================*/
   .git-content-wrapper {
-    column-count: 3;
     max-width: 1200px;
+  }
+
+  .git-content-wrapper .resources ul{
+    margin-left: 10%;
   }
 
   .create,
   .hard {
-    width: calc(50% - 6.25em);
-    margin: auto 0 auto 0;
+    width: calc(50% - 0.5em);
   }
 
   .horses {

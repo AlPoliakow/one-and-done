@@ -4,9 +4,6 @@ const ffExpand = document.querySelector('.ff-base .collapsible');
 const branchesBase = document.querySelector('.branches-base');
 const branchesContent = document.querySelector('.branches-content');
 const branchesExpand = document.querySelector('.branches-base .collapsible');
-const repoBase = document.querySelector('.repo-base');
-const repoContent = document.querySelector('.repo-content');
-const repoExpand = document.querySelector('.repo-base .collapsible');
 const irregularBase = document.querySelector('.irregular-base');
 const irregularContent = document.querySelector('.irregular-content');
 const irregularExpand = document.querySelector('.irregular-base .collapsible');
@@ -51,19 +48,6 @@ branchesExpand.addEventListener('click', function () {
     } else {
         branchesExpand.innerText = "➕";
         branchesContent.style.display="none";
-        console.log("collapse");
-    }
-});
-
-//Expand and collapse Repo content
-repoExpand.addEventListener('click', function () {
-    if (repoExpand.innerText == "➕") {
-        repoExpand.innerText = "➖";
-        repoContent.style.display="block";
-        console.log("expand");
-    } else {
-        repoExpand.innerText = "➕";
-        repoContent.style.display="none";
         console.log("collapse");
     }
 });

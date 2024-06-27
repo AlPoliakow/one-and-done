@@ -20,401 +20,375 @@
 </head>
 
 <body class="git-page">
-        <header>
-            <div class="content-wrapper" id="up">
-                <figure>
-                    <a href="../index.html"><i class="fa-solid fa-book-bookmark logo logo-git"></i></a>
-                </figure>
-                <nav class="full-screen-nav hide">
-                    <div class="backdrop"></div>
-                    <ul>
-                        <li class="close"><a href="#home" onclick="closeNav()" class="nav-close">&times;</a></li>
-                        <li><a href="../index.html" onclick="closeNav()" class="nav-home">Home</a></li>
-                        <li><a href="../html-page/index.html" onclick="closeNav()" class="nav-html">HTML</a></li>
-                        <li><a href="../css-page/index.html" onclick="closeNav()" class="nav-css">CSS</a></li>
-                        <li><a href="../js-page/index.html" onclick="closeNav()" class="nav-js">JavaScript</a></li>
-                        <li><a href="../all/index.html" onclick="closeNav()" class="nav-combo">All together</a></li>
-                        <li><a href="index.html" onclick="closeNav()" class="nav-git">Git</a></li>
-                        <li><a href="#socials" onclick="closeNav()" class="nav-contact">Contact</a></li>
-                    </ul>
-                </nav>
-                <button class="toggle" aria-label="navigation-menu"><i class="fa-solid fa-bars"></i>
-                </button>
-                <h1 class="purple-text main-heading">The Terminal</h1>
-            </div>
-        </header>
-        <main>
-            <div class="git-content-wrapper">
-                <article class="purple git">
-                    <h2>Git</h2>
-                    <i class="fa-solid fa-keyboard"></i>
-                    <p>A version control system that tracks changes in computer files</p>
-                </article>
-                <article class="purple ff">
-                    <div class="ff-base base">
-                        <h2>Frequent fliers</h2>
-                        <button type="button" class="collapsible">➕</button>
-                    </div>
-                    <div class="ff-content content">
-                        <table>
-                            <tr> 
-                                <th>Code</th>
-                                <th>Function</th>
-                            </tr>
-                            <tr> 
-                                <td>pwd</td>
-                                <td>view current file path or location</td>
-                            </tr>
-                            <tr>
-                                <td>mkdir <i>directory-name</i></td>
-                                <td>make a new directory and name it</td>
-                            </tr>
-                            <tr>
-                                <td>ls</td>
-                                <td>view a list of files and folders in a directory</td>
-                            </tr>
-                            <tr>
-                                <td>explorer .</td>
-                                <td>open the current directory in files (PC)</td>
-                            </tr>
-                            <tr>
-                                <td>code .</td>
-                                <td>open the current directory in the text editor (PC)</td>
-                            </tr>
-                            <tr>
-                                <td>cd <i>directory_name</i></td>
-                                <td>move into named directory</td>
-                            </tr>
-                        </table>
-                    </div>
-                </article>
-                <article class="purple branches">
-                    <div class="branches-base base">
-                        <h2>Branches</h2>
-                        <button type="button" class="collapsible">➕</button>
-                    </div>
-                    <div class="branches-content content">
-                        <p>Branches are used to trial a new feature or design which can then be merged into the main
-                            branch
-                            or easily deleted/pruned</p>
-                        <table class="branch-table">
-                            <thead>
-                                <tr> 
-                                    <th>Code</th>
-                                    <th>Function</th>
-                                </tr>
-                            </thead>
-                            <tr> 
-                                <td>git checkout <i>branch-name</i></td>
-                                <td>switches to the named branch</td>
-                            </tr>
-                            <tr>
-                                <td>git checkout -b <i>new-branch-name</i></td>
-                                <td>creates and switches to a new named branch</td>
-                            </tr>
-                            <tr>
-                                <td>git branch</td>
-                                <td>list the branches in the local repo</td>
-                            </tr>
-                            <tr>
-                                <td>git branch -a</td>
-                                <td>list all the branches in local and remote repos</td>
-                            </tr>
-                            <tr>
-                                <td>git branch -d <i>branch_name</i></td>
-                                <td>deletes the named branch (when abandonning a feature)</td>
-                            </tr>
-                            <tr>
-                                <td>git branch -m <i>branch_name</i> <i>new_branch_name</i></td>
-                                <td>rename a branch</td>
-                            </tr>
-                            <tr>
-                                <td>git branch -m <i>branch_name</i> <i>new_branch_name</i></td>
-                                <td>rename a branch</td>
-                            </tr>
-                            <tr>
-                                <td>git merge branch_name</td>
-                                <td>merge commits from the named branch to the branch you're on</td>
-                            </tr>
-                            <tr>
-                                <td>git stash</td>
-                                <td>temporarily stores changes so you can switch branches without committing changes
-                                    and without losing your work</td>
-                            </tr>
-                            <tr>
-                                <td>git stash pop</td>
-                                <td>apply the changes that were stored</td>
-                            </tr>
-                            <tr>
-                                <td>git clone</td>
-                                <td>clone a remote repo to your computer (local)</td>
-                            </tr>
-                            <tr>
-                                <td>git push origin <i>branch_name</i></td>
-                                <td>push changes from a branch to a remote repo</td>
-                            </tr>
-                            <tr>
-                                <td>git remote -v</td>
-                                <td>list the remote repos that are connected to your local repo</td>
-                            </tr>
-                            <tr>
-                                <td>git fetch</td>
-                                <td>downloads any files or commits to the computer</td>
-                            </tr>
-                            <tr>
-                                <td>git remote remove origin</td>
-                                <td>removes the origin connection</td>
-                            </tr>
-                        </table>
-                    </div>
-                </article>
-                <article class="purple repo-commands">
-                    <div class="repo-base base">
-                        <h2>Repo commands</h2>
-                        <button type="button" class="collapsible">➕</button>
-                    </div>
-                    <div class="repo-content content">
-                        <table>
-                            <tr> 
-                                <th>Code</th>
-                                <th>Function</th>
-                            </tr>
-                            <tr> 
-                                <td>git init</td>
-                                <td>turns a directory into a repo</td>
-                            </tr>
-                            <tr>
-                                <td>git status</td>
-                                <td>check for new, modified or untracked project files</td>
-                            </tr>
-                            <tr>
-                                <td>git log</td>
-                                <td>shows a history of the commits to a project</td>
-                            </tr>
-                            <tr>
-                                <td>git diff</td>
-                                <td>compare the recent changes to the previously/current committed version</td>
-                            </tr>
-                            <tr>
-                                <td>git add</td>
-                                <td>stage file for the next commit</td>
-                            </tr>
-                            <tr>
-                                <td>git add -A</td>
-                                <td>stage all changed files for the next commit</td>
-                            </tr>
-                            <tr>
-                                <td>git commit -m <i>"Explanatory message"</i></td>
-                                <td>commit files in staging area to repo with a message</td>
-                            </tr>
-                        </table>
-                    </div>
-                </article>
-                <article class="purple irregular">
-                    <div class=" irregular-base base">
-                        <h2>Irregular commands</h2>
-                        <button type="button" class="collapsible">➕</button>
-                    </div>
-                    <div class="irregular-content content">
-                        <h3>Irregular but not unimportant</h3>
-                        <table>
-                            <tr> 
-                                <th>Code</th>
-                                <th>Function</th>
-                            </tr>
-                            <tr> 
-                                <td>ls -a</td>
-                                <td>view a list of files and folders in a directory including hidden and system files
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>rm -r <i>directory-name</i></td>
-                                <td>remove a directory ⚠ THIS IS PERMANENT AND DELETES THE
-                                    DIRECTORY AND CONTENTS</td>
-                            </tr>
-                            <tr>
-                                <td>touch <i>file_name</i></td>
-                                <td>creates a new file (touch index.html)</td>
-                            </tr>
-                            <tr>
-                                <td>cp <i>current-name new-file-name </i></td>
-                                <td>duplicate a file</td>
-                            </tr>
-                            <tr>
-                                <td>cat</td>
-                                <td>view all the content in a file from the command line</td>
-                            </tr>
-                            <tr>
-                                <td>head</td>
-                                <td>print the first 10 lines of a file (head index.html)</td>
-                            </tr>
-                            <tr>
-                                <td>tail</td>
-                                <td>print the last 10 lines of a file</td>
-                            </tr>
-                            <tr>
-                                <td>rm <i>file-name </i></td>
-                                <td>⚠ Permanently deletes the file</td>
-                            </tr>
-                        </table>
-                    </div>
-                </article>
-                <article class="purple moving">
-                    <div class="moving-base base">
-                        <h2>Moving directories</h2>
-                        <button type="button" class="collapsible">➕</button>
-                    </div>
-                    <div class="moving-content content">
-                        <table>
-                            <tr>
-                                <th>Code</th>
-                                <th>Function</th>
-                            </tr>
-                            <tr>
-                                <td>cd</td>
-                                <td>move into a directory</td>
-                            </tr>
-                            <tr>
-                                <td>cd ..</td>
-                                <td>navigate up one directory</td>
-                            </tr>
-                            <tr>
-                                <td>cd ../..</td>
-                                <td>naviage back two directories</td>
-                            </tr>
-                            <tr>
-                                <td>cd -</td>
-                                <td>return to your previous location</td>
-                            </tr>
-                        </table>
-                    </div>
-                </article>
-                <article class="purple create">
-                    <div class="create-base base">
-                        <h2>Create a new repo</h2>
-                        <button type="button" class="collapsible">➕</button>
-                    </div>
-                    <div class="create-content content">
-                        <ol class="align-left">
-                            <li>Go to Github and create a new repository using the green button on the Dashboard page
-                            </li>
-                            <li>Copy the SSH of the repo</li>
-                            <li>Go to the Command-Line</li>
-                            <li>cd➡ get to the right local directory</li>
-                            <li>mkdir➡ to create a new directory *only if necessary*</li>
-                            <li>pwd ➡ double check where you are</li>
-                            <li>git init</li>
-                            <li>touch README.md</li>
-                            <li>git ADD -A</li>
-                            <li>git commit -m "First commit"</li>
-                            <li>git branch -M main ➡ renames "master" to "main"</li>
-                            <!--https://git-scm.com/docs/git-branch-->
-                            <li>git remote add origin (SSH)</li>
-                            <li>git push -u origin main ➡ "-u" sets 'upstream'</li>
-                        </ol>
-                    </div>
-                </article>
-                <article class="purple hard">
-                    <div class="hard-base base">
-                        <h2>Retreat</h2>
-                        <button type="button" class="collapsible">➕</button>
-                    </div>
-                    <div class="hard-content content">
-                        <h3>Delete commits to return to an old version</h3>
-                        <ul class="align-left">
-                            <li>You can (⚠ PERMANENTLY) delete recent commits until a selected return point using the
-                                commit
-                                hash</li>
-                            <li>git reset --hard 123456 (commit hash sequence)</li>
-                            <li>after you've deleted commits, to push changes to GitHib you'll need to command "git push
-                                --force-with-lease origin branch_name"</li>
-                        </ul>
-                        <div class="horses"><i class="fa-regular fa-chess-knight"></i><i class="fa-regular fa-chess-knight"></i><i class="fa-regular fa-chess-knight"></i><i class="fa-regular fa-chess-knight"></i><i class="fa-regular fa-chess-knight"></i></div>
-                    </div>
-                </article>
-                <article class="purple">
-                    <div class="resources-base base">
-                        <h2>Resources</h2>
-                        <button type="button" class="collapsible">➕</button>
-                    </div>
-                    <div class="resources-content content">
-                        <ul class="align-left">
-                            <li><a href="https://education.github.com/git-cheat-sheet-education.pdf" target="_blank"
-                                    rel="noreferrer">GitHub Cheat Sheet</a></li>
-                            <li><a href="https://confluence.atlassian.com/bitbucketserver/basic-git-commands-776639767.html"
-                                    target="_blank" rel="noreferrer">Atlassian Basic Git Commands</a></li>
-                            <li><a href="https://www.atlassian.com/git/glossary#commands" target="_blank"
-                                    rel="noreferrer">Atlassian Commands Glossary</a></li>
-                            <li><a href="https://dzone.com/articles/top-20-git-commands-with-examples" target="_blank"
-                                    rel="noreferrer">Git Commands with examples</a></li>
-                            <li><a href="https://www.gitkraken.com/learn/git/commands" target="_blank"
-                                    rel="noreferrer">Git
-                                    Commands Reference Guide</a></li>
-                        </ul>
-                    </div>
-                </article>
-                <article class="purple">
-                    <div class="hints-base base">
-                        <h2>Hints <i class="fa-solid fa-magnifying-glass"></i></h2>
-                        <button type="button" class="collapsible">➕</button>
-                    </div>
-                    <div class="hints-content content">
-                        <ul class="align-left">
-                            <li>Panic exit the command line:<br>
-                                "ctrl" + "c"<br>
-                                "esc"
-                                "q"</li>
-                            <li>Capitalise the first letter of git messages</li>
-                            <li><a href="https://www.tempertemper.net/blog/chaining-git-commands" target="_blank"
-                                    rel="noreferrer">Chaining commands</a> allows multiple git commands to run
-                                simultanesouly or in rapid succession.</li>
-                        </ul>
-                    </div>
-                </article>
-                <article class="purple">
-                    <div class="done-base base">
-                        <h2>One & Done</h2>
-                        <button type="button" class="collapsible">➕</button>
-                    </div>
-                    <div class="done-content content">
-                        <ul class="align-left">
-                            <li><a href="https://stackoverflow.com/questions/2944469/how-to-commit-my-current-changes-to-a-different-branch-in-git"
-                                    target="_blank" rel="noopener">Add changes to a different git branch </a></li>
-                        </ul>
-                    </div>
-                </article>
-            </div>
-        </main>
-        <footer>
-            <div class="content-wrapper">
-                <p class="bottom-nav">
-                    <a href="../index.html"><i class="fa-solid fa-house"></i></a>
-                    <a href="../html-page/index.html"><i class="fa-brands fa-html5"></i></a>
-                    <a href="../css-page/index.html"><i class="fa-brands fa-css3-alt"></i></a>
-                    <a href="../js-page/index.html"><i class="fa-brands fa-js"></i></a>
-                    <a href="../all/index.html"><i class="fa-solid fa-calculator"></i></a>
-                    <a href="#up"><i class="fa-solid fa-up-long"></i></a>
-                </p>
-                <div class="acknowledgement">
-                    <p>I acknowledge the Traditional Custodians of Country throughout Australia and their connections to
-                        land, sea
-                        and community. I pay my respect to their Elders past and present and extend that respect to all
-                        Aboriginal and
-                        Torres Strait Islander peoples.</p>
+    <header>
+        <div class="content-wrapper" id="up">
+            <figure>
+                <a href="../index.html"><i class="fa-solid fa-book-bookmark logo logo-git"></i></a>
+            </figure>
+            <nav class="full-screen-nav hide">
+                <div class="backdrop"></div>
+                <ul>
+                    <li class="close"><a href="#home" onclick="closeNav()" class="nav-close">&times;</a></li>
+                    <li><a href="../index.html" onclick="closeNav()" class="nav-home">Home</a></li>
+                    <li><a href="../html-page/index.html" onclick="closeNav()" class="nav-html">HTML</a></li>
+                    <li><a href="../css-page/index.html" onclick="closeNav()" class="nav-css">CSS</a></li>
+                    <li><a href="../js-page/index.html" onclick="closeNav()" class="nav-js">JavaScript</a></li>
+                    <li><a href="../all/index.html" onclick="closeNav()" class="nav-combo">All together</a></li>
+                    <li><a href="index.html" onclick="closeNav()" class="nav-git">Git</a></li>
+                    <li><a href="#socials" onclick="closeNav()" class="nav-contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="toggle" aria-label="navigation-menu"><i class="fa-solid fa-bars"></i>
+            </button>
+            <h1 class="purple-text main-heading">The Terminal</h1>
+        </div>
+    </header>
+    <main>
+        <div class="git-content-wrapper content-wrapper">
+            <article class="purple git">
+                <h2>Git</h2>
+                <i class="fa-solid fa-keyboard"></i>
+                <p>A version control system that tracks changes in computer files</p>
+            </article>
+            <article class="purple resources">
+                <div class="resources-base base">
+                    <h2>Resources</h2>
+                    <button type="button" class="collapsible">➕</button>
                 </div>
-                <p id="socials">
-                    <a href="mailto:mx.al.poliakow@gmail.com"><i class="fa-regular fa-envelope"></i></a>
-                    <a href="https://github.com/AlPoliakow" target="_blank" rel="noopener"><i
-                            class="fa-brands fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/al-poliakow-2953282b6/" target="_blank" rel="noopener"><i
-                            class="fa-brands fa-linkedin"></i></a>
-                </p>
-                <p class="developed"><!--Designed, researched and developed by--><i class="fa-regular fa-copyright"></i> Al Poliakow - 2024</p>
+                <div class="resources-content content">
+                    <ul class="align-left">
+                        <li><a href="https://education.github.com/git-cheat-sheet-education.pdf" target="_blank"
+                                rel="noreferrer">GitHub Cheat Sheet</a></li>
+                        <li><a href="https://confluence.atlassian.com/bitbucketserver/basic-git-commands-776639767.html"
+                                target="_blank" rel="noreferrer">Atlassian Basic Git Commands</a></li>
+                        <li><a href="https://www.atlassian.com/git/glossary#commands" target="_blank"
+                                rel="noreferrer">Atlassian Commands Glossary</a></li>
+                        <li><a href="https://dzone.com/articles/top-20-git-commands-with-examples" target="_blank"
+                                rel="noreferrer">Git Commands with examples</a></li>
+                        <li><a href="https://www.gitkraken.com/learn/git/commands" target="_blank" rel="noreferrer">Git
+                                Commands Reference Guide</a></li>
+                    </ul>
+                </div>
+            </article>
+            <article class="purple ff">
+                <div class="ff-base base">
+                    <h2>Frequent fliers</h2>
+                    <button type="button" class="collapsible">➕</button>
+                </div>
+                <div class="ff-content content">
+                    <table>
+                        <tr>
+                            <th>Code</th>
+                            <th>Function</th>
+                        </tr>
+                        <tr>
+                            <td>pwd</td>
+                            <td>view current file path or location</td>
+                        </tr>
+                        <tr>
+                            <td>ls</td>
+                            <td>view a list of files and folders in a directory</td>
+                        </tr>
+                        <tr>
+                            <td>explorer .</td>
+                            <td>open the current directory in files (PC)</td>
+                        </tr>
+                        <tr>
+                            <td>code .</td>
+                            <td>open the current directory in the text editor (PC)</td>
+                        </tr>
+                        <tr>
+                            <td>git add <i>file_name</i></td>
+                            <td>stage file for the next commit</td>
+                        </tr>
+                        <tr>
+                            <td>git add -A</td>
+                            <td>stage all changed files for the next commit</td>
+                        </tr>
+                        <tr>
+                            <td>git commit -m <i>"Explanatory message"</i></td>
+                            <td>commit files in staging area to repo with a message</td>
+                        </tr>
+                    </table>
+                </div>
+            </article>
+            <article class="purple branches">
+                <div class="branches-base base">
+                    <h2>Branches</h2>
+                    <button type="button" class="collapsible">➕</button>
+                </div>
+                <div class="branches-content content">
+                    <p>Branches are used to trial a new feature or design which can then be merged into the main
+                        branch
+                        or easily deleted/pruned</p>
+                    <table class="branch-table">
+                        <thead>
+                            <tr>
+                                <th>Code</th>
+                                <th>Function</th>
+                            </tr>
+                        </thead>
+                        <tr>
+                            <td>git checkout <i>branch-name</i></td>
+                            <td>switches to the named branch</td>
+                        </tr>
+                        <tr>
+                            <td>git checkout -b <i>new-branch-name</i></td>
+                            <td>creates and switches to a new named branch</td>
+                        </tr>
+                        <tr>
+                            <td>git branch</td>
+                            <td>list the branches in the local repo</td>
+                        </tr>
+                        <tr>
+                            <td>git branch -a</td>
+                            <td>list all the branches in local and remote repos</td>
+                        </tr>
+                        <tr>
+                            <td>git branch -d <i>branch_name</i></td>
+                            <td>deletes the named branch (when abandonning a feature)</td>
+                        </tr>
+                        <tr>
+                            <td>git branch -m <i>branch_name</i> <i>new_branch_name</i></td>
+                            <td>rename a branch</td>
+                        </tr>
+                        <tr>
+                            <td>git branch -m <i>branch_name</i> <i>new_branch_name</i></td>
+                            <td>rename a branch</td>
+                        </tr>
+                        <tr>
+                            <td>git merge <i>branch-name</i></td>
+                            <td>merges commits from the named branch to the current branch</td>
+                        </tr>
+                        <tr>
+                            <td>git stash</td>
+                            <td>temporarily stores changes so you can switch branches without committing changes
+                                and without losing your work</td>
+                        </tr>
+                        <tr>
+                            <td>git stash pop</td>
+                            <td>apply the changes that were stored</td>
+                        </tr>
+                        <tr>
+                            <td>git clone</td>
+                            <td>clone a remote repo to your computer (local)</td>
+                        </tr>
+                        <tr>
+                            <td>git push origin <i>branch_name</i></td>
+                            <td>push changes from a branch to a remote repo</td>
+                        </tr>
+                        <tr>
+                            <td>git remote -v</td>
+                            <td>list the remote repos that are connected to your local repo</td>
+                        </tr>
+                        <tr>
+                            <td>git fetch</td>
+                            <td>downloads any files or commits to the computer</td>
+                        </tr>
+                        <tr>
+                            <td>git remote remove origin</td>
+                            <td>removes the origin connection</td>
+                        </tr>
+                    </table>
+                </div>
+            </article>
+            <article class="purple irregular">
+                <div class=" irregular-base base">
+                    <h2>Irregular commands</h2>
+                    <button type="button" class="collapsible">➕</button>
+                </div>
+                <div class="irregular-content content">
+                    <h3>Irregular but not unimportant</h3>
+                    <table>
+                        <tr>
+                            <th>Code</th>
+                            <th>Function</th>
+                        </tr>
+                        <tr>
+                            <td>mkdir <i>directory_name</i></td>
+                            <td>make a new directory and name it</td>
+                        </tr>
+                        <tr>
+                            <td>ls -a</td>
+                            <td>view a list of files and folders in a directory including hidden and system files
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>rm -r <i>directory-name</i></td>
+                            <td>remove a directory ⚠ THIS IS PERMANENT AND DELETES THE
+                                DIRECTORY AND CONTENTS</td>
+                        </tr>
+                        <tr>
+                            <td>touch <i>file_name</i></td>
+                            <td>creates a new file (touch index.html)</td>
+                        </tr>
+                        <tr>
+                            <td>git status</td>
+                            <td>check for new, modified or untracked project files</td>
+                        </tr>
+                        <tr>
+                            <td>git log</td>
+                            <td>shows a history of the commits to a project</td>
+                        </tr>
+                        <tr>
+                            <td>git diff</td>
+                            <td>compare the recent changes to the previously/current committed version</td>
+                        </tr>
+                        <tr>
+                            <td>cp <i>current-name new-file-name </i></td>
+                            <td>duplicate a file</td>
+                        </tr>
+                        <tr>
+                            <td>cat</td>
+                            <td>view all the content in a file from the command line</td>
+                        </tr>
+                        <tr>
+                            <td>rm <i>file-name </i></td>
+                            <td>⚠ Permanently deletes the file</td>
+                        </tr>
+                    </table>
+                </div>
+            </article>
+            <article class="purple moving">
+                <div class="moving-base base">
+                    <h2>Moving directories</h2>
+                    <button type="button" class="collapsible">➕</button>
+                </div>
+                <div class="moving-content content">
+                    <table>
+                        <tr>
+                            <th>Code</th>
+                            <th>Function</th>
+                        </tr>
+                        <tr>
+                            <td>cd</td>
+                            <td>move into a directory</td>
+                        </tr>
+                        <tr>
+                            <td>cd ..</td>
+                            <td>navigate up one directory</td>
+                        </tr>
+                        <tr>
+                            <td>cd ../..</td>
+                            <td>naviage back two directories</td>
+                        </tr>
+                        <tr>
+                            <td>cd -</td>
+                            <td>return to your previous location</td>
+                        </tr>
+                    </table>
+                </div>
+            </article>
+            <article class="purple create">
+                <div class="create-base base">
+                    <h2>Create a new repo</h2>
+                    <button type="button" class="collapsible">➕</button>
+                </div>
+                <div class="create-content content">
+                    <ol class="align-left">
+                        <li>Go to Github and create a new repository using the green button on the Dashboard page
+                        </li>
+                        <li>Copy the SSH of the repo</li>
+                        <li>Go to the Command-Line</li>
+                        <li>cd➡ get to the right local directory</li>
+                        <li>mkdir➡ to create a new directory *only if necessary*</li>
+                        <li>pwd ➡ double check where you are</li>
+                        <li>git init</li>
+                        <li>touch README.md</li>
+                        <li>git ADD -A</li>
+                        <li>git commit -m "First commit"</li>
+                        <li>git branch -M main ➡ renames "master" to "main"</li>
+                        <!--https://git-scm.com/docs/git-branch-->
+                        <li>git remote add origin (SSH)</li>
+                        <li>git push -u origin main ➡ "-u" sets 'upstream'</li>
+                    </ol>
+                </div>
+            </article>
+            <article class="purple hard">
+                <div class="hard-base base">
+                    <h2>Retreat</h2>
+                    <button type="button" class="collapsible">➕</button>
+                </div>
+                <div class="hard-content content">
+                    <h3>Delete commits to return to an old version</h3>
+                    <ul class="align-left">
+                        <li>You can (⚠ PERMANENTLY) delete recent commits until a selected return point using the
+                            commit
+                            hash</li>
+                        <li>git reset --hard 123456 (commit hash sequence)</li>
+                        <li>after you've deleted commits, to push changes to GitHib you'll need to command "git push
+                            --force-with-lease origin branch_name"</li>
+                    </ul>
+                    <div class="horses"><i class="fa-regular fa-chess-knight"></i><i
+                            class="fa-regular fa-chess-knight"></i><i class="fa-regular fa-chess-knight"></i><i
+                            class="fa-regular fa-chess-knight"></i><i class="fa-regular fa-chess-knight"></i></div>
+                </div>
+            </article>
+            <article class="purple">
+                <div class="hints-base base">
+                    <h2>Hints <i class="fa-solid fa-magnifying-glass"></i></h2>
+                    <button type="button" class="collapsible">➕</button>
+                </div>
+                <div class="hints-content content">
+                    <ul class="align-left">
+                        <li>Panic exit the command line:<br>
+                            "ctrl" + "c"<br>
+                            "esc"
+                            "q"</li>
+                        <li>Capitalise the first letter of git messages</li>
+                        <li><a href="https://www.tempertemper.net/blog/chaining-git-commands" target="_blank"
+                                rel="noreferrer">Chaining commands</a> allows multiple git commands to run
+                            simultanesouly or in rapid succession.</li>
+                    </ul>
+                </div>
+            </article>
+            <article class="purple">
+                <div class="done-base base">
+                    <h2>One & Done</h2>
+                    <button type="button" class="collapsible">➕</button>
+                </div>
+                <div class="done-content content">
+                    <ul class="align-left">
+                        <li><a href="https://stackoverflow.com/questions/2944469/how-to-commit-my-current-changes-to-a-different-branch-in-git"
+                                target="_blank" rel="noopener">Add changes to a different git branch </a></li>
+                        <li>Separate each change into it's own commit so that if one change causes an error, it can be
+                            isolated and deleted</li>
+                    </ul>
+                </div>
+            </article>
+        </div>
+    </main>
+    <footer>
+        <div class="content-wrapper">
+            <p class="bottom-nav">
+                <a href="../index.html"><i class="fa-solid fa-house"></i></a>
+                <a href="../html-page/index.html"><i class="fa-brands fa-html5"></i></a>
+                <a href="../css-page/index.html"><i class="fa-brands fa-css3-alt"></i></a>
+                <a href="../js-page/index.html"><i class="fa-brands fa-js"></i></a>
+                <a href="../all/index.html"><i class="fa-solid fa-calculator"></i></a>
+                <a href="#up"><i class="fa-solid fa-up-long"></i></a>
+            </p>
+            <div class="acknowledgement">
+                <p>I acknowledge the Traditional Custodians of Country throughout Australia and their connections to
+                    land, sea
+                    and community. I pay my respect to their Elders past and present and extend that respect to all
+                    Aboriginal and
+                    Torres Strait Islander peoples.</p>
             </div>
-        </footer>
+            <p id="socials">
+                <a href="mailto:mx.al.poliakow@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+                <a href="https://github.com/AlPoliakow" target="_blank" rel="noopener"><i
+                        class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/al-poliakow-2953282b6/" target="_blank" rel="noopener"><i
+                        class="fa-brands fa-linkedin"></i></a>
+            </p>
+            <p class="developed"><!--Designed, researched and developed by--><i class="fa-regular fa-copyright"></i> Al
+                Poliakow - 2024</p>
+        </div>
+    </footer>
 
-        <script src="../js/nav.js"></script>
-        <script src="../js/expand-git.js"></script>
+    <script src="../js/nav.js"></script>
+    <script src="../js/expand-git.js"></script>
 </body>
 
 </html>
