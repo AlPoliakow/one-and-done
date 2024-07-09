@@ -398,22 +398,9 @@ main .content-wrapper {
 }
 
 /*-for click to expand section-*/
-.about-base,
-.html-base,
-.css-base,
-.js-base,
-.all-base,
-.git-base {
+.base {
   display: flex;
   justify-content: space-between;
-}
-
-.html-base i,
-.css-base i,
-.js-base i,
-.all-base i,
-.git-base i {
-  font-size: 1.95em;
 }
 
 .homepage-block .white {
@@ -430,23 +417,13 @@ main .content-wrapper {
   margin: 0;
 }
 
-.about-base button,
-.html-base button,
-.css-base button,
-.js-base button,
-.all-base button,
-.git-base button {
-  padding: 0;
+.expand {
+  padding: 0 0.35em;
   line-height: 0;
   font-size: 1em;
 }
 
-.about-content,
-.html-content,
-.css-content,
-.js-content,
-.all-content,
-.git-content {
+.content {
   margin-top: 20px;
   display: none;
 }
@@ -630,13 +607,14 @@ footer .bottom-nav .fa-up-long {
 .git-page h2 {
   width: 100%;
   margin: 0;
+  font-size: 1.35em;
 }
 
-.git-content-wrapper button {
+/*.git-content-wrapper button {
   padding: 0;
   line-height: 0;
   font-size: 1em;
-}
+}*/
 
 .git-page .content {
   margin-top: 20px;
