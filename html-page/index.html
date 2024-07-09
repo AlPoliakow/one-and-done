@@ -20,118 +20,126 @@
 </head>
 
 <body class="html-page content-page">
-        <header>
-            <div class="content-wrapper" id="up">
-                <figure>
-                    <a href="../index.html"><i class="fa-solid fa-book-bookmark logo logo-html"></i></a>
-                </figure>
-                <nav class="full-screen-nav hide">
-                    <div class="backdrop"></div>
-                    <ul>
-                        <li class="close"><a href="#home" onclick="closeNav()" class="nav-close">&times;</a></li>
-                        <li><a href="../index.html" onclick="closeNav()" class="nav-home">Home</a></li>
-                        <li><a href="index.html" onclick="closeNav()" class="nav-html">HTML</a></li>
-                        <li><a href="../css-page/index.html" onclick="closeNav()" class="nav-css">CSS</a></li>
-                        <li><a href="../js-page/index.html" onclick="closeNav()" class="nav-js">JavaScript</a></li>
-                        <li><a href="../all-page/index.html" onclick="closeNav()" class="nav-combo">All together</a></li>
-                        <li><a href="../terminal-page/index.html" onclick="closeNav()" class="nav-git">Git</a></li>
-                        <li><a href="#socials" onclick="closeNav()" class="nav-contact">Contact</a></li>
-                    </ul>
-                </nav>
-                <button class="toggle" aria-label="navigation-menu"><i class="fa-solid fa-bars"></i>
-                </button>
-                <h1 class="blue-text main-heading">HTML</h1>
+    <header>
+        <div class="content-wrapper" id="up">
+            <figure>
+                <a href="../index.html"><i class="fa-solid fa-book-bookmark logo logo-html"></i></a>
+            </figure>
+            <nav class="full-screen-nav hide">
+                <div class="backdrop"></div>
+                <ul>
+                    <li class="close"><a href="#home" onclick="closeNav()" class="nav-close">&times;</a></li>
+                    <li><a href="../index.html" onclick="closeNav()" class="nav-home">Home</a></li>
+                    <li><a href="index.html" onclick="closeNav()" class="nav-html">HTML</a></li>
+                    <li><a href="../css-page/index.html" onclick="closeNav()" class="nav-css">CSS</a></li>
+                    <li><a href="../js-page/index.html" onclick="closeNav()" class="nav-js">JavaScript</a></li>
+                    <li><a href="../all-page/index.html" onclick="closeNav()" class="nav-combo">All together</a></li>
+                    <li><a href="../terminal-page/index.html" onclick="closeNav()" class="nav-git">Git</a></li>
+                    <li><a href="#socials" onclick="closeNav()" class="nav-contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="toggle" aria-label="navigation-menu"><i class="fa-solid fa-bars"></i>
+            </button>
+            <h1 class="blue-text main-heading">HTML</h1>
+        </div>
+    </header>
+    <main class="html-page">
+        <div class="content-wrapper">
+            <article class="blue language">
+                <h2>HTML</h2>
+                <i class="fa-brands fa-html5"></i>
+                <p>HyperText Markup Language (HTML)<br> is a language which acts as the skeleton to provide the
+                    structure and content for a webpage.</p>
+            </article>
+            <article class="blue bp">
+                <h2>Best practices</h2>
+                <ul>
+                    <li>Appropriate element type selection is very important for screen readers</li>
+                    <li><span>Comments:</span> provide a brief explanation for label to the code</li>
+                    <li><span>Image accessibility:</span> every image needs a clear and brief description for screen
+                        readers</li>
+                    <li><span>Formatting:</span> element needs to be appropriately nested</li>
+                    <li><span>Headings:</span> each element needs an appropriate heading</li>
+                    <li><span>Validate the code:</span> check the code for errors using a <a
+                            href="https://validator.w3.org/#validate_by_input" target="_blank" rel="noopener">HTML
+                            validator</a></li>
+                </ul>
+            </article>
+            <article class="blue hints">
+                <h2>Hints <i class="fa-solid fa-magnifying-glass"></i></h2>
+                <ul>
+                    <li><span>Classes:</span> can be assigned to multiple elements and should have a simple and
+                        intuitive name based on either the element ("main-heading") or the style that will be
+                        applied ("bold")
+                    </li>
+                    <li><span>IDs:</span> are only used once/for a single element and are used in navigation links
+                    </li>
+                    <li>Check for start and end tags</li>
+                    <li>Check container levels</li>
+                    <li>Check folder pathway</li>
+                    <li><span>Use indentation:</span> “Alt” + “shift” + “F” automatically indents code and makes it
+                        easier to check for closing
+                        tags in VS Code</li>
+                </ul>
+            </article>
+            <article class="blue one-done">
+                <h2>One & Done</h2>
+                <ul>
+                    <li><a href="https://www.w3schools.com/html/html_forms.asp" target="_blank" rel="noopener">Forms</a>
+                    </li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Forms/Your_first_form" target="_blank"
+                            rel="noopener">Form template</a></li>
+                    <li><a href="https://blog.hubspot.com/website/section-in-html" target="_blank"
+                            rel="noopener">Section tags vs div or article tags</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select" target="_blank"
+                            rel="noopener">Avoid showing the first item in a droplist</a></li>
+                    <li><a href="https://www.geeksforgeeks.org/html-file-paths/" target="_blank" rel="noopener">File
+                            paths</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox"
+                            target="_blank" rel="noopener">Checkbox inputs</a> can be individual or linked</li>
+                    <li>Refer to the <a href="https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA8.html" target="_blank"
+                            rel="noopener">hyperlink guidelines</a> for improved accessibility and user-friendliness</li>
+                    <li>An <a href="https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA8.html" target="_blank"
+                            rel="noopener">aria-label</a> can be used to provide a descriptive text label to links that
+                        will not be visible on the page</li>
+                    <li><a href="https://www.visionaustralia.org/business-consulting/digital-access/blog/how-to-make-read-more-links-accessible"
+                            target="_blank" rel="noopener">Read more link accessibility</a> for screen readers needs to
+                        be considered</li>
+                </ul>
+            </article>
+        </div>
+    </main>
+    <footer>
+        <div class="content-wrapper html-page">
+            <p class="bottom-nav">
+                <a href="../index.html"><i class="fa-solid fa-house"></i></a>
+                <a href="../css-page/index.html"><i class="fa-brands fa-css3-alt"></i></a>
+                <a href="../js-page/index.html"><i class="fa-brands fa-js"></i></a>
+                <a href="../all/index.html"><i class="fa-solid fa-calculator"></i></a>
+                <a href="../terminal/index.html"><i class="fa-solid fa-keyboard"></i></a>
+                <a href="#up"><i class="fa-solid fa-up-long"></i></a>
+            </p>
+            <div class="acknowledgement">
+                <p>I acknowledge the Traditional Custodians of Country throughout Australia and their connections to
+                    land, sea
+                    and community. I pay my respect to their Elders past and present and extend that respect to all
+                    Aboriginal and
+                    Torres Strait Islander peoples.</p>
             </div>
-        </header>
-        <main class="html-page">
-            <div class="content-wrapper">
-                <article class="blue language">
-                    <h2>HTML</h2>
-                    <i class="fa-brands fa-html5"></i>
-                    <p>HyperText Markup Language (HTML)<br> is a language which acts as the skeleton to provide the
-                        structure and content for a webpage.</p>
-                </article>
-                <article class="blue bp">
-                    <h2>Best practices</h2>
-                    <ul>
-                        <li>Appropriate element type selection is very important for screen readers</li>
-                        <li><span>Comments:</span> provide a brief explanation for label to the code</li>
-                        <li><span>Image accessibility:</span> every image needs a clear and brief description for screen
-                            readers</li>
-                        <li><span>Formatting:</span> element needs to be appropriately nested</li>
-                        <li><span>Headings:</span> each element needs an appropriate heading</li>
-                        <li><span>Validate the code:</span> check the code for errors using a <a
-                                href="https://validator.w3.org/#validate_by_input" target="_blank" rel="noopener">HTML
-                                validator</a></li>
-                    </ul>
-                </article>
-                <article class="blue hints">
-                    <h2>Hints <i class="fa-solid fa-magnifying-glass"></i></h2>
-                    <ul>
-                        <li><span>Classes:</span> can be assigned to multiple elements and should have a simple and
-                            intuitive name based on either the element ("main-heading") or the style that will be
-                            applied ("bold")
-                        </li>
-                        <li><span>IDs:</span> are only used once/for a single element and are used in navigation links
-                        </li>
-                        <li>Check for start and end tags</li>
-                        <li>Check container levels</li>
-                        <li>Check folder pathway</li>
-                        <li><span>Use indentation:</span> “Alt” + “shift” + “F” automatically indents code and makes it
-                            easier to check for closing
-                            tags in VS Code</li>
-                    </ul>
-                </article>
-                <article class="blue one-done">
-                    <h2>One & Done</h2>
-                    <ul>
-                        <li><a href="https://www.w3schools.com/html/html_forms.asp" target="_blank"
-                                rel="noopener">Forms</a></li>
-                        <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Forms/Your_first_form"
-                                target="_blank" rel="noopener">Form template</a></li>
-                        <li><a href="https://blog.hubspot.com/website/section-in-html" target="_blank"
-                                rel="noopener">Section tags vs div or article tags</a></li>
-                        <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select" target="_blank"
-                                rel="noopener">Avoid showing the first item in a droplist</a></li>
-                        <li><a href="https://www.geeksforgeeks.org/html-file-paths/" target="_blank" rel="noopener">File
-                                paths</a></li>
-                        <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox"
-                                target="_blank" rel="noopener">Checkbox inputs</a> can be individual or linked</li>
-                    </ul>
-                </article>
-            </div>
-        </main>
-        <footer>
-            <div class="content-wrapper html-page">
-                <p class="bottom-nav">
-                    <a href="../index.html"><i class="fa-solid fa-house"></i></a>
-                    <a href="../css-page/index.html"><i class="fa-brands fa-css3-alt"></i></a>
-                    <a href="../js-page/index.html"><i class="fa-brands fa-js"></i></a>
-                    <a href="../all/index.html"><i class="fa-solid fa-calculator"></i></a>
-                    <a href="../terminal/index.html"><i class="fa-solid fa-keyboard"></i></a>
-                    <a href="#up"><i class="fa-solid fa-up-long"></i></a>
-                </p>
-                <div class="acknowledgement">
-                    <p>I acknowledge the Traditional Custodians of Country throughout Australia and their connections to
-                        land, sea
-                        and community. I pay my respect to their Elders past and present and extend that respect to all
-                        Aboriginal and
-                        Torres Strait Islander peoples.</p>
-                </div>
-                <p id="socials">
-                    <a href="mailto:mx.al.poliakow@gmail.com?subject=Hello" target="_blank"><i
-                            class="fa-regular fa-envelope"></i></a>
-                    <a href="https://github.com/AlPoliakow" target="_blank" rel="noopener"><i
-                            class="fa-brands fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/al-poliakow-2953282b6/" target="_blank" rel="noopener"><i
-                            class="fa-brands fa-linkedin"></i></a>
-                </p>
-                <p class="developed"><!--Designed, researched and developed by--><i class="fa-regular fa-copyright"></i>
-                    Al Poliakow - 2024</p>
-            </div>
-        </footer>
+            <p id="socials">
+                <a href="mailto:mx.al.poliakow@gmail.com?subject=Hello" target="_blank"><i
+                        class="fa-regular fa-envelope"></i></a>
+                <a href="https://github.com/AlPoliakow" target="_blank" rel="noopener"><i
+                        class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/al-poliakow-2953282b6/" target="_blank" rel="noopener"><i
+                        class="fa-brands fa-linkedin"></i></a>
+            </p>
+            <p class="developed"><!--Designed, researched and developed by--><i class="fa-regular fa-copyright"></i>
+                Al Poliakow - 2024</p>
+        </div>
+    </footer>
 
-        <script src="../js/nav.js"></script>
+    <script src="../js/nav.js"></script>
 </body>
 
 </html>
