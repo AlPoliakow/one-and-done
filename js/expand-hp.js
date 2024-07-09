@@ -1,21 +1,21 @@
 const aboutBase = document.querySelector('.about-base');
 const aboutContent = document.querySelector('.about-content');
-const aboutExpand = document.querySelector('.about-base .collapsible');
+const aboutExpand = document.querySelector('.about-base .expandable');
 const blueBase = document.querySelector('.html-base');
 const blueContent = document.querySelector('.html-content');
-const blueExpand = document.querySelector('.html-base .collapsible');
+const blueExpand = document.querySelector('.html-base .expandable');
 const redBase = document.querySelector('.css-base');
 const redContent = document.querySelector('.css-content');
-const redExpand = document.querySelector('.css-base .collapsible');
+const redExpand = document.querySelector('.css-base .expandable');
 const yellowBase = document.querySelector('.js-base');
 const yellowContent = document.querySelector('.js-content');
-const yellowExpand = document.querySelector('.js-base .collapsible');
+const yellowExpand = document.querySelector('.js-base .expandable');
 const greenBase = document.querySelector('.all-base');
 const greenContent = document.querySelector('.all-content');
-const greenExpand = document.querySelector('.all-base .collapsible');
+const greenExpand = document.querySelector('.all-base .expandable');
 const purpleBase = document.querySelector('.git-base');
 const purpleContent = document.querySelector('.git-content');
-const purpleExpand = document.querySelector('.git-base .collapsible');
+const purpleExpand = document.querySelector('.git-base .expandable');
 
 //Expand and collapse About content
 aboutExpand.addEventListener('click', function () {

@@ -1,30 +1,30 @@
 const ffBase = document.querySelector('.ff-base');
 const ffContent = document.querySelector('.ff-content');
-const ffExpand = document.querySelector('.ff-base .collapsible');
+const ffExpand = document.querySelector('.ff-base .expandable');
 const branchesBase = document.querySelector('.branches-base');
 const branchesContent = document.querySelector('.branches-content');
-const branchesExpand = document.querySelector('.branches-base .collapsible');
+const branchesExpand = document.querySelector('.branches-base .expandable');
 const irregularBase = document.querySelector('.irregular-base');
 const irregularContent = document.querySelector('.irregular-content');
-const irregularExpand = document.querySelector('.irregular-base .collapsible');
+const irregularExpand = document.querySelector('.irregular-base .expandable');
 const movingBase = document.querySelector('.moving-base');
 const movingContent = document.querySelector('.moving-content');
-const movingExpand = document.querySelector('.moving-base .collapsible');
+const movingExpand = document.querySelector('.moving-base .expandable');
 const createBase = document.querySelector('.create-base');
 const createContent = document.querySelector('.create-content');
-const createExpand = document.querySelector('.create-base .collapsible');
+const createExpand = document.querySelector('.create-base .expandable');
 const hardBase = document.querySelector('.hard-base');
 const hardContent = document.querySelector('.hard-content');
-const hardExpand = document.querySelector('.hard-base .collapsible');
+const hardExpand = document.querySelector('.hard-base .expandable');
 const resourcesBase = document.querySelector('.resources-base');
 const resourcesContent = document.querySelector('.resources-content');
-const resourcesExpand = document.querySelector('.resources-base .collapsible');
+const resourcesExpand = document.querySelector('.resources-base .expandable');
 const hintsBase = document.querySelector('.hints-base');
 const hintsContent = document.querySelector('.hints-content');
-const hintsExpand = document.querySelector('.hints-base .collapsible');
+const hintsExpand = document.querySelector('.hints-base .expandable');
 const doneBase = document.querySelector('.done-base');
 const doneContent = document.querySelector('.done-content');
-const doneExpand = document.querySelector('.done-base .collapsible');
+const doneExpand = document.querySelector('.done-base .expandable');
 
 //Expand and collapse Frequent Fliers content
 ffExpand.addEventListener('click', function () {
