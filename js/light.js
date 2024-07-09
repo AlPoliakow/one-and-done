@@ -11,6 +11,7 @@ const socials = document.querySelectorAll('#socials i');
 const paragraphText = document.querySelectorAll('article p');
 const heading = document.querySelector('h2');
 const linkedHeadings = document.querySelectorAll('h2 a');
+const readMores = document.querySelectorAll('.read-more a');
 const icon = document.querySelector('.logo');
 
 //light mode
@@ -26,9 +27,12 @@ darkModeSwitch.addEventListener("click", function () {
     paragraphText.forEach((paragraph) => {
       paragraph.classList.remove("light-mode");
     });
-  
     linkedHeadings.forEach((linkedHeading) => {
       linkedHeading.style.color = "white";
+    });
+    readMores.forEach((readMore) => {
+      readMore.style.color = "#b266ff";
+      readMore.style.fontWeight = "400";
     });
     navList.forEach((listItem) => {
       listItem.style.color = "white";
@@ -50,6 +54,10 @@ darkModeSwitch.addEventListener("click", function () {
     });
     linkedHeadings.forEach((linkedHeading) => {
       linkedHeading.style.color = "black";
+    });
+    readMores.forEach((readMore) => {
+      readMore.style.color = "#8024dc";
+      readMore.style.fontWeight = "600";
     });
     navList.forEach((listItem) => {
       listItem.style.color = "black";
