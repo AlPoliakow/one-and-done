@@ -128,6 +128,7 @@ li {
 
 a {
   color: #b266ff;
+  color: #811ee3;
   cursor: pointer;
 }
 
@@ -311,11 +312,23 @@ footer .developed {
 }
 
 /*---LIGHT MODE MOON/SUN SWITCH---*/
+
+
 .mode-toggle {
   width: 100%;
   margin: 10px 0;
   display: flex;
   justify-content: center;
+  flex-direction:column;
+}
+
+.mode-label {
+  width: 100%;
+  margin-bottom: 1.75em;
+  text-align:center;
+  font-family: "Lora", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .mode-button {
@@ -325,7 +338,7 @@ footer .developed {
   border-radius: 0.1em;
   border: 0.095em solid #9f9f9f;
   background: #9f9f9f;
-  margin: 0.26em 0.15em;
+  margin: 0.26em calc(50% - 1em);
   cursor: pointer;
 }
 
@@ -344,15 +357,15 @@ footer .developed {
   visibility: hidden;
 }
 
-.toggle-checkbox:checked + .toggle-btn::after {
-left: 50%;
+.toggle-checkbox:checked+.toggle-btn::after {
+  left: 50%;
 }
 
 .sun-moon .toggle-btn::after {
   content: '🌞';
 }
 
-.sun-moon .toggle-checkbox:checked + .toggle-btn::after {
+.sun-moon .toggle-checkbox:checked+.toggle-btn::after {
   content: '🌚';
 }
 
@@ -437,7 +450,7 @@ article p {
 
 .read-more {
   text-align: center;
-  width:100%;
+  width: 100%;
   margin-top: 1.5em;
 }
 
@@ -801,14 +814,25 @@ td {
   /*==========================================================================
 ------HOMEPAGE TABLET STYLES------
 ============================================================================*/
+  /* Mode label to appear on same row as switch */
   header .mode-toggle {
-    margin: 2.5em 0;
+    margin: 2em 0;
+    flex-direction: row;
     order: 4;
+  }
+
+  .mode-label {
+    width: auto;
+    margin-bottom: 0;
+  }
+
+  .mode-button {
+    margin: 0.6em 0.5em 0.5em 2.5em;
   }
 
   .content-wrapper {
     gap: 1em;
-    width:90%;
+    width: 90%;
   }
 
   .homepage article {
@@ -1039,6 +1063,7 @@ td {
   header .mode-toggle {
     margin: 3em 0 2em 0;
   }
+
   footer .content-wrapper {
     padding: 50px 0 75px 0;
   }
@@ -1087,7 +1112,7 @@ td {
     max-width: 1200px;
   }
 
-  .git-content-wrapper .resources ul{
+  .git-content-wrapper .resources ul {
     margin-left: 10%;
   }
 
