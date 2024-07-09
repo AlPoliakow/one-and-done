@@ -128,7 +128,6 @@ li {
 
 a {
   color: #b266ff;
-  color: #811ee3;
   cursor: pointer;
 }
 
@@ -234,27 +233,35 @@ header .toggle i {
   width: 100%;
   height: 100%;
   list-style: none;
-  padding: 1em 1em 10% 1em;
+  padding: 1em 1em 15% 1em;
+  box-sizing:border-box;
 }
 
 .full-screen-nav ul li {
   width: 100%;
   padding: 0;
-
 }
 
 .full-screen-nav ul .close {
   text-align: right;
-  padding: 20px 20px 0 0;
+  padding: 0 20px 20px 0;
   font-size: 2.5em;
   color: white;
+}
+
+.full-screen-nav ul .close a {
+  text-decoration:none;
 }
 
 .full-screen-nav ul li a {
   font-size: 2em;
   padding: 0;
-  text-decoration: none;
   color: white;
+  text-underline-offset: 0.25em;
+}
+
+.nav-icon {
+  font-size: 1em;
 }
 
 .open-nav {
@@ -484,7 +491,10 @@ article p {
 
 .fa-html5 {
   color: rgb(71, 71, 254);
-  font-size: 5em;
+}
+
+.icon-image-large {
+  font-size:5em;
 }
 
 /*---CSS---*/
@@ -498,7 +508,6 @@ article p {
 
 .fa-css3-alt {
   color: red;
-  font-size: 5em;
 }
 
 /*---JavaScript---*/
@@ -519,7 +528,6 @@ article p {
   border-left: 5px black solid;
   border-right: 5px black solid;
   color: yellow;
-  font-size: 5em;
 }
 
 /*---ALL---*/
@@ -529,7 +537,6 @@ article p {
 
 .fa-calculator {
   color: green;
-  font-size: 5em;
 }
 
 .green-text {
@@ -539,7 +546,6 @@ article p {
 /*---GIT---*/
 .fa-keyboard {
   color: purple;
-  font-size: 5em;
 }
 
 .purple-text {
@@ -875,7 +881,7 @@ td {
     display: none;
   }
 
-  .homepage-block .icon-image {
+  .homepage-block .icon-image-large {
     margin: 15px 0;
   }
 
@@ -913,6 +919,12 @@ td {
   .css-page .content-wrapper .language h2,
   .js-page .content-wrapper .language h2 {
     margin-bottom: 20px;
+  }
+
+  .html-page .language i,
+  .js-page .language i,
+  .git-page .language i {
+    font-size: 7em;
   }
 
   .hints,
