@@ -435,6 +435,11 @@ article p {
   text-align: left;
 }
 
+.read-more {
+  text-align: center;
+  width:100%;
+}
+
 /*---ABOUT---*/
 .orange {
   border: 2px orange solid;
