@@ -260,6 +260,10 @@ header .toggle i {
   text-underline-offset: 0.25em;
 }
 
+.full-screen-nav ul li a:hover {
+  font-weight:800;
+}
+
 .nav-icon {
   font-size: 1em;
 }
