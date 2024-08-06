@@ -151,6 +151,7 @@ footer {
 img {
   width: 100%;
   margin: 0;
+  height:auto;
 }
 
 /*---BASE HEADER AND FOOTER STYLES---*/
@@ -164,18 +165,11 @@ footer .content-wrapper {
 }
 
 header figure {
-  width: 20%;
+  height: 50px;
+  padding:0;
   display: flex;
   justify-content: center;
   margin: 24px 0 0 0;
-  /*border: 2px dotted white;*/
-}
-
-header .logo {
-  font-size: 3em;
-  padding-top: 9.6px;
-  color: white;
-  margin: 0;
 }
 
 header h1 {
@@ -187,7 +181,7 @@ header h1 {
 header .toggle {
   margin: 20px 0 0 0;
   width: 20%;
-  height: 1.8em;
+  height: 50px;
   padding: 0;
   background: var(--light-blue);
   outline: 0;
@@ -547,6 +541,15 @@ footer .content-wrapper {
 ------HTML, CSS, JS PAGES MOBILE STYLES------
 ============================================================================*/
 /*---Articles Styles Mobile---*/
+header figure {
+  width:50px;
+} 
+
+header figure a{
+    margin: 0;
+   width:100%;
+}
+
 .html-page h2,
 .content-page h2 {
   margin-bottom: 20px;
@@ -765,19 +768,13 @@ td {
   }
 
   header figure {
-    width: 10%;
     order: 1;
-    margin-top: 10px;
-  }
-
-  header .logo {
-    padding-top: 20px;
+    margin-top:34px;
   }
 
   header .toggle {
-    width: 10%;
     order: 3;
-    margin-top: 15px;
+    margin-top: 34px;
   }
 
   header h1 {

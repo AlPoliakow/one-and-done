@@ -18,7 +18,7 @@ const icon = document.querySelector('.logo');
 darkModeSwitch.addEventListener("click", function () {
   if (body.classList.contains("light-mode")) {
     body.classList.remove("light-mode");
-    icon.style.color = "white";
+    icon.src= "img/white.png";
     bars.style.color = "white";
     nav.style.background = "black";
     acknowledgement.style.border = "2px dotted white";
@@ -44,7 +44,7 @@ darkModeSwitch.addEventListener("click", function () {
     body.classList.add("light-mode");
     nav.style.background = "white"; //nav was still appearing with black background despite adding light-mode class
     bars.style.color = "black";
-    icon.style.color = "black";
+    icon.src= "img/black.png";
     nav.classList.remove("light-mode");
     acknowledgement.style.border = "2px dotted black";
     heading.style.color = "black";
