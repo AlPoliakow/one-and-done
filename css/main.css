@@ -853,6 +853,12 @@ td {
     display: block;
   }
 
+  .about i{
+    /* to unify spacing without readmore section */
+    margin-top: 6.5%;
+    margin-bottom: 8%;
+  }
+
   .about-base button,
   .html-base button,
   .css-base button,
