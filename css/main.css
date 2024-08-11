@@ -769,7 +769,9 @@ td {
 
   header figure {
     order: 1;
-    margin-top:34px;
+    margin-top:30px;
+    height: 60px;
+    width: 60px;
   }
 
   header .toggle {
@@ -1035,14 +1037,16 @@ td {
   }
 
   header figure {
-    width: 20%;
+    height: 70px;
+    width: 70px;
+    margin-top:25px;
     order: 1;
   }
 
   header .toggle {
     width: 20%;
     order: 3;
-    margin-top: 20px;
+    margin-top: 30px;
   }
 
   header h1 {
