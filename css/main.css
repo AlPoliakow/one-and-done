@@ -98,7 +98,7 @@ html {
 
 body {
   background: rgb(0, 0, 0);
-  color: #FFFFFF;
+  color: #FFFFFF; /*contrast ratio 21:1 */
 }
 
 h1,
@@ -127,7 +127,7 @@ li {
 }
 
 a {
-  color: #b266ff;
+  color: #BA75FF; /*contrast ratio 7:07:1 */
   cursor: pointer;
 }
 
@@ -198,7 +198,7 @@ header .toggle {
 }
 
 header .toggle i {
-  color: white;
+  color: #FFFFFF;
   margin: 0;
   padding: 0;
 }
@@ -213,10 +213,10 @@ header .toggle i {
   transition: 0.2s ease-in-out;
   display: none;
   z-index: 9999;
-  color: white;
+  color: #FFFFFF;
   height: 100vh;
   width: 100vw;
-  background: black;
+  background: #000000;
 }
 
 .full-screen-nav ul {
@@ -240,7 +240,7 @@ header .toggle i {
   text-align: right;
   padding: 0 20px 20px 0;
   font-size: 2.5em;
-  color: white;
+  color: #FFFFFF;
 }
 
 .full-screen-nav ul .close a {
@@ -250,7 +250,7 @@ header .toggle i {
 .full-screen-nav ul li a {
   font-size: 2em;
   padding: 0;
-  color: white;
+  color: #FFFFFF;
   text-underline-offset: 0.25em;
 }
 
@@ -299,7 +299,7 @@ footer .acknowledgement p {
 footer .content-wrapper #socials a {
   font-size: 3em;
   margin: 0 10px;
-  color: white;
+  color: #FFFFFF;
 }
 
 footer .developed {
@@ -312,13 +312,11 @@ footer .developed {
 ============================================================================*/
 /*---LIGHT MODE CLASS---*/
 .light-mode {
-  background: white;
-  color: black;
+  background: #FFFFFF;
+  color: #000000;
 }
 
 /*---LIGHT MODE MOON/SUN SWITCH---*/
-
-
 .mode-toggle {
   width: 100%;
   margin: 10px 0;
@@ -438,21 +436,21 @@ article p {
 
 /*---ABOUT---*/
 .orange {
-  border: 2px orange solid;
+  border: 2px #fcb309 solid; 
 }
 
 .orange-text {
-  color: orange;
+  color: #fcb309; /*contrast ratio 11.59:1 */
 }
 
 .fa-address-card {
   font-size: 5em;
-  color: orange;
+  color: #fcb309;
 }
 
 /*---HTML---*/
 .blue-text {
-  color: rgb(71, 71, 254);
+  color: #8B8BFE; /*contrast ratio 7.22:1 */
 }
 
 .main-heading {
@@ -461,11 +459,11 @@ article p {
 }
 
 .blue {
-  border: 2px rgb(71, 71, 254) solid;
+  border: 2px #8B8BFE solid;
 }
 
 .fa-html5 {
-  color: rgb(71, 71, 254);
+  color: #8B8BFE;
 }
 
 .icon-image-large {
@@ -474,61 +472,61 @@ article p {
 
 /*---CSS---*/
 .red {
-  border: 2px red solid;
+  border: 2px #FF6161 solid;
 }
 
 .red-text {
-  color: red;
+  color: #FF6161; /*contrast ratio 7.13:1 */
 }
 
 .fa-css3-alt {
-  color: red;
+  color: #FF6161;
 }
 
 /*---JavaScript---*/
 .yellow {
   /* for light on mode */
-  outline: 3px solid black;
+  outline: 3px solid #000000;
   outline-offset: -6px;
-  border: 2px yellow solid;
+  border: 2px #ffff00 solid;
 }
 
 .yellow-text {
-  color: yellow;
+  color: #ffff00; /*contrast ratio 19.55:1 */
 }
 
 .fa-js {
   /* for light on mode */
-  background: black;
-  border-left: 5px black solid;
-  border-right: 5px black solid;
-  color: yellow;
+  background: #000000;
+  border-left: 5px #000000 solid;
+  border-right: 5px #000000 solid;
+  color: #ffff00;
 }
 
 /*---ALL---*/
 .green {
-  border: 2px limegreen solid;
+  border: 2px #32cd32 solid; 
 }
 
 .fa-calculator {
-  color: green;
+  color: #32cd32;
 }
 
 .green-text {
-  color: green;
+  color: #32cd32; /*contrast ratio 9.91:1 */
 }
 
 /*---GIT---*/
 .fa-keyboard {
-  color: purple;
+  color: #FF29FF;
 }
 
 .purple-text {
-  color: purple;
+  color: #FF29FF; /*contrast ratio 7.01:1 */
 }
 
 .purple {
-  border: 2px purple solid;
+  border: 2px #FF29FF solid;
 }
 
 /*---HOMEPAGE MOBILE FOOTER---*/
@@ -564,20 +562,6 @@ header figure a{
 
 .hints i {
   width: 7%;
-}
-
-footer .bottom-nav {
-  width: 100%;
-}
-
-footer .bottom-nav i {
-  font-size: 2em;
-  margin: 0 0.4em 1em 0;
-}
-
-footer .bottom-nav .fa-house,
-footer .bottom-nav .fa-up-long {
-  color: #FFFFFF;
 }
 
 .flex ul {
@@ -935,11 +919,6 @@ td {
     padding: 0 0 50px 0;
   }
 
-  .bottom-nav {
-    margin: 0 0 20px 0;
-    height: 2em;
-  }
-
   .content-page #socials {
     margin: 10px 0;
   }
@@ -1063,10 +1042,6 @@ td {
 
   header .mode-toggle {
     margin: 3em 0 2em 0;
-  }
-
-  .bottom-nav {
-    display: none; /* only visible for mobile and tablet */
   }
 
   footer .content-wrapper {
