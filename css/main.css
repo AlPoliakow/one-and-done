@@ -255,7 +255,7 @@ header .toggle i {
 }
 
 .full-screen-nav ul li a:hover,
-.full-screen-nav ul li .close:hover {
+.full-screen-nav ul .close:hover {
   font-weight:800;
 }
 
