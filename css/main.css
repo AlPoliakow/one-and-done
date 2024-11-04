@@ -1065,6 +1065,10 @@ td {
     margin: 3em 0 2em 0;
   }
 
+  .bottom-nav {
+    display: none; /* only visible for mobile and tablet */
+  }
+
   footer .content-wrapper {
     padding: 50px 0 75px 0;
   }
