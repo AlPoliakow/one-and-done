@@ -140,7 +140,6 @@ main,
 footer {
   display: flex;
   justify-content: center;
-  /*---parent's to .content-wrapper---*/
   width: 100%;
 }
 
@@ -342,11 +341,10 @@ main .content-wrapper {
   width: 100%;
   padding: 1em 2em;
   margin: 0.5em 1em;
-  text-align: center;
-  /*-needed for icon position-*/
+  text-align: center; /*-needed for icon position-*/
 }
 
-/*-for click to expand section-*/
+/*-for expanded section-*/
 .base {
   display: flex;
   justify-content: space-between;
@@ -387,7 +385,7 @@ article p {
   margin-top: 1.5em;
 }
 
-/*---ABOUT---*/
+/*---ABOUT STYLES---*/
 .orange {
   border: 2px #fcb309 solid; 
 }
@@ -401,7 +399,7 @@ article p {
   color: #fcb309;
 }
 
-/*---HTML---*/
+/*---HTML STYLES---*/
 .blue-text {
   color: #8B8BFE; /*contrast ratio 7.22:1 */
 }
@@ -423,7 +421,7 @@ article p {
   font-size:5em;
 }
 
-/*---CSS---*/
+/*---CSS STYLES---*/
 .red {
   border: 2px #FF6161 solid;
 }
@@ -436,10 +434,8 @@ article p {
   color: #FF6161;
 }
 
-/*---JavaScript---*/
+/*---JAVASCRIPT STYLES---*/
 .yellow {
-  /* for light on mode */
-  outline: 3px solid #000000;
   outline-offset: -6px;
   border: 2px #ffff00 solid;
 }
@@ -449,14 +445,10 @@ article p {
 }
 
 .fa-js {
-  /* for light on mode */
-  background: #000000;
-  border-left: 5px #000000 solid;
-  border-right: 5px #000000 solid;
   color: #ffff00;
 }
 
-/*---ALL---*/
+/*---ALL TOGETHER STYLES---*/
 .green {
   border: 2px #32cd32 solid; 
 }
@@ -469,7 +461,7 @@ article p {
   color: #32cd32; /*contrast ratio 9.91:1 */
 }
 
-/*---GIT---*/
+/*---GIT STYLES---*/
 .fa-keyboard {
   color: #FF29FF;
 }
@@ -538,11 +530,10 @@ header figure a{
 
 .check ul li {
   margin-bottom: 0.6em;
-  text-indent: -1.3em;
-  /*indents second line */
+  text-indent: -1.3em; /* indents second line */ 
 }
 
-/*-for click to expand section-*/
+/*-for expanded section-*/
 .git-page .base {
   display: flex;
   justify-content: space-between;
@@ -553,12 +544,6 @@ header figure a{
   margin: 0;
   font-size: 1.35em;
 }
-
-/*.git-content-wrapper button {
-  padding: 0;
-  line-height: 0;
-  font-size: 1em;
-}*/
 
 .git-page .content {
   margin-top: 20px;
@@ -598,8 +583,7 @@ table,
 th,
 td {
   border: 1px solid purple;
-  border-collapse: collapse;
-  /*single instead of double lines */
+  border-collapse: collapse; /*single instead of double lines */
 }
 
 .branches-content {
@@ -850,8 +834,7 @@ td {
   .one-done ul {
     columns: 2;
     column-gap: 40px;
-    break-inside: avoid;
-    /* avoids fragmentation */
+    break-inside: avoid; /* avoids fragmentation */
   }
 
   .content-page footer .content-wrapper {
