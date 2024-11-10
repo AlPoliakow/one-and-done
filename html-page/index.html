@@ -53,11 +53,12 @@
                 <h2>Best practices</h2>
                 <ul>
                     <li>Appropriate element type selection is very important for screen readers</li>
-                    <li><span>Comments:</span> provide a brief explanation for label to the code</li>
-                    <li><span>Image accessibility:</span> every image needs a clear and brief description for screen
+                    <li><span>Comments:</span> provide a brief explanation or label for the code</li>
+                    <li>Every image needs a clear and brief description for screen
                         readers</li>
-                    <li><span>Formatting:</span> element needs to be appropriately nested</li>
-                    <li><span>Headings:</span> each element needs an appropriate heading</li>
+                    <li>Decorative images should be hidden from screen readers</li>
+                    <li><span>Formatting:</span> elements needs to be appropriately nested</li>
+                    <li><span>Headings:</span> each section needs an appropriate heading</li>
                     <li><span>Validate the code:</span> check the code for errors using a <a
                             href="https://validator.w3.org/#validate_by_input" target="_blank" rel="noopener">HTML
                             validator</a></li>
@@ -72,10 +73,9 @@
                     </li>
                     <li><span>IDs:</span> are only used once/for a single element and are used in navigation links
                     </li>
-                    <li>Check for start and end tags</li>
-                    <li>Check container levels</li>
-                    <li>Check folder pathway</li>
-                    <li><span>Use indentation:</span> “Alt” + “shift” + “F” automatically indents code and makes it
+                    <li>Check that each start tag has a corresponding end tag</li>
+                    <li>Check folder pathway if the link isn't working</li>
+                    <li>“Alt” + “shift” + “F” automatically indents code and makes it
                         easier to check for closing
                         tags in VS Code</li>
                 </ul>
@@ -83,33 +83,24 @@
             <article class="blue one-done">
                 <h2>One & Done</h2>
                 <ul>
-                    <li><a href="https://www.w3schools.com/html/html_forms.asp" target="_blank" rel="noopener">Forms</a>
-                    </li>
-                    <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Forms/Your_first_form" target="_blank"
-                            rel="noopener">Form template</a></li>
                     <li><a href="https://blog.hubspot.com/website/section-in-html" target="_blank"
-                            rel="noopener">Section tags vs div or article tags</a></li>
+                            rel="noopener">Section tags</a> are used to group related content where other tags (nav/article) are not appropriate</li>
                     <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select" target="_blank"
-                            rel="noopener">Avoid showing the first item in a droplist</a></li>
-                    <li><a href="https://www.geeksforgeeks.org/html-file-paths/" target="_blank" rel="noopener">File
-                            paths</a></li>
-                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox"
-                            target="_blank" rel="noopener">Checkbox inputs</a> can be individual or linked</li>
+                            rel="noopener">Avoid showing the first item in a droplist</a> by creating an option with a blank value</li>
+                    <li>Using the <a href="https://www.geeksforgeeks.org/html-file-paths/" target="_blank" rel="noopener"> correct file
+                            path</a> is crucial</li>
+                    <li>A <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox"
+                            target="_blank" rel="noopener">checkbox input</a> allows for a binary response</li>
                     <li>An <a href="https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA8.html" target="_blank"
-                            rel="noopener">aria-label</a> attribute can be used to provide a descriptive text label to
-                        links that
-                        will not be visible on the page</li>
+                            rel="noopener">aria-label</a> attribute can be used to provide a descriptive text label to hyperlinks
+                        </li>
                     <li>An <a
                             href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-description"
-                            target="_blank" rel="noopener">aria-description</a> or an <a
-                            href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-describedby"
-                            target="_blank" rel="noopener">aria-describedby</a> attribute are used instead of an
-                        aria-label for longer explanations</li>
-                    <li>An <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-details" target="_blank"
-                            rel="noopener">aria-details</a> attribute can provide extended explanations and are not used in accessible descriptions</li>
+                            target="_blank" rel="noopener">aria-description</a> can be used instead of an
+                        aria-label for a longer explanation</li>
                     <li><a href="https://www.visionaustralia.org/business-consulting/digital-access/blog/how-to-make-read-more-links-accessible"
-                            target="_blank" rel="noopener">"Read more" link accessibility</a> for screen readers needs to
-                        be considered</li>
+                            target="_blank" rel="noopener">"Read more" link accessibility</a> needs to be considered in relation to screen readers
+                        </li>
                 </ul>
             </article>
         </div>
@@ -124,9 +115,10 @@
                     Torres Strait Islander peoples.</p>
             </div>
             <p id="socials">
-                <a href="mailto:mx.al.poliakow@gmail.com?subject=Hello" target="_blank"><i class="fa-regular fa-envelope" aria-hidden="false"></i><br><span>Email</span></a>
-                <a href="https://github.com/AlPoliakow" target="_blank" rel="noopener"><i
-                        class="fa-brands fa-github" aria-hidden="false"></i> <br><span>GitHub</span></a>
+                <a href="mailto:mx.al.poliakow@gmail.com?subject=Hello" target="_blank"><i
+                        class="fa-regular fa-envelope" aria-hidden="false"></i><br><span>Email</span></a>
+                <a href="https://github.com/AlPoliakow" target="_blank" rel="noopener"><i class="fa-brands fa-github"
+                        aria-hidden="false"></i> <br><span>GitHub</span></a>
                 <a href="https://www.linkedin.com/in/al-poliakow-2953282b6/" target="_blank" rel="noopener"><i
                         class="fa-brands fa-linkedin" aria-hidden="false"></i><br><span>LinkedIn</span></a>
             </p>
